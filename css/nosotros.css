@@ -119,7 +119,7 @@
 }
 
 .link a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     animation-duration: 3s;
     animation-name: color;
@@ -152,7 +152,6 @@
 }
 
 .foto img {
-    height: 100%;
-    width: 100%;
-
+    height: 300px;
+    width: auto;
 }
