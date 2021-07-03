@@ -1,0 +1,98 @@
+
+/* CARD PROYECTOS */
+.ppal--h2 {
+  padding: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.card {
+  margin: 0.5rem;
+  border-bottom: black 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style:solid;
+  padding-bottom: 1rem;
+}
+.card a img {
+  object-fit: cover;
+  height: 300px;
+  width: 400px;
+}
+.card__projectItem {
+  filter: grayscale(100);
+  opacity: 80%;
+  }
+.card__projectItem:hover {
+  filter: grayscale(0);
+  opacity: 100%;
+}
+.card__projectOverlay--h5 {
+  text-align: right;
+  font-size: 0.6rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+.card__projectOverlay--h4 {
+  text-align: right;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 0.1rem;
+}
+.card__projectOverlay--h3 {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1rem;
+}
+/* FIN CARD PROYECTOS */  
+
+
+/* CARD INVERSIONES */
+.ppal--h2 {
+  padding: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.card_inv {
+  margin: 0.5rem;
+  padding-bottom: 2rem;
+}
+.card_inv a img {
+  object-fit: cover;
+  height: 300px;
+  width: 400px;
+}
+.card__projectItem {
+  filter: grayscale(100);
+  opacity: 80%;
+  }
+.card__projectItem:hover {
+  filter: grayscale(0);
+  opacity: 100%;
+}
+.card__projectOverlay--h5 {
+  text-align: right;
+  font-size: 0.6rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+.card__projectOverlay--h4 {
+  text-align: right;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 0.1rem;
+}
+.card__projectOverlay--h3 {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1rem;
+}
+/* FIN CARD PROYECTOS */  

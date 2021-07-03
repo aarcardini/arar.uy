@@ -1,0 +1,158 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    align-content: center;
+    justify-items: center;
+    align-items: stretch;
+    grid-template-areas:
+      "Descripcion Descripcion foto"
+      "academica laboral Links";
+    width: 90%;
+    height: 90%;
+  }
+  
+  .Descripcion { grid-area: Descripcion; }
+  
+  .laboral { grid-area: laboral; }
+  
+  .academica { grid-area: academica; }
+  
+  .foto { grid-area: foto; }
+  
+  .Links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "CV CV CV"
+      "proyectos proyectos proyectos"
+      "inversiones inversiones inversiones";
+    grid-area: Links;
+  }
+  
+  .CV { grid-area: CV; }
+  
+  .proyectos { grid-area: proyectos; }
+  
+  .inversiones { grid-area: inversiones; }
+  
+  
+
+
+
+
+
+.contenedor {
+    padding-top: 160px;
+    padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.caja_texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    position: relative;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 1px;
+}
+  
+.texto {
+    background: var(--blanco);
+    padding: 2rem;
+}
+
+.texto h1 {
+    padding-top:1rem;
+    font-weight: 300;
+    text-align:center;
+    cursor:pointer;
+}
+.texto h1:hover {
+    color: var(--rojo);
+}
+
+.texto p {
+    padding-top: 0.5rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.texto_base {
+    background: var(--blanco);
+    width: 100%;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.texto_base p {
+    padding-top: 0.5rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.texto_base h2 {
+    font-weight: 300;
+    cursor:pointer;
+}
+.texto_base h2:hover {
+    color: var(--rojo);
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blanco);
+    padding: 1rem;
+}
+
+.link a {
+    font-size: 2rem;
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+@keyframes color {
+    0% { color: #ff9a9e; }
+    50% { color: #fad0c4; }
+    100% { color: #ff9a9e; }
+}
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.foto {
+    padding: 1rem;   
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-height: 200px;
+/* transform: translate(10px, 20px);
+ */ 
+}
+
+.foto img {
+    height: 100%;
+    width: 100%;
+
+}
