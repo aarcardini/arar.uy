@@ -1,0 +1,272 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: column;
+    align-content: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "proyecto1 proyecto2 proyecto3 proyecto4 proyecto5"
+      "tabla1 tabla1 tabla1 tabla1 link"
+      "tabla2 tabla2 tabla2 tabla2 link2"
+      "tabla3 tabla3 tabla3 tabla3 link3";
+    width: 90%;
+    height: 90%;
+  }
+  
+  .proyecto1 { grid-area: proyecto1; }
+  
+  .proyecto2 { grid-area: proyecto2; }
+  
+  .proyecto3 { grid-area: proyecto3; }
+  
+  .proyecto4 { grid-area: proyecto4; }
+  
+  .proyecto5 { grid-area: proyecto5; }
+  
+  .tabla1 { grid-area: tabla1; }
+  
+  .link { grid-area: link; }
+  
+  .tabla2 { grid-area: tabla2; }
+  
+  .link2 { grid-area: link2; }
+  
+  .tabla3 { grid-area: tabla3; }
+  
+  .link3 { grid-area: link3; }
+  
+.activos {
+    padding-top: 180px;
+}
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+.inversiones {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.proyecto1 {
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 300px;
+    max-height: 300px;
+}
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/inversiones/maldonado.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.proyecto2 {
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 300px;
+    max-height: 300px;
+}
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/inversiones/punta-gorda.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.proyecto3 {
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 300px;
+    max-height: 300px;
+}
+.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/proyectos/montero/render1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.proyecto4 {
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 300px;
+    max-height: 300px;
+}
+.img4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/proyectos/luisa/render1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.proyecto5 {
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 300px;
+    max-height: 300px;
+}
+.img5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/proyectos/cocina_italia2/render.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+table{
+    width:100%;
+    table-layout: fixed;
+    border: 1px;
+}
+.table__header{
+    background-color: var(--amarillo);
+   }
+.table__content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid var(--blanco);
+}
+.table__content--disponible{
+    color: var(--verde);
+    font-weight: bold;
+}
+.table__content--noDisponible{
+    color: var(--rojo);
+    font-weight: bold;
+}
+th{
+    padding: 1rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--negro);
+    text-transform: uppercase;
+  }
+td{
+    padding: 1rem;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--negro);
+    border-bottom: solid 1px var(--blanco);
+}
+
+
+
+
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border: 1px var(--amarillo) dashed;
+}
+.link a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+}
+
+.link a:hover {
+    text-decoration: line-through;
+}
+.link2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border: 1px var(--amarillo) dashed;
+}
+.link2 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+}
+
+.link2 a:hover {
+    text-decoration: line-through;
+}
+.link3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border: 1px var(--amarillo) dashed;
+}
+.link3 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+}
+.link3 a:hover {
+    text-decoration: line-through;
+}
+
+@keyframes color {
+    0% { color: #ff9a9e; }
+    50% { color: #fad0c4; }
+    100% { color: #ff9a9e; }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+}

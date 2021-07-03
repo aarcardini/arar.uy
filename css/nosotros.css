@@ -9,13 +9,13 @@
     justify-items: center;
     align-items: stretch;
     grid-template-areas:
-      "Descripcion Descripcion foto"
+      "descripcion descripcion foto"
       "academica laboral Links";
     width: 90%;
     height: 90%;
   }
   
-  .Descripcion { grid-area: Descripcion; }
+  .descripcion { grid-area: descripcion; }
   
   .laboral { grid-area: laboral; }
   
@@ -23,7 +23,7 @@
   
   .foto { grid-area: foto; }
   
-  .Links {
+  .links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -68,10 +68,10 @@
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
     padding: 1px;
 }
-  
+
 .texto {
     background: var(--blanco);
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 .texto h1 {
@@ -93,7 +93,7 @@
 .texto_base {
     background: var(--blanco);
     width: 100%;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: justify;
 }
 
@@ -111,14 +111,31 @@
     color: var(--rojo);
 }
 
-.link {
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--blanco);
-    padding: 1rem;
+    background-image: url(../img/Alejandro\ Arcardini\ Arquitecto.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 350px;
+}
+  
+.foto {
+    padding: 10px;   
+    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
+    max-width: 400px;
+    max-height: 400px;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+}
 .link a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -128,7 +145,7 @@
 }
 
 .link a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
 }
 
 @keyframes color {
@@ -138,21 +155,20 @@
 }
 
 
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.foto {
-    padding: 1rem;   
-    background: linear-gradient(to left,  #ff9a9e, #fad0c4);
-    max-height: 200px;
-/* transform: translate(10px, 20px);
- */ 
-}
+@media (max-width: 800px) {
 
-.foto img {
-    height: 300px;
-    width: auto;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .Links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
 }

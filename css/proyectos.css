@@ -1,4 +1,27 @@
+  /* MAIN CONTENT */
+.ppal {
+  padding: 4rem;
+  padding-top: 160px;
+  background-color: var(--blanco);
+}
+  
+.underconst {
+  padding: 4rem;
+  background-color: var(--blanco);
+}
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+  /* FINALIZA CONTENT */
+
+
+
+  
 /* CARD PROYECTOS */
 .ppal--h2 {
   padding: 1rem;
