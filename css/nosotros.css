@@ -34,6 +34,7 @@
       "proyectos proyectos proyectos"
       "inversiones inversiones inversiones";
     grid-area: Links;
+    padding: 2rem;
   }
   
   .CV { grid-area: CV; }
