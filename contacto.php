@@ -31,7 +31,7 @@
   <section class="contacto">
       <div id="container">
         <h1>Trabajemos juntos</h1>
-        <form action="contact_form_to_email.php" method="post" id="contact_form">
+        <form action="enviar.php" method="post" id="contact_form">
           <div class="nombre">
             <label for="name"></label>
             <input type="text" placeholder="Soy..." name="name" id="name_input" required>
@@ -58,7 +58,7 @@
             <textarea name="message" placeholder="Aquí va el texto" id="message_input" cols="30" rows="5" required></textarea>
           </div>
           <div class="submit">
-            <input type="submit" value="Enviar mensaje" id="form_button" />
+            <input type="submit" name="enviar" value="Enviar mensaje" id="form_button" />
           </div>
         </form>
       </div>
@@ -101,6 +101,10 @@
       </div>
     </div>
   </div>
+
+<?php
+include("enviar.php");
+?>
 
 </body>
 </html>
