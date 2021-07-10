@@ -284,6 +284,8 @@ footer {
   transition: transform .3s;
   will-change: transform;
   contain: paint;
+  border: none;
+  outline: none;
 }
 
 .page #nav-content ul {
