@@ -193,6 +193,8 @@ footer {
   align-items: center;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   z-index: 0;
+  border: none;
+  outline: none;
 }
 
 
@@ -201,8 +203,6 @@ footer {
   height: 100vh;
   width: 100%;
   pointer-events: none;
-  border: none;
-  outline: none;
 }
 .page #nav-container .bg {
   position: absolute;
@@ -218,9 +218,12 @@ footer {
 .page #nav-container:focus-within .bg {
   visibility: visible;
   opacity: .6;
+  
 }
 .page #nav-container * {
   visibility: visible;
+  border: none;
+  outline: none;
 }
 
 .page .button {
