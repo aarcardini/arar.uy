@@ -1,163 +1,39 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr 0.4fr;
-    gap: 1em 1em;
-    grid-auto-flow: column;
-    align-content: stretch;
-    align-items: stretch;
-    grid-template-areas:
-      "intro intro intro intro"
-      "serv1 serv1 serv2 serv2"
-      "serv3 serv3 serv4 serv4"
-      "title title title title"
-      "fase1 fase2 fase3 fase4";
-    width: 90%;
-    height: 90%;
-}
-  
-  .intro { grid-area: intro; }
-  
-  .serv1 { grid-area: serv1; }
-  
-  .serv2 { grid-area: serv2; }
-  
-  .serv3 { grid-area: serv3; }
-  
-  .serv4 { grid-area: serv4; }
-  
-  .title { grid-area: title; }
-  
-  .fase1 { grid-area: fase1; }
-  
-  .fase2 { grid-area: fase2; }
-  
-  .fase3 { grid-area: fase3; }
-  
-  .fase4 { grid-area: fase4; }
-
-  
-.servicios {
-    padding: 5rem;
-    padding-top: 160px;
-    text-align: center;
-    padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+#servicios {
+    margin: 0;
 }
 
-
-.serv1 {
-    background: var(--blanco);
-    max-width: 600px;
-    max-height: 500px;
+#servicios .container {
+    padding-top:180px;
 }
-
-.serv1 p{
-    text-align: justify;
+#fases .container {
+    padding-bottom:40px;
 }
-
-.serv1 img {
-    width: 600px;
+#servicios .container img {
+    width: 100vw;
     height: 300px;
     filter: grayscale(100);
     opacity: 80%;
     object-fit: cover;
 }
-.serv2 {
-    background: var(--blanco);
-    max-width: 600px;
-    max-height: 500px;
-}
-.serv2 p{
-    text-align: justify;
-}
-
-.serv2 img {
-    width: 600px;
-    height: 300px;
-    filter: grayscale(100);
+#servicios .container img:hover {
+    filter: none;
     opacity: 80%;
-    object-fit: cover;
 }
-.serv3 {
-    background: var(--blanco);
-    max-width: 600px;
-    max-height: 500px;
-}
-.serv3 p{
+#servicios .container p {
     text-align: justify;
+    text-align-last: center;
 }
-
-.serv3 img {
-    padding-top: 1rem;
-    width: 600px;
-    height: 300px;
-    filter: grayscale(100);
-    opacity: 80%;
-    object-fit: cover;
-}
-.serv4 {
-    padding-top: 1rem;
-    background: var(--blanco);
-    max-width: 600px;
-    max-height: 500px;
-}
-.serv4 p{
+#fases .container p {
     text-align: justify;
+    text-align-last: center;
 }
 
-.serv4 img {
-    width: 600px;
-    height: 300px;
-    filter: grayscale(100);
-    opacity: 80%;
-    object-fit: cover;
-}
+@media (max-width: 960px) {
 
-.fase1 p {
-    text-align: justify;
-}
-
-.fase2 p {
-    text-align: justify;
-}
-
-.fase3 p {
-    text-align: justify;
-}
-
-.fase4 p {
-    text-align: justify;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 1700px) {
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+    #servicios .container {
+        padding-top:80px;
     }
-}
-
-
-
-@media (max-width: 800px) {
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+    #fases .container {
+        padding-bottom:0px;
     }
 }
