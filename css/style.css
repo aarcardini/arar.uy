@@ -339,7 +339,7 @@ footer {
 /* FINALIZA MENU LATERAL */
 
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
 
   .layout {
     display: flex;
