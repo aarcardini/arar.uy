@@ -1,6 +1,12 @@
 #proyectos {
   margin: 0;
 }
+
+.btn {
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: var(--negro);
+}
 .btn:focus,.btn:active {
   outline: none !important;
   box-shadow: none;
