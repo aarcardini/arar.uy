@@ -16,7 +16,7 @@
   text-decoration: line-through solid var(--rojo) 1px;
   color: var(--rojo);
 }
-#proyectos .container {
+#proyectos {
   padding-top:180px;
   padding-bottom:40px;
 }
@@ -55,10 +55,39 @@
 }
 
 
-@media (max-width: 992px) {
 
-  #proyectos .container {
-      padding-top:80px;
-      padding-bottom:0px;
+#proyectos .container p {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.logo-list {
+  padding: 20px 0;
+  text-align: center;
+}
+.logo-list img {
+  display: inline-block;
+  max-width: 85%;
+  padding: 15px 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(100);
+  -moz-filter: grayscale(100);
+  filter: grayscale(100);
+}
+.logo-list img:hover {
+  filter: none;
+  transform: scale(1.2);
+  -webkit-filter: none;
+  -moz-filter: none;
+}
+
+
+@media (max-width: 768px) {
+  #proyectos .container img {
+    height: 400px ;
+  }
+  #proyectos {
+    padding-top:80px;
+    padding-bottom:0px;
   }
 }
