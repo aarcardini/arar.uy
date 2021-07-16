@@ -98,7 +98,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 0.5rem;
+  height: 2rem;
   background-color: var(--blanco);
   width: 100%;
   bottom: 0rem;
@@ -106,6 +106,7 @@ footer {
 
 /* ICONOS DE REDES SOCIALES */
 .social{
+  padding-top: 1rem;
   display: flex;
   flex-direction: row;
 }
@@ -129,6 +130,7 @@ footer {
   padding: 0.6rem;
   }
 .madeby p {
+  padding-top: 1rem;
   letter-spacing: 3px;
 }
 .madeby a {

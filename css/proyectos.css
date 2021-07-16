@@ -80,7 +80,17 @@
   -webkit-filter: none;
   -moz-filter: none;
 }
+#globant {
+  width: 50%;
+}
+#lospi {
+  width: 50%;
+}
 
+.collapse {
+  text-align: justify;
+  text-align-last: center;
+}
 
 @media (max-width: 768px) {
   #proyectos .container img {
@@ -89,5 +99,8 @@
   #proyectos {
     padding-top:80px;
     padding-bottom:0px;
+  }
+  #offcanvasRight {
+    width: 70%;
   }
 }
