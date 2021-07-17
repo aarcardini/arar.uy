@@ -92,6 +92,15 @@
   text-align-last: center;
 }
 
+.card-body {
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--gris);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--negro);
+}
+
 @media (max-width: 768px) {
   #proyectos .container img {
     height: 400px ;

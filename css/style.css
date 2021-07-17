@@ -16,6 +16,7 @@
   --rojo: #B06D74;
   --negro: #1E1F20;
   --beige: #F2EFE9;
+  --gris: #F1F1F1;
   --verde: #6D9F71;
   --amarillo: #EABA6B;
   --celeste: #437F97;
@@ -340,6 +341,28 @@ footer {
   width: 100%;
 }
 /* FINALIZA MENU LATERAL */
+
+.ir-arriba {
+	display:none;
+	padding:15px;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+  border-radius: 2rem;
+  margin-bottom: 30px;
+
+  border-radius: 150px;
+  background: #f5f5f5;
+  box-shadow:  5px 5px 10px #d0d0d0,
+               -5px -5px 10px #ffffff;
+}
+
+.ir-arriba:hover {
+  border-radius: 150px;
+  background: #f5f5f5;
+  box-shadow: inset 20px 20px 39px #d0d0d0,
+              inset -20px -20px 39px #ffffff;
+}
 
 
 @media (max-width: 768px) {
