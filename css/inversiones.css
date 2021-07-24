@@ -1,44 +1,7 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1em 1em;
-    grid-auto-flow: column;
-    align-content: stretch;
-    align-items: stretch;
-    grid-template-areas:
-      "proyecto1 proyecto2 proyecto3 proyecto4 proyecto5"
-      "tabla1 tabla1 tabla1 tabla1 link"
-      "tabla2 tabla2 tabla2 tabla2 link2"
-      "tabla3 tabla3 tabla3 tabla3 link3";
-    width: 90%;
-    height: 90%;
-  }
-  
-  .proyecto1 { grid-area: proyecto1; }
-  
-  .proyecto2 { grid-area: proyecto2; }
-  
-  .proyecto3 { grid-area: proyecto3; }
-  
-  .proyecto4 { grid-area: proyecto4; }
-  
-  .proyecto5 { grid-area: proyecto5; }
-  
-  .tabla1 { grid-area: tabla1; }
-  
-  .link { grid-area: link; }
-  
-  .tabla2 { grid-area: tabla2; }
-  
-  .link2 { grid-area: link2; }
-  
-  .tabla3 { grid-area: tabla3; }
-  
-  .link3 { grid-area: link3; }
-  
-.activos {
+
+#activos {
     padding-top: 180px;
+    padding-bottom: 40px;
 }
 h1 {
     font-weight: 300;
@@ -57,245 +20,70 @@ h2 {
   flex-direction: row;
 }
 
-/* PROYECTO 1 */
-.proyecto1 {
-    background: var(--blanco);
-    max-width: 300px;
-    max-height: 300px;
-    
+.texto_base {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 0.5rem;
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: center;
 }
-.teProy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.texto_titulo {
+    font-weight: 300;
+    cursor:pointer;
+    text-align:center;
 }
-.img1 img {
-    width: 300px;
-    height: 240px;
+.texto_titulo:hover {
+    color: var(--rojo);
+}
+
+
+
+  #invers img {
+    width: fit-content;
+    height: 200px;
     filter: grayscale(100);
     opacity: 80%;
-    border-radius: 0.5rem;
     object-fit: cover;
-}
-.teProy a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--rojo);
-}
-
-.teProy a:hover {
-    text-decoration: line-through;
-}
-.teProy h2 {
-    font-weight: 300;
-}
-/* FIN PROYECTO 1 */
-/* PROYECTO 2 */
-.proyecto2 {
-    background: var(--blanco);
-    max-width: 300px;
-    max-height: 300px;
-}
-/* FIN PROYECTO 2 */
-/* PROYECTO 3 */
-.proyecto3 {
-    background: var(--blanco);
-    max-width: 300px;
-    max-height: 300px;
-    
-}
-/* FIN PROYECTO 3 */
-/* PROYECTO 4 */
-.proyecto4 {
-    background: var(--blanco);
-    max-width: 300px;
-    max-height: 300px;   
-}
-/* FIN PROYECTO 4 */
-/* PROYECTO 4 */
-.proyecto5 {
-    background: var(--blanco);
-    max-width: 300px;
-    max-height: 300px;
-    
-}
-/* FIN PROYECTO 5 */
-/* TABLAS */
-table{
-    width:100%;
-    table-layout: fixed;
-    border: 1px;
-}
-.table__header{
-    background-color: var(--amarillo);
-   }
-.table__content{
-    height:300px;
-    overflow-x:auto;
-    margin-top: 0px;
-    border: 1px solid var(--blanco);
-}
-.table__content--disponible{
-    color: var(--verde);
-    font-weight: bold;
-}
-.table__content--noDisponible{
-    color: var(--rojo);
-    font-weight: bold;
-}
-th{
-    padding: 1rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    color: var(--negro);
-    text-transform: uppercase;
   }
-td{
-    padding: 1rem;
-    text-align: center;
-    vertical-align:middle;
+  #invers img:hover {
+    filter: none;
+    opacity: 80%;
+  }
+  
+  #invers h5 {
+    text-align: right;
+    font-size: 0.6rem;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+  }
+  #invers h4 {
+    text-align: right;
+    font-size: 0.8rem;
+    color: black;
     font-weight: 300;
-    font-size: 12px;
-    color: var(--negro);
-    border-bottom: solid 1px var(--blanco);
-}
+    margin-bottom: 0.1rem;
+  }
+  #invers h3 {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    line-height: 1rem;
+  }
+  #invers p {
+    text-align: justify;
+    text-align-last: center;
+  }
 
-/* FINALIZA TABLAS */
+  @media (max-width: 768px) {
 
-
-/* LINKS EN GRID */
-.link {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    border: 1px var(--amarillo) dashed;
-}
-.link a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    animation-duration: 3s;
-    animation-name: color;
-    animation-iteration-count: infinite;
-}
-
-.link a:hover {
-    text-decoration: line-through;
-}
-.link2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    border: 1px var(--amarillo) dashed;
-}
-.link2 a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    animation-duration: 3s;
-    animation-name: color;
-    animation-iteration-count: infinite;
-    
-}
-
-.link2 a:hover {
-    text-decoration: line-through;
-}
-.link3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    border: 1px var(--amarillo) dashed;
-}
-.link3 a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    animation-duration: 3s;
-    animation-name: color;
-    animation-iteration-count: infinite;
-}
-.link3 a:hover {
-    text-decoration: line-through;
-}
-
-@keyframes color {
-    0% { color: #ff9a9e; }
-    50% { color: #fad0c4; }
-    100% { color: #ff9a9e; }
-}
-/* FINALIZA LINKS EN GRID */
-
-
-
-
-
-
-
-@media (max-width: 1700px) {
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+    #activos {
+      padding-top:80px;
+      padding-bottom:0px;
     }
-
-    .link {
-        width: 100%;
+    #offcanvasRight {
+      width: 70%;
     }
-    .link a {
-        font-size: 1rem;
-    }
-    .link h2 {
-        font-size: 1rem;
-    }
-    .link2 {
-        width: 100%;
-    }
-    .link2 a {
-        font-size: 1rem;
-    }
-    .link2 h2 {
-        font-size: 1rem;
-    }
-        
-    .link2 {
-        width: 100%;
-    }
-    .link2 a {
-        font-size: 1rem;
-    }
-    .link2 h2 {
-        font-size: 1rem;
-    }
-    .link3 {
-        width: 100%;
-    }
-    .link3 a {
-        font-size: 1rem;
-    }
-    .link3 h2 {
-        font-size: 1rem;
-    }
-}
-
-
-
-@media (max-width: 800px) {
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-    }
-}
+  }

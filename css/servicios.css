@@ -27,12 +27,12 @@
     text-align-last: center;
 }
 
-@media (max-width: 960px) {
 
-    #carrousel .container {
-        padding-top:80px;
+
+@media (max-width: 768px) {
+
+    #servicios .container{
+      padding-top:80px;
+      padding-bottom:0px;
     }
-    #fases .container {
-        padding-bottom:0px;
-    }
-}
+  }

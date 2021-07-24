@@ -1,72 +1,6 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1.3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1em 1em;
-    grid-auto-flow: row;
-    justify-content: stretch;
-    align-content: center;
-    justify-items: center;
-    align-items: stretch;
-    grid-template-areas:
-      "descripcion descripcion foto"
-      "academica laboral Links";
-    width: 90%;
-    height: 90%;
-  }
-  
-  .descripcion { grid-area: descripcion; }
-  
-  .laboral { grid-area: laboral; }
-  
-  .academica { grid-area: academica; }
-  
-  .foto { grid-area: foto; }
-  
-  .links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "CV CV CV"
-      "proyectos proyectos proyectos"
-      "inversiones inversiones inversiones";
-    grid-area: Links;
-    padding: 2rem;
-  }
-  
-  .CV { grid-area: CV; }
-  
-  .proyectos { grid-area: proyectos; }
-  
-  .inversiones { grid-area: inversiones; }
-  
-  
-
-
-
-
-
-.contenedor {
-    padding-top: 160px;
+#nosotros {
+    padding-top: 200px;
     padding-bottom: 50px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.caja_texto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 60%;
-    position: relative;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
-    padding: 1px;
 }
 
 .texto {
@@ -74,13 +8,17 @@
     padding: 0.5rem;
 }
 
-.texto h1 {
+.h1 {
     padding-top:1rem;
     font-weight: 300;
     text-align:center;
     cursor:pointer;
+    background: none;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
-.texto h1:hover {
+
+.h1:hover {
     color: var(--rojo);
 }
 
@@ -91,35 +29,28 @@
 }
 
 .texto_base {
-    background: var(--blanco);
-    width: 100%;
-    padding: 0.5rem;
-    text-align: justify;
-}
-
-.texto_base p {
+    font-family: 'Source Sans Pro', sans-serif;
     padding-top: 0.5rem;
     font-weight: 300;
     text-align: justify;
+    text-align-last: center;
 }
 
-.texto_base h2 {
+.texto_titulo {
     font-weight: 300;
     cursor:pointer;
+    text-align:center;
 }
-.texto_base h2:hover {
+.texto_titulo:hover {
     color: var(--rojo);
 }
 
 .img {
-    display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url(../img/Alejandro\ Arcardini\ Arquitecto.jpg);
     background-size: cover;
     background-position: center;
-    width: 250px;
-    height: 350px;
+    height: 180px;
 }
   
 .foto {
@@ -131,13 +62,11 @@
 
 .links {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content:baseline;
     align-items: center;
 }
 .link a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     animation-duration: 3s;
     animation-name: color;
@@ -155,20 +84,13 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+    #nosotros {
+      padding-top:80px;
+      padding-bottom:0px;
     }
-
-    .Links {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
+    #offcanvasRight {
+      width: 70%;
     }
-}
+  }

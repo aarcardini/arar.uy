@@ -364,6 +364,22 @@ footer {
               inset -20px -20px 39px #ffffff;
 }
 
+.texto_base {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 0.5rem;
+  font-weight: 300;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.texto_titulo {
+  font-weight: 300;
+  cursor:pointer;
+  text-align:center;
+}
+.texto_titulo:hover {
+  color: var(--rojo);
+}
 
 @media (max-width: 768px) {
 
