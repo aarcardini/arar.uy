@@ -1,0 +1,38 @@
+#servicios {
+    margin: 0;
+}
+#servicios .container {
+    padding-top:180px;
+}
+#fases .container {
+    padding-bottom:40px;
+}
+#servicios .container img {
+    width: 100vw;
+    height: 300px;
+    filter: grayscale(100);
+    opacity: 80%;
+    object-fit: cover;
+}
+#servicios .container img:hover {
+    filter: none;
+    opacity: 80%;
+}
+#servicios .container p {
+    text-align: justify;
+    text-align-last: center;
+}
+#fases .container p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #servicios .container{
+      padding-top:80px;
+      padding-bottom:0px;
+    }
+  }

@@ -1,0 +1,224 @@
+/* BODY BASE */
+body {
+  .circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    background: #111;
+    border-radius: 80%;
+    backface-visibility: hidden;
+  }
+  .texto_base {
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: ($Sp/2);
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: center;
+  }
+  .texto_titulo {
+    font-weight: 300;
+    cursor: crosshair;
+    text-align: center;
+    color: $negro;
+    &:hover {
+      color: $rojo;
+    }
+  }
+  .sepTop {
+    padding-top: $SpMenu;
+  }
+  .sepBut {
+    padding-bottom: $SpFooter;
+  }
+  .sepBut1 {
+    padding-bottom: ($SpFooter/2);
+  }
+  h1 {
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: $Sp;
+  }
+
+  h2 {
+    font-weight: 200;
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link a {
+    font-size: 1rem;
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: color;
+    animation-iteration-count: infinite;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  @keyframes color {
+    0% {
+      color: #ff9a9e;
+    }
+
+    50% {
+      color: #fad0c4;
+    }
+
+    100% {
+      color: #ff9a9e;
+    }
+  }
+
+  .logo-list {
+    padding: 20px 0;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      max-width: 60%;
+      padding: 0;
+      transition: all 0.3s ease-in-out;
+      -webkit-filter: grayscale(100);
+      -moz-filter: grayscale(100);
+      filter: grayscale(100);
+
+      &:hover {
+        filter: none;
+        transform: scale(1.2);
+        -webkit-filter: none;
+        -moz-filter: none;
+      }
+    }
+  }
+  #globant {
+    width: 50%;
+  }
+
+  .collapse {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+/* FIN BODY BASE */
+
+/* IFRAME BLOG Y CV */
+iframe.full {
+  height: 100vh;
+  width: 100vw;
+}
+/* FIN IFRAME BLOG Y CV */
+
+/* ARRANCA CONTENIDO PRINCIPAL */
+.principal {
+  img {
+    width: ($hImg * 2);
+    height: $hImg;
+    object-fit: cover;
+    filter: grayscale(100);
+    opacity: 80%;
+
+    &:hover {
+      filter: none;
+      opacity: 80%;
+    }
+  }
+  .fotoAle {
+    padding: $Sp;
+    background: linear-gradient(to left, #ff9a9e, #fad0c4);
+  }
+
+  .imgS {
+    // SERVICIOS
+    width: fit-content;
+    height: 400px;
+    filter: grayscale(100);
+    opacity: 80%;
+    object-fit: cover;
+
+    &:hover {
+      filter: none;
+      opacity: 80%;
+    }
+  }
+
+  h5 {
+    text-align: right;
+    font-size: 0.6rem;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+  }
+
+  h4 {
+    text-align: right;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 0.1rem;
+  }
+
+  h3 {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    line-height: 1rem;
+  }
+
+  p {
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .btn {
+    font-weight: 300;
+    font-size: 1.05rem;
+    color: var(--negro);
+
+    &:focus,
+    &:active {
+      outline: none !important;
+      box-shadow: none;
+      text-decoration: line-through solid $rojo 1px;
+    }
+
+    &:hover {
+      text-decoration: line-through solid $rojo 1px;
+      color: $rojo;
+    }
+  }
+}
+
+/* FIN CONTENIDO PRINCIPAL */
+
+@media (max-width: 768px) {
+  body {
+    .sepTop {
+      padding-top: ($Sp * 5);
+    }
+    .sepBut {
+      padding-bottom: $Sp;
+    }
+  }
+  #offcanvasRight {
+    width: 70%;
+  }
+  .principal {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: grayscale(100);
+      opacity: 80%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* RESETEO DE NAVEGADOR */
+/* ELIMINACIÓN DE BARRA DE SCROLL */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* FINALIZA RESETEO NAVEGADOR */

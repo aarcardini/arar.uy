@@ -1,0 +1,133 @@
+button {
+    overflow: visible;
+    color: var(--rojo);
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, select, textarea {
+    color: var(--rojo);
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    border: none;
+    max-width: 780px;
+    margin: auto;
+    position: auto;
+}
+
+form {
+    padding-top: 2rem;
+}
+
+h1 {
+    color: var(--negro);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.mail {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+    background: none;
+    border: none;
+	border-bottom: dashed 1px var(--negro);
+	color: var(--negro);
+	font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+    text-transform: none;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.mensaje {
+	float: none;
+}
+
+.nombre {
+	float: left;
+	width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telefono {
+    width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+    width: 100%;
+}
+
+
+#form_button {
+    background: var(--blanco);
+    border: dashed 1px var(--negro);
+    color: var(--negro);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: var(--negro);
+    color: var(--beige);
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: auto;
+    width: 95%;
+  }
+}

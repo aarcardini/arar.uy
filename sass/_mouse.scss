@@ -1,0 +1,16 @@
+.cursor {
+  position: absolute;
+  width: $Sp;
+  height: $Sp;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  border: 3px solid $negro;
+  border-radius: 100px;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-out;
+
+  &.movimiento {
+    transform: scale(0.7);
+  }
+}

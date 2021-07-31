@@ -1,0 +1,146 @@
+button {
+  overflow: visible;
+  color: $rojo;
+  text-transform: none;
+}
+
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: $rojo;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+form {
+  padding-top: $SpMenu;
+  border: none;
+  max-width: 780px;
+  margin: auto;
+  position: auto;
+}
+
+h1 {
+  color: $negro;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: none;
+}
+
+.mail {
+  float: right;
+  width: 45%;
+}
+.nombre {
+  float: left;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: dashed 1px $negro;
+  color: $negro;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.mensaje {
+  float: none;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.subject,
+.telefono {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+#form_button {
+  background: $blanco;
+  border: dashed 1px $negro;
+  color: $negro;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    background: $negro;
+    color: $beige;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mail {
+    float: none;
+    width: 100%;
+  }
+  .nombre {
+    float: none;
+    width: 100%;
+  }
+  form {
+    padding-top: $Sp;
+    border: none;
+    margin: 2rem;
+    position: auto;
+  }
+  .contacto {
+    padding-top: ($Sp * 5);
+  }
+}

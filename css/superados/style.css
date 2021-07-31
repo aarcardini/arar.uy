@@ -1,0 +1,404 @@
+/* ctrl + f para buscar en el cuerpo del css. Elementos importantes:  "GRID" para ir a seccion GRID
+                                                                      "MENU" para ir a la seccion MENU
+                                                                      "MENU LATERAL" para ir al menu lateral de pequeñas pantallas
+                                                                      "FOOTER" Para ir a la seccion del footer
+                                                                      "SOCIAL" para ir a los iconos de redes sociales
+                                                                      "CONTENT" Para ir a la seccion de contenidos. ASIDE responde a la sección que falta del grid ya que .span-col-3 ocupa 3 franjas de las 4 destinadas a la web. */
+
+/* En HTML .span-col-4 indica que se utiliza el ancho completo de la página. y .span-col-3 que se utilizan 3 columnas. .span-col-3 se complementa con "aside". Dentro de cada grid se utiliza flexbox para ordenar las cajas. En pequeñas pantallas .layout se comporta como flexbox y no como grid por lo que .aside pasa a estar debajo de .span-col-3 */
+
+/* De momento se utiliza iframe para la sección del blog que se redirige a la página de blog de mi web a la cual le saqué los menu y el footer desde el css de Wordpress */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* ARRANCA COLORES */
+:root {
+  --rojo: #B06D74;
+  --negro: #1E1F20;
+  --beige: #F2EFE9;
+  --gris: #F1F1F1;
+  --verde: #6D9F71;
+  --amarillo: #EABA6B;
+  --celeste: #437F97;
+  --blanco: white;
+}
+/* FINALIZA COLORES */
+
+/* RESETEO DE NAVEGADOR */
+/* ELIMINACIÓN DE BARRA DE SCROLL */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* FINALIZA RESETEO NAVEGADOR */
+
+/* ARRANCA MENU */
+header {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 140px;
+  background-color: var(--blanco);
+  width: 100%;
+  position: fixed;
+}
+
+header .logo a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--negro);
+  cursor: crosshair;
+}
+header .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+header .menu ul li {
+  list-style: none;
+}
+header .menu ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: var(--negro);
+}
+header .menu ul li a:hover {
+  text-decoration: line-through solid var(--rojo) 1px;
+}
+header .menu ul li .on{
+  text-decoration: line-through solid var(--rojo) 1px;
+}
+.logo img {
+  height: 5rem;
+}
+.page {
+  display: none;
+}
+/* FIN MENU */
+
+/* FOOTER CON REDES */
+footer {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  background-color: var(--blanco);
+  width: 100%;
+  bottom: 0rem;
+}
+
+/* ICONOS DE REDES SOCIALES */
+.social{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.social li{
+  list-style: none;
+}
+.social li a{
+  display: inline-block;
+  color: var(--negro);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover{
+  transform: scale(0.5) translateY(-15px);
+  color: var(--negro);
+}
+.madeby {
+  right: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  }
+.madeby p {
+  padding-top: 1rem;
+  letter-spacing: 3px;
+}
+.madeby a {
+  text-decoration: none;
+  color: var(--negro);
+}
+.madeby a:hover {
+  text-decoration: line-through solid var(--rojo) 1px;
+}
+/* FINALIZA REDES */
+
+
+  /* COMIENZA MENU LATERAL */
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: var(--negro);
+}
+
+.page header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background: var(--blanco);
+  color: var(--negro);
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  z-index: 0;
+  border: none;
+  outline: none;
+}
+
+
+.page #nav-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+.page #nav-container .bg {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  background: var(--negro);
+}
+.page #nav-container:focus-within .bg {
+  visibility: visible;
+  opacity: .6;
+  
+}
+.page #nav-container * {
+  visibility: visible;
+  border: none;
+  outline: none;
+}
+
+.page .button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  -webkit-appearance: none;
+  border: 0;
+  background: var(--blanco);
+  border-radius: 0;
+  height: 4rem;
+  width: 2rem;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 25px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: var(--negro);
+}
+.page .icon-bar {
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--negro);
+  transition: .3s;
+}
+.page .icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+.page #nav-container:focus-within .button {
+  pointer-events: none;
+}
+.page #nav-container:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,8px,0) rotate(45deg);
+  background-color: var(--rojo);
+}
+.page #nav-container:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+.page #nav-container:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0,-8px,0) rotate(-45deg);
+  background-color: var(--rojo);
+}
+
+.page #nav-content {
+  margin-top: 70px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 70px);
+  background: var(--blanco);
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  will-change: transform;
+  contain: paint;
+}
+
+.page #nav-content ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page #nav-content li a {
+  padding: 1rem 1rem;
+  display: block;
+  transition: color .1s;
+}
+
+.page #nav-content li a:hover {
+  text-decoration: line-through solid var(--rojo) 1px;
+}
+.page #nav-content li .on{
+  text-decoration: line-through solid var(--rojo) 1px;
+}
+
+.page #nav-content li:not(.small) + .small {
+  margin-top: auto;
+}
+
+.page .small {
+  display: flex;
+  align-self: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--negro);
+  text-transform: uppercase;
+}
+
+.page .small img{
+  width: 100px;
+}
+
+.page .small a {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.page .small a + a {
+  margin-left: 15px;
+}
+
+.page #nav-container:focus-within #nav-content {
+  transform: none;
+}
+
+
+.page a,
+.page a:visited,
+.page a:focus,
+.page a:active,
+.page a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+.page a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: var(--negro);
+}
+
+.page ul {
+  padding: 0;
+  list-style: none;
+}
+
+.page img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}
+/* FINALIZA MENU LATERAL */
+
+.ir-arriba {
+	display:none;
+	padding:15px;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+  border-radius: 2rem;
+  margin-bottom: 30px;
+
+  border-radius: 150px;
+  background: #f5f5f5;
+  box-shadow:  5px 5px 10px #d0d0d0,
+               -5px -5px 10px #ffffff;
+}
+
+.ir-arriba:hover {
+  border-radius: 150px;
+  background: #f5f5f5;
+  box-shadow: inset 20px 20px 39px #d0d0d0,
+              inset -20px -20px 39px #ffffff;
+}
+
+.texto_base {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 0.5rem;
+  font-weight: 300;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.texto_titulo {
+  font-weight: 300;
+  cursor:pointer;
+  text-align:center;
+}
+.texto_titulo:hover {
+  color: var(--rojo);
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    position: relative;
+  }
+  footer {
+    display: none;
+  }
+  .page {
+    display: block;
+  }
+  header {
+    display: none;
+  }
+}
