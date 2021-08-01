@@ -3,7 +3,7 @@
 /* BARRAS/MENU/FOOTER */
 /* ARRANCA MENU */
 header {
-  z-index: 10;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,6 +170,7 @@ footer .madeby a:hover {
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #1e1f20;
+  z-index: 100;
 }
 
 .page header {

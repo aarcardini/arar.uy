@@ -1,6 +1,6 @@
 /* ARRANCA MENU */
 header {
-  z-index: 10;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,7 +42,6 @@ header {
         font-weight: 300;
         font-size: 1.05rem;
         color: $negro;
-
         &:hover {
           text-decoration: line-through solid $rojo 1px;
         }
@@ -123,6 +122,7 @@ footer {
   font-weight: 600;
   letter-spacing: 0.03em;
   color: $negro;
+  z-index: 100;
 
   header {
     display: flex;
