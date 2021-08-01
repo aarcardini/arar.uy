@@ -771,7 +771,7 @@ h1 {
 }
 
 input[type="text"],
-[type="email"],
+[type="mail"],
 select,
 textarea {
   background: none;
@@ -792,7 +792,7 @@ textarea {
 }
 
 input[type="text"]:focus,
-[type="email"]:focus,
+[type="mail"]:focus,
 textarea:focus {
   outline: none;
   padding: 0 0 0.875em 0;
