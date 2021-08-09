@@ -30,6 +30,9 @@ body {
   .sepTop {
     padding-top: $SpMenu;
   }
+  .sepTop1 {
+    padding-top: ($SpFooter/2);
+  }
   .sepBut {
     padding-bottom: $SpFooter;
   }
@@ -45,6 +48,9 @@ body {
   h2 {
     font-weight: 200;
     text-align: center;
+  }
+  p {
+    text-align: justify;
   }
   .links {
     display: flex;
@@ -139,6 +145,8 @@ iframe.full {
   .imgS {
     // SERVICIOS
     width: fit-content;
+    display: block;
+    margin: auto;
     height: 400px;
     filter: grayscale(100);
     opacity: 80%;

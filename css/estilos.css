@@ -412,6 +412,7 @@ footer .madeby a:hover {
   background: #f5f5f5;
   -webkit-box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #ffffff;
+  z-index: 10000;
 }
 
 .ir-arriba:hover {
@@ -492,6 +493,10 @@ body .sepTop {
   padding-top: 11rem;
 }
 
+body .sepTop1 {
+  padding-top: 1.5rem;
+}
+
 body .sepBut {
   padding-bottom: 3rem;
 }
@@ -509,6 +514,10 @@ body h1 {
 body h2 {
   font-weight: 200;
   text-align: center;
+}
+
+body p {
+  text-align: justify;
 }
 
 body .links {
@@ -631,6 +640,8 @@ iframe.full {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: block;
+  margin: auto;
   height: 400px;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
@@ -888,5 +899,32 @@ textarea {
           transform: scale(0.7);
 }
 
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* FIN LIGHTBOX */
 /* FIN HEADER */
 /*# sourceMappingURL=estilos.css.map */
