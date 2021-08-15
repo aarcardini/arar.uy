@@ -157,6 +157,17 @@ iframe.full {
       opacity: 80%;
     }
   }
+  a {
+    text-align: left;
+    font-size: 1rem;
+    color: $negro;
+    font-weight: 300;
+    margin-bottom: 0.1rem;
+    text-decoration: none;
+    &:hover {
+      color: $rojo;
+    }
+  }
 
   h5 {
     text-align: right;
@@ -204,7 +215,34 @@ iframe.full {
       color: $rojo;
     }
   }
+  #invers {
+    h5 {
+      text-align: left;
+    }
+
+    h4 {
+      text-align: left;
+    }
+
+    h3 {
+      text-align: left;
+    }
+  }
 }
+
+/* PROGRESS BAR MODIFICACION DE BOOTSTRAP*/
+#invers {
+  .progress {
+    height: 1rem;
+    border-radius: 0;
+    background: $gris;
+  }
+  .progress-bar {
+    background: $negro;
+  }
+}
+
+/* FIN PROGRESS BAR */
 
 /* FIN CONTENIDO PRINCIPAL */
 

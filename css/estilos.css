@@ -656,6 +656,19 @@ iframe.full {
   opacity: 80%;
 }
 
+.principal a {
+  text-align: left;
+  font-size: 1rem;
+  color: #1e1f20;
+  font-weight: 300;
+  margin-bottom: 0.1rem;
+  text-decoration: none;
+}
+
+.principal a:hover {
+  color: #b06d74;
+}
+
 .principal h5 {
   text-align: right;
   font-size: 0.6rem;
@@ -705,6 +718,30 @@ iframe.full {
   color: #b06d74;
 }
 
+.principal #invers h5 {
+  text-align: left;
+}
+
+.principal #invers h4 {
+  text-align: left;
+}
+
+.principal #invers h3 {
+  text-align: left;
+}
+
+/* PROGRESS BAR MODIFICACION DE BOOTSTRAP*/
+#invers .progress {
+  height: 1rem;
+  border-radius: 0;
+  background: #f1f1f1;
+}
+
+#invers .progress-bar {
+  background: #1e1f20;
+}
+
+/* FIN PROGRESS BAR */
 /* FIN CONTENIDO PRINCIPAL */
 @media (max-width: 768px) {
   body .sepTop {
@@ -875,28 +912,6 @@ textarea {
   .contacto {
     padding-top: 5rem;
   }
-}
-
-.cursor {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  border: 3px solid #1e1f20;
-  border-radius: 100px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-
-.cursor.movimiento {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 /* LIGHTBOX */
