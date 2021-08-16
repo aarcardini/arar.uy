@@ -228,6 +228,30 @@ iframe.full {
       text-align: left;
     }
   }
+  #landblog {
+    h5 {
+      text-align: center;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+}
+.landing {
+  img {
+    filter: grayscale(100);
+    opacity: 80%;
+
+    &:hover {
+      filter: none;
+      opacity: 80%;
+    }
+  }
 }
 
 /* PROGRESS BAR MODIFICACION DE BOOTSTRAP*/

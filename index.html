@@ -14,7 +14,7 @@
     <link rel="icon" href="img/Logo_arar.svg">
     <title>Estudio ARAR.</title>
 </head>
-<body>
+<body id="landing">
   <header>
     <div class="logo">    
       <a href="index.html"><img src="img/Logo_arar.svg" alt="logo de la empresa arar.uy"></a>
@@ -36,8 +36,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-xl-6">
-        <p class="texto_base">ARAR es un estudio de arquitectura joven e independiente que se esfuerza por impulsar una arquitectura que sea innovadora y humana. La finalidad de nuestros conceptos arquitectónicos está en mejorar la calidad de vida de las personas independientemente del lugar donde se encuentren.</p>
-        <p class="texto_base">Creemos que mediante la arquitectura y el urbanismo se puede generar un impacto positivo sobre nuestro planta. Por ello, es de nuestra responsabilidad el uso racional del conocimiento para generar entornos sustentables, bellos y perdurables.</p>
+        <p class="texto_base"><b>ARAR</b> es un estudio de arquitectura joven e independiente que se esfuerza por impulsar una <strong>arquitectura que sea innovadora y humana.</strong> La finalidad de nuestros conceptos arquitectónicos está en <strong>mejorar la calidad de vida de las personas independientemente del lugar donde se encuentren.</strong></p>
+        <p class="texto_base">Creemos que mediante la arquitectura y el urbanismo <strong>se puede generar un impacto positivo sobre nuestro planta.</strong> Por ello, es de nuestra responsabilidad el uso racional del conocimiento para generar entornos sustentables, bellos y perdurables.</p>
       </div>
       <div class="col-sm-12 col-md-6 col-xl-6">
         <p class="texto_base">Calidad, atención al detalle y diseño enfocado al ser humano son solo unos de los valores</strong> que nos caracterizan. <strong>Nuestros valores</strong> están enfocados en generar ambientes cálidos y eficientes donde se puedan desarrollar diferentes actividades de la forma más humana posible.</p>
@@ -51,25 +51,32 @@
 <section class="principal sepBut">
   <div class="container-fluid">
     <div class="row">
-      <h1 class="col-12 d-flex justify-content-center p-2 bd-highlight texto_titulo">Nuestro objetivo, es crear espacios con significado, espacios que las personas amen.</h1>
+      <h1 class="col-12 d-flex justify-content-center p-2 bd-highlight texto_titulo fs-4">Nuestro objetivo, es crear espacios con significado, espacios que las personas amen.</h1>
+    </div>
+  </div>
+</section>
+
+<section class="sepBut">
+  <div class="container ">
+    <div class="row landing">
+      <img src="./img/proyectos/montero/montero.jpg" alt="foto del proyecto Estudio en punta carretas" title="Foto de Proyecto Estudio Punta Carretas">
     </div>
   </div>
 </section>
 
 
-
   <!-- ULTIMOS POROYECTOS -->
-  <section>
+  <section class="sepBut">
     <div class="container principal">
       <div class="row">
         <div class="col-12">
           <h2 class="texto_titulo">Proyectos Seleccionados</h2>
         </div>
           <div class=" col-sm-12 col-md-4 col-xl-3 gy-3">
-            <a href="./proyectos/montero.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/proyectos/montero/render1.jpg" alt=""></a>
-            <h4>Montevideo - Uruguay</h4>
-            <h5>-</h5>
-            <h3>Reforma Apartamento</h3>
+            <a href="./proyectos/utec.html"><img loading="lazy" class="figure-img img-fluid" src="img/proyectos/concursos/itr-utec.jpg" alt=""></a>
+            <h4>Fray Bentos - Rio Negro</h4>
+            <h5>Concurso</h5>
+            <h3>ITR-UTEC</h3>
           </div>
           <div class=" col-sm-12 col-md-4 col-xl-3  gy-3">
             <a href="./proyectos/cocina_reno.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/proyectos/cocina_italia/render1.jpg" alt=""></a>
@@ -83,33 +90,40 @@
             <h5>Concurso</h5>
             <h3>Guggenheim</h3>
           </div>
-          <div class=" col-sm-12 col-md-4 col-xl-3  gy-3">
-            <a href="./proyectos/oficina_turin.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/proyectos/oficina_turin/render1.jpg" alt=""></a>
-            <h4>Turin - Italia</h4>
-            <h5>-</h5>
-            <h3>Oficinas Turin</h3>
+          <div class=" col-sm-12 col-md-4 col-xl-3 gy-3">
+            <a href="./proyectos/antel_arena.html"><img loading="lazy" class="figure-img img-fluid" src="img/proyectos/concursos/antelarena.jpg" alt=""></a>
+            <h4>Montevideo - Uruguay</h4>
+            <h5>Concurso</h5>
+            <h3>ANTEL Arena</h3>
           </div>
+      </div>
+    </div>
+  </section>
+  <section class="sepBut">
+    <div class="container ">
+      <div class="row landing">
+        <img src="./img/proyectos/oficina_turin/oficina_imagen.jpg" alt="foto del proyecto oficinas en turin" title="Foto de Oficinas en Turin">
       </div>
     </div>
   </section>
   <!-- ENTRADAS BLOG -->
   <section class="sepBut">
     <div class="container principal sepTop1">
-      <div class="row">
+      <div class="row" id="landblog">
         <div class="col-12">
-          <h2 class="texto_titulo">Últimas notas</h2>
+          <h2 class="texto_titulo">Últimas notas en nuestro cuaderno</h2>
         </div>
-          <div class=" col-sm-12 col-md-4 col-xl-4 gy-3">
+          <div class=" col-sm-12 col-md-4 col-xl-4 mx-auto gy-3">
             <a href="./blog.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/blog/Julio-Vilamajo.jpeg" alt=""></a>
             <h3>Las valijas de Vilamaó</h3>
             <p class="texto_base">Bajo el titulo “Vilamajó: aproximaciones proyectuales a la casa exenta” Fernando de Sierra nos invita a indagar la metodología proyéctual de Vilamajó en base a los escritos y dibujos contenidos dentro de dos valijas (de el y de su esposa) entregadas en el 2001 a la FADU (Facultad de Arquitectura, Diseñó y Urbanismo de la UDELAR) por Marta Cabral (amiga de la hermana de Vilamajó) unos 50 años luego de la muerte del arquitecto.</p>
           </div>
-          <div class=" col-sm-12 col-md-4 col-xl-4 gy-3">
+          <div class=" col-sm-12 col-md-4 col-xl-4 mx-auto gy-3">
             <a href="./blog.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/blog/Gottfried-Bohm.jpg" alt=""></a>
             <h3>Transparencias opacas</h3>
             <p class="texto_base">Se estudia la relación entre la luz, la arquitectura y las personas que la habitan, enfrentando dos arquitecturas que, en tiempos y materialidades diferentes demuestran un carácter expresionista que demarca un cambio de época y nuevas preocupaciones.</p>
           </div>
-          <div class=" col-sm-12 col-md-4 col-xl-4 gy-3">
+          <div class=" col-sm-12 col-md-4 col-xl-4 mx-auto gy-3">
             <a href="./blog.html" target="_blank"><img loading="lazy" class="figure-img img-fluid" src="img/blog/Memoria-eclectica-carat.jpg" alt=""></a>
             <h3>La memoria ecléctica</h3>
             <p class="texto_base">Con esta entrada, comienzo a desarrollar una serie de comparaciones. Entendiendo que, a través de ellas, somos capaces de comprender el pensamiento de los diferentes arquitectos. El valor de comparar no solamente reside en la comprensión de ambos elementos y la teoría que hay detrás de ellos. Sino también, cuando se implementa la visión de quien los compara.
