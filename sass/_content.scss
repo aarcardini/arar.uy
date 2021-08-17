@@ -1,5 +1,82 @@
 /* BODY BASE */
 body {
+  p::selection {
+    background: $rojoopacid;
+  }
+  strong::selection {
+    background: $rojoopacid;
+  }
+  b::selection {
+    background: $rojoopacid;
+  }
+  u::selection {
+    background: $rojoopacid;
+  }
+  h1::selection {
+    background: $rojoopacid;
+  }
+  h2::selection {
+    background: $rojoopacid;
+  }
+  h3::selection {
+    background: $rojoopacid;
+  }
+  h4::selection {
+    background: $rojoopacid;
+  }
+  h5::selection {
+    background: $rojoopacid;
+  }
+  h6::selection {
+    background: $rojoopacid;
+  }
+  a::selection {
+    background: $rojoopacid;
+  }
+  img::selection {
+    background: $rojoopacid;
+  }
+  label::selection {
+    background: $rojoopacid;
+  }
+  span::selection {
+    background: $rojoopacid;
+  }
+  th::selection {
+    background: $rojoopacid;
+  }
+  td::selection {
+    background: $rojoopacid;
+  }
+  /* MAILCHIMP */
+  #mc_embed_signup {
+    clear: left;
+    font: 14px "Source Sans Pro", sans-serif;
+  }
+  #mc-embedded-subscribe-form input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+  }
+  #mergeRow-gdpr {
+    margin-top: 0px;
+  }
+  #mergeRow-gdpr fieldset label {
+    font-weight: normal;
+  }
+  #mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+  }
+  .mc-field-group {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+  }
+
+  u {
+    text-decoration-color: $rojo;
+  }
   .circle {
     position: absolute;
     width: 15px;
