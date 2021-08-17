@@ -13,3 +13,38 @@ RewriteRule ^(.*)$ $1.html
 #RewriteRule ^([a-z]+)/?$ $1.html [NC]
 
 </IfModule>
+
+
+RewriteEngine on
+
+Options +FollowSymLinks
+
+RewriteCond %{HTTP_HOST} ^www\.arar\.cuyom$ [NC]
+
+RewriteRule ^(.*)$ http://arar.uy/$1 [R=301,L]
+
+ErrorDocument 404 /index.html
+
+<files .htaccess>
+
+order allow,deny
+
+deny from all
+
+</files>
+
+deny from all
+
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?arar\.uy/.*$ [NC]
+
+RewriteRule .*\.(jpg|gif|bmp|png|mp4)$ [L]
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
+
+Header set Cache-Control "max-age=2592000, public"
+
+</FilesMatch>
