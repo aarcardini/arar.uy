@@ -1,51 +1,6 @@
 /* BODY BASE */
 body {
-  p::selection {
-    background: $rojoopacid;
-  }
-  strong::selection {
-    background: $rojoopacid;
-  }
-  b::selection {
-    background: $rojoopacid;
-  }
-  u::selection {
-    background: $rojoopacid;
-  }
-  h1::selection {
-    background: $rojoopacid;
-  }
-  h2::selection {
-    background: $rojoopacid;
-  }
-  h3::selection {
-    background: $rojoopacid;
-  }
-  h4::selection {
-    background: $rojoopacid;
-  }
-  h5::selection {
-    background: $rojoopacid;
-  }
-  h6::selection {
-    background: $rojoopacid;
-  }
-  a::selection {
-    background: $rojoopacid;
-  }
-  img::selection {
-    background: $rojoopacid;
-  }
-  label::selection {
-    background: $rojoopacid;
-  }
-  span::selection {
-    background: $rojoopacid;
-  }
-  th::selection {
-    background: $rojoopacid;
-  }
-  td::selection {
+  ::selection {
     background: $rojoopacid;
   }
   /* MAILCHIMP */
