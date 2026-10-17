@@ -41,7 +41,7 @@ export default function (eleventyConfig) {
     return t ? t.name : slug;
   });
   eleventyConfig.addFilter("absUrl", (url, base) => new URL(url, base).href);
-  eleventyConfig.addFilter("jsonify", (v) => JSON.stringify(v));
+  eleventyConfig.addFilter("jsonify", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("stripHtml", (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());
   eleventyConfig.addFilter("xmlEscape", (s) =>
     String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")

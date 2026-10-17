@@ -36,7 +36,23 @@
   <link rel="preload" href="/assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"ArchitectureFirm" if not (layout == 'post') else "BlogPosting","name": site.name,"url": canonical,"headline": pageTitle,"description": pageDescription,"image": site.url ~ pageImage,"address":{"@type":"PostalAddress","addressLocality":"Montevideo","addressCountry":"UY"},"email": site.email,"sameAs":[site.social.facebook, site.social.linkedin, site.social.instagram]} | jsonify | safe }}</script>
+  {%- set isPost = (layout == 'post') %}
+  {%- set published = page.date | dateISO %}
+  {%- set updated = (modified | dateISO) if modified else published %}
+  {%- set org = {"@type": "ArchitectureFirm", "@id": site.url ~ "/#organization", "name": site.name, "url": site.url ~ "/", "email": site.email, "telephone": "+59891428436", "logo": site.url ~ "/assets/favicon-192x192.png", "image": site.url ~ site.ogImage, "address": {"@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY"}, "sameAs": [site.social.facebook, site.social.linkedin, site.social.instagram], "founder": [{"@type": "Person", "name": "Alejandro Arcardini Ravera"}, {"@type": "Person", "name": "Karen Johann Alvarez"}]} %}
+  {%- set crumbs = [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": site.url ~ "/"}] %}
+  {%- if isPost %}
+    {%- set catNames = [] %}{% for c in (categories or []) %}{% set catNames = (catNames.push(c | termName(categoryList)), catNames) %}{% endfor %}
+    {%- set tagNames = [] %}{% for t in (tags or []) %}{% set tagNames = (tagNames.push(t | termName(tagList)), tagNames) %}{% endfor %}
+    {%- set crumbs = crumbs.concat([{"@type": "ListItem", "position": 2, "name": "Cuaderno de notas", "item": site.url ~ "/cuaderno/"}, {"@type": "ListItem", "position": 3, "name": title}]) %}
+    {%- set main = {"@type": "BlogPosting", "@id": canonical ~ "#article", "mainEntityOfPage": canonical, "url": canonical, "headline": title, "description": pageDescription, "image": site.url ~ pageImage, "datePublished": published, "dateModified": updated, "inLanguage": "es", "articleSection": catNames | join(", "), "keywords": tagNames | join(", "), "author": {"@type": "Person", "name": site.author, "url": site.url ~ "/nosotros_como_estudio_de_arquitectura/"}, "publisher": org} %}
+  {%- else %}
+    {%- if page.url != "/" %}{% set crumbs = crumbs.concat([{"@type": "ListItem", "position": 2, "name": title}]) %}{% endif %}
+    {%- set main = {"@type": "WebPage", "@id": canonical, "url": canonical, "name": pageTitle, "description": pageDescription, "inLanguage": "es", "isPartOf": {"@type": "WebSite", "name": site.name, "url": site.url ~ "/"}, "about": org} %}
+  {%- endif %}
+  {%- set graph = [main] %}
+  {%- if crumbs.length > 1 %}{% set graph = graph.concat([{"@type": "BreadcrumbList", "itemListElement": crumbs}]) %}{% endif %}
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@graph": graph} | jsonify | safe }}</script>
 </head>
 <body class="{{ bodyClass }}">
   <a class="skip-link" href="#contenido">Ir al contenido</a>
