@@ -1,5 +1,5 @@
 # Publica el sitio en GitHub Pages cada vez que se actualiza la rama main.
-# Requisito (una sola vez): Settings → Pages → Build and deployment → Source: "GitHub Actions".
+# Si el paso "Configurar GitHub Pages" fallara por permisos: Settings → Pages → Source: "GitHub Actions".
 name: Publicar en GitHub Pages
 
 on:
@@ -32,6 +32,9 @@ jobs:
       - name: Configurar GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Activa Pages (fuente: GitHub Actions) si todavía no está activado en el repositorio.
+          enablement: true
 
       - name: Instalar dependencias
         run: npm ci
