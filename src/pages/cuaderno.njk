@@ -1,0 +1,35 @@
+---
+layout: page
+title: Cuaderno de notas
+seoTitle: Cuaderno de notas - Estudio ARAR.
+description: "Nos apasiona investigar y escribir en nuestro cuaderno diferentes aspectos de la arquitectura que acerquen los ladrillos a las personas: neuroarquitectura, diseño, teoría y experiencia humana."
+image: /assets/img/2026/01/FS310.webp
+permalink: /cuaderno/
+---
+<section class="container container--inset">
+  <div class="notebook-hero">
+    <div>
+      <h1 class="h-serif">Cuaderno de notas</h1>
+      <p>Un paseo por mis conexiones sinápticas</p>
+    </div>
+  </div>
+</section>
+
+<section class="container notebook" data-filter-grid data-page-size="9">
+  <div class="tabs" role="tablist" aria-label="Filtrar notas por tema">
+    <button class="tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">Todo</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="diseno-y-teoria">Teoría y diseño</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="arquitectura-experiencia-humana">Arquitectura como experiencia</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="neuro">Neuro(s)</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="cultura-y-proyectos">Cultura, proyectos y arquitectos</button>
+    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="jardin">Serie Jardín</button>
+  </div>
+  <div class="cards" role="list">
+    {%- for post in collections.posts %}
+    {% include "partials/post-card.njk" %}
+    {%- endfor %}
+  </div>
+  <div class="load-more">
+    <button class="btn btn--square" type="button" data-load-more>Cargar más</button>
+  </div>
+</section>

@@ -1,0 +1,121 @@
+[
+  {
+    "id": 151,
+    "slug": "altas-capacidades",
+    "name": "Altas Capacidades",
+    "count": 4,
+    "description": ""
+  },
+  {
+    "id": 70,
+    "slug": "arquitectos-2",
+    "name": "Arquitectos",
+    "count": 6,
+    "description": ""
+  },
+  {
+    "id": 90,
+    "slug": "arquitectura",
+    "name": "Arquitectura",
+    "count": 25,
+    "description": ""
+  },
+  {
+    "id": 165,
+    "slug": "arquitectura-experiencia-humana",
+    "name": "Arquitectura experiencia humana",
+    "count": 20,
+    "description": ""
+  },
+  {
+    "id": 160,
+    "slug": "arquitectura-infantil",
+    "name": "Arquitectura infantil",
+    "count": 2,
+    "description": ""
+  },
+  {
+    "id": 150,
+    "slug": "autismo",
+    "name": "Autismo",
+    "count": 4,
+    "description": ""
+  },
+  {
+    "id": 76,
+    "slug": "comparacion",
+    "name": "Comparación",
+    "count": 3,
+    "description": ""
+  },
+  {
+    "id": 167,
+    "slug": "cultura-y-proyectos",
+    "name": "Cultura y proyectos",
+    "count": 15,
+    "description": ""
+  },
+  {
+    "id": 166,
+    "slug": "diseno-y-teoria",
+    "name": "Diseño y teoría",
+    "count": 20,
+    "description": ""
+  },
+  {
+    "id": 121,
+    "slug": "humana",
+    "name": "Humana",
+    "count": 21,
+    "description": ""
+  },
+  {
+    "id": 88,
+    "slug": "interiorismo",
+    "name": "Interiorismo",
+    "count": 15,
+    "description": ""
+  },
+  {
+    "id": 164,
+    "slug": "jardin",
+    "name": "Jardín",
+    "count": 7,
+    "description": ""
+  },
+  {
+    "id": 163,
+    "slug": "neuro",
+    "name": "Neuro",
+    "count": 11,
+    "description": ""
+  },
+  {
+    "id": 1,
+    "slug": "sin-categoria",
+    "name": "Sin categoría",
+    "count": 1,
+    "description": ""
+  },
+  {
+    "id": 74,
+    "slug": "teoria",
+    "name": "Teoría",
+    "count": 27,
+    "description": ""
+  },
+  {
+    "id": 75,
+    "slug": "urbanismo",
+    "name": "Urbanismo",
+    "count": 8,
+    "description": ""
+  },
+  {
+    "id": 72,
+    "slug": "uruguay",
+    "name": "Uruguay",
+    "count": 2,
+    "description": ""
+  }
+]

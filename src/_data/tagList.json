@@ -1,0 +1,332 @@
+[
+  {
+    "id": 155,
+    "slug": "aci",
+    "name": "ACI",
+    "count": 2
+  },
+  {
+    "id": 154,
+    "slug": "altas-capacidades-intelectuales",
+    "name": "Altas Capacidades Intelectuales",
+    "count": 2
+  },
+  {
+    "id": 71,
+    "slug": "arquitectos",
+    "name": "Arquitectos",
+    "count": 6
+  },
+  {
+    "id": 152,
+    "slug": "autismo",
+    "name": "Autismo",
+    "count": 3
+  },
+  {
+    "id": 156,
+    "slug": "diseno-universal",
+    "name": "Diseño universal",
+    "count": 2
+  },
+  {
+    "id": 126,
+    "slug": "hygge",
+    "name": "Hygge",
+    "count": 1
+  },
+  {
+    "id": 125,
+    "slug": "japandi",
+    "name": "Japandi",
+    "count": 1
+  },
+  {
+    "id": 120,
+    "slug": "japon",
+    "name": "Japón",
+    "count": 1
+  },
+  {
+    "id": 114,
+    "slug": "komorebi",
+    "name": "Komorebi",
+    "count": 1
+  },
+  {
+    "id": 168,
+    "slug": "neurodivergencia",
+    "name": "Neurodivergencia",
+    "count": 1
+  },
+  {
+    "id": 147,
+    "slug": "pallasmaa",
+    "name": "Pallasmaa",
+    "count": 1
+  },
+  {
+    "id": 115,
+    "slug": "shibui",
+    "name": "Shibui",
+    "count": 1
+  },
+  {
+    "id": 108,
+    "slug": "superkilen",
+    "name": "Superkilen",
+    "count": 2
+  },
+  {
+    "id": 153,
+    "slug": "tea",
+    "name": "TEA",
+    "count": 2
+  },
+  {
+    "id": 73,
+    "slug": "uruguay",
+    "name": "Uruguay",
+    "count": 1
+  },
+  {
+    "id": 116,
+    "slug": "yugen",
+    "name": "Yūgen",
+    "count": 1
+  },
+  {
+    "id": 93,
+    "slug": "arquitectura",
+    "name": "arquitectura",
+    "count": 26
+  },
+  {
+    "id": 158,
+    "slug": "arquitectura-corporativa",
+    "name": "arquitectura corporativa",
+    "count": 1
+  },
+  {
+    "id": 128,
+    "slug": "arquitectura-de-interiores",
+    "name": "arquitectura de interiores",
+    "count": 1
+  },
+  {
+    "id": 103,
+    "slug": "arquitectura-emocional",
+    "name": "arquitectura emocional",
+    "count": 21
+  },
+  {
+    "id": 162,
+    "slug": "arquitectura-infantil",
+    "name": "arquitectura infantil",
+    "count": 1
+  },
+  {
+    "id": 161,
+    "slug": "bebe",
+    "name": "bebe",
+    "count": 1
+  },
+  {
+    "id": 95,
+    "slug": "biofilia",
+    "name": "biofilia",
+    "count": 2
+  },
+  {
+    "id": 98,
+    "slug": "cocina",
+    "name": "cocina",
+    "count": 1
+  },
+  {
+    "id": 97,
+    "slug": "comida",
+    "name": "comida",
+    "count": 2
+  },
+  {
+    "id": 129,
+    "slug": "diseno",
+    "name": "diseño",
+    "count": 1
+  },
+  {
+    "id": 105,
+    "slug": "diseno-arquitectonico",
+    "name": "diseño arquitectónico",
+    "count": 6
+  },
+  {
+    "id": 170,
+    "slug": "dislexia",
+    "name": "dislexia",
+    "count": 1
+  },
+  {
+    "id": 113,
+    "slug": "emociones",
+    "name": "emociones",
+    "count": 1
+  },
+  {
+    "id": 106,
+    "slug": "emociones-y-espacios",
+    "name": "emociones y espacios",
+    "count": 17
+  },
+  {
+    "id": 110,
+    "slug": "empatia",
+    "name": "empatía",
+    "count": 2
+  },
+  {
+    "id": 92,
+    "slug": "fenomenologia",
+    "name": "fenomenología",
+    "count": 2
+  },
+  {
+    "id": 100,
+    "slug": "forma",
+    "name": "forma",
+    "count": 1
+  },
+  {
+    "id": 94,
+    "slug": "fotografia",
+    "name": "fotografía",
+    "count": 1
+  },
+  {
+    "id": 107,
+    "slug": "humanizacion-de-la-arquitectura",
+    "name": "humanización de la arquitectura",
+    "count": 23
+  },
+  {
+    "id": 130,
+    "slug": "humano",
+    "name": "humano",
+    "count": 1
+  },
+  {
+    "id": 104,
+    "slug": "inteligencia-emocional",
+    "name": "inteligencia emocional",
+    "count": 14
+  },
+  {
+    "id": 119,
+    "slug": "interiores",
+    "name": "interiores",
+    "count": 2
+  },
+  {
+    "id": 127,
+    "slug": "interiorismo",
+    "name": "interiorismo",
+    "count": 1
+  },
+  {
+    "id": 101,
+    "slug": "lugar",
+    "name": "lugar",
+    "count": 1
+  },
+  {
+    "id": 117,
+    "slug": "luz",
+    "name": "luz",
+    "count": 1
+  },
+  {
+    "id": 99,
+    "slug": "materialidad",
+    "name": "materialidad",
+    "count": 1
+  },
+  {
+    "id": 91,
+    "slug": "neuroarquitectura",
+    "name": "neuroarquitectura",
+    "count": 2
+  },
+  {
+    "id": 131,
+    "slug": "neurociencia",
+    "name": "neurociencia",
+    "count": 1
+  },
+  {
+    "id": 148,
+    "slug": "sentidos",
+    "name": "sentidos",
+    "count": 1
+  },
+  {
+    "id": 112,
+    "slug": "ser-humano",
+    "name": "ser humano",
+    "count": 17
+  },
+  {
+    "id": 135,
+    "slug": "sociologia",
+    "name": "sociología",
+    "count": 1
+  },
+  {
+    "id": 111,
+    "slug": "sostenibilidad",
+    "name": "sostenibilidad",
+    "count": 3
+  },
+  {
+    "id": 118,
+    "slug": "sutileza",
+    "name": "sutileza",
+    "count": 1
+  },
+  {
+    "id": 169,
+    "slug": "tdah",
+    "name": "tdah",
+    "count": 1
+  },
+  {
+    "id": 132,
+    "slug": "teoria",
+    "name": "teoría",
+    "count": 1
+  },
+  {
+    "id": 134,
+    "slug": "tercer-lugar",
+    "name": "tercer lugar",
+    "count": 1
+  },
+  {
+    "id": 133,
+    "slug": "terceros-lugares",
+    "name": "terceros lugares",
+    "count": 1
+  },
+  {
+    "id": 109,
+    "slug": "urbanismo",
+    "name": "urbanismo",
+    "count": 3
+  },
+  {
+    "id": 102,
+    "slug": "urbano",
+    "name": "urbano",
+    "count": 1
+  }
+]

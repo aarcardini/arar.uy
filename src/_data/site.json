@@ -1,0 +1,46 @@
+{
+  "name": "Estudio ARAR.",
+  "shortName": "Estudio ARAR",
+  "title": "Estudio ARAR. Arquitectos. Uruguay",
+  "description": "Creamos espacios para vivir, trabajar y jugar. Arquitectos en Montevideo Uruguay, énfasis en la arquitectura residencial",
+  "url": "https://arar.uy",
+  "lang": "es",
+  "author": "Alejandro Arcardini",
+  "email": "alejandro@arar.uy",
+  "phoneDisplay": "091428436 (Whatsapp)",
+  "whatsapp": "https://wa.me/+59891428436",
+  "location": "Montevideo - Uruguay",
+  "hours": "Lunes a viernes",
+  "tagline": "Nuestro objetivo, es crear espacios con significado, espacios que las personas amen.",
+  "ogImage": "/assets/img/2022/12/HomeBanner2-e1696813531631.webp",
+  "social": {
+    "facebook": "https://www.facebook.com/estudioarar",
+    "linkedin": "https://www.linkedin.com/in/alejandro-arcardini-ravera/",
+    "instagram": "https://www.instagram.com/arar.uy/"
+  },
+  "nav": [
+    { "label": "Servicios", "url": "/servicios/" },
+    { "label": "Trabajos", "url": "/proyectos/" },
+    { "label": "Cuaderno de Notas", "url": "/cuaderno/" },
+    { "label": "Nosotros", "url": "/nosotros_como_estudio_de_arquitectura/" },
+    { "label": "Libro", "url": "/el-arte-de-habitar/" }
+  ],
+  "legal": [
+    { "label": "Privacidad y condiciones", "url": "/privacidad-y-condiciones/" }
+  ],
+  "cta": {
+    "label": "Hablemos",
+    "title": "Pongamos los lápices sobre el papel",
+    "text": "Agendemos una cita y pongamos manos a la obra.",
+    "button": "Contacto",
+    "url": "/contacto/"
+  },
+  "book": {
+    "title": "El arte de habitar lo que somos",
+    "url": "/el-arte-de-habitar/",
+    "cover": "/assets/img/2025/11/Portada-libro.webp",
+    "coverAlt": "Tapa de libro con el nombre: El arte de habitar lo que somos",
+    "amazon": "https://a.co/d/5Pfm1NA",
+    "mercadolibre": "https://articulo.mercadolibre.com.uy/MLU-761426660-libro-el-arte-de-habitar-lo-que-somos-bienestar-y-felicidad-_JM"
+  }
+}

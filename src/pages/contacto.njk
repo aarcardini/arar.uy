@@ -1,0 +1,27 @@
+---
+layout: page
+title: Contacto
+seoTitle: Contacto - Estudio ARAR.
+description: "Trabajemos juntos. Escribinos a alejandro@arar.uy o por WhatsApp al 091 428 436. Estudio ARAR, arquitectos en Montevideo, Uruguay."
+permalink: /contacto/
+---
+<section class="page-hero container">
+  <h1 class="display">Trabajemos Juntos</h1>
+  <p class="page-hero__text">{{ site.tagline }}</p>
+</section>
+<section class="contact container">
+  <div class="contact__grid">
+    <div>
+      <h2 class="h-sub">{{ site.name }}</h2>
+      <ul class="icon-list icon-list--spaced">
+        <li>{% include "icons/mail.svg" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>{% include "icons/whatsapp.svg" %}<a href="{{ site.whatsapp }}" target="_blank" rel="noopener">{{ site.phoneDisplay }}</a></li>
+        <li>{% include "icons/clock.svg" %}<span>{{ site.hours }}</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="h-sub">¿Cómo podemos ayudarte?</h2>
+      <p>Hablemos y desarrollemos proyectos juntos.</p>
+    </div>
+  </div>
+</section>

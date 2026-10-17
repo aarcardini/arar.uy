@@ -1,0 +1,140 @@
+---
+layout: page
+title: Proyectos
+seoTitle: Proyectos - Estudio ARAR.
+description: "Una selección de proyectos de Estudio ARAR: concursos, vivienda, interiorismo, gastronomía y desarrollos inmobiliarios en Uruguay y el mundo."
+image: /assets/img/2022/11/gug.webp
+permalink: /proyectos/
+---
+{%- macro project(kind, title, cover, tall=false, reverse=false, slides=null, carouselLabel="") %}
+<article class="project{% if reverse %} project--reverse{% endif %}">
+  <div class="project__media">
+    {%- if slides %}
+    <div class="carousel carousel--project" data-carousel>
+      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Imagen anterior">{% include "icons/chevron-left.svg" %}</button>
+      <div class="carousel__track" tabindex="0" aria-label="{{ carouselLabel }}">
+        {%- for s in slides %}
+        <div class="carousel__slide"><img src="/assets/img/{{ s }}" alt="{{ title }}, imagen {{ loop.index }}" loading="lazy" decoding="async"></div>
+        {%- endfor %}
+      </div>
+      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Imagen siguiente">{% include "icons/chevron-right.svg" %}</button>
+    </div>
+    {%- else %}
+    <div class="project__cover{% if tall %} project__cover--tall{% endif %}">
+      <img src="/assets/img/{{ cover }}" alt="{{ title }}" loading="lazy" decoding="async">
+      <span class="project__cover-title" aria-hidden="true">{{ title }}</span>
+    </div>
+    {%- endif %}
+  </div>
+  <div class="project__text">
+    <p class="project__kind">{{ kind }}</p>
+    <h2 class="h-serif project__title">{{ title }}</h2>
+    {{ caller() }}
+  </div>
+</article>
+{%- endmacro %}
+
+<section class="container container--wide projects-hero">
+  <div class="projects-hero__text">
+    <h2 class="h-serif">Creamos Espacios Para Vivir, Trabajar Y Jugar.</h2>
+    <p>Mediante la arquitectura y el urbanismo generamos un impacto positivo sobre nuestro planeta. Por ello, es de nuestra responsabilidad el uso racional del conocimiento para generar entornos sustentables, bellos y perdurables.</p>
+    <p>Creamos espacios con significado, espacios que las personas amen.</p>
+  </div>
+  <div class="projects-hero__media">
+    <img src="/assets/img/2022/11/gug.webp" alt="Croquis del proyecto para el Guggenheim Helsinki" width="1608" height="481" fetchpriority="high" decoding="async">
+  </div>
+</section>
+
+<div class="container container--inset">
+  <h1 class="sr-only">Proyectos de Estudio ARAR.</h1>
+
+  {%- call project("Concurso de anteproyectos", "Centro Cívico Ciudad del Plata", null, false, false, ["2026/02/LP2-scaled.webp","2026/02/LP3.webp","2026/02/LP4.webp","2026/02/LP5.webp","2026/02/LP6.webp","2026/02/LP1.webp"], "Imágenes del Centro Cívico Ciudad del Plata") %}
+  <p>El Centro Cívico para la Ciudad del Plata se concibe con el ciudadano como eje central. Cada función se aloja en un edificio independiente que cuenta con todos los servicios necesarios para su autonomía. Los edificios se ubican en el perímetro del terreno, dejando un espacio verde en el centro para el disfrute de las personas que trabajan o visitan el recinto, tanto de la ciudad como de fuera.</p>
+  {%- endcall %}
+
+  {%- call project("Concurso de Anteproyectos", "Centro Cultural Mariano Arana", null, false, true, ["2026/02/CCA6.webp","2026/02/CCA-1.webp","2026/02/CCA3.webp","2026/02/CCA4.webp"], "Imágenes del Centro Cultural Mariano Arana") %}
+  <p>El Centro Cultural Mariano Arana (CCMA) se concibe por partes como la sumatoria de diferentes volúmenes que conforman una unidad. Cada volumetría posee una altura diferente de forma que se enmarca en cada altura diferente una función específica. A su vez, se utilizan tres materiales diferentes según el tipo de actividad que se le destina a los espacios. Se pretende que la materialidad del Centro Cultural refleje el contexto, y, a su vez, que sea permeable a lo que sucede dentro del edificio y a lo que sucede fuera de él. De esta forma se genera un nexo que relaciona visualmente el interior con el exterior de forma bidireccional.</p>
+  {%- endcall %}
+
+  {%- call project("Gastronómico", "Ouí", "2022/12/HomeBanner2-e1696813531631.webp") %}
+  <p>Diseño y proyecto ejecutivo para un bistró ubicado en Caracas Venezuela.</p>
+  {%- endcall %}
+
+  {%- call project("Proyectos de Inversión", "Broot", "2026/02/broot1.webp", true, true) %}
+  <p>Situado en el corazón de la ciudad y a solo pasos del WTC, presenta un edificio que alberga 8 cómodos apartamentos de un dormitorio. Cada uno de estos apartamentos ha sido meticulosamente diseñado para fusionar comodidad y estilo, ofreciendo un oasis urbano para quienes buscan una vida dinámica en el nuevo centro económico de la ciudad.</p>
+  <p>La fachada del edificio, de vidrio, ladrillo y revoque pintado en tonos de gris grafito, busca elevar el estándar arquitectónico de la zona. Esta combinación de materiales no solo refleja la contemporaneidad, sino que también se integra con respeto en el tejido urbano existente.</p>
+  <p>En la planta baja, el proyecto se enriquece con un local comercial estratégicamente ubicado. Este espacio no solo enriquece la oferta del área, sino que también revitaliza la vida urbana, extendiendo las horas de actividad en las calles y generando un ambiente vibrante y seguro. Este local se convierte en un punto de encuentro, contribuyendo significativamente a la habitabilidad y dinamismo del barrio.</p>
+  {%- endcall %}
+
+  <section class="criteria">
+    <div class="criteria__intro">
+      <h2 class="h-sub">Trabajamos bajo los siguientes criterios</h2>
+    </div>
+    <div class="criteria__items">
+      <div>
+        <h3 class="h-sub">Impacto positivo</h3>
+        <p>Buscamos generar un impacto positivo tanto en las personas como con el medio ambiente. En el resultado y en el proceso.</p>
+      </div>
+      <div>
+        <h3 class="h-sub">Calidad de vida</h3>
+        <p>Por sobre todo buscamos mejorar la calidad de vida de las personas.</p>
+      </div>
+      <div>
+        <h3 class="h-sub">Empatía</h3>
+        <p>Tanto en el proceso de diseño, como en la construcción y en los espacios que desarrollamos.</p>
+      </div>
+    </div>
+  </section>
+
+  {%- call project("Residencial", "Apartamento CQ", "2024/02/AP-CQ-Small.webp") %}
+  <blockquote><p>“El presente es el lugar en el que se dan las experiencias cotidianas; el “hoy, aquí y ahora” (…). Transformar ese presente cotidiano en una fuerza creativa, aprender a ver en él un sustrato poético con el que construir esa perfección.” <strong>Iñaki Ábalos – La buena vida</strong>.</p></blockquote>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Fatimah's Home", "2026/02/FH1.webp", false, true) %}
+  <p>Se proyecta el pulmón de la casa de Fatimah en Riad – Arabia Saudita. Los espacios se articulan combinando una funcionalidad propia de la cultura de Arabia Saudita mientras que se opta por una estética más internacional.</p>
+  {%- endcall %}
+
+  {%- call project("Concurso de anteproyectos", "Guggenheim Helsinki", "2022/12/guggPortada.webp") %}
+  <p>Un nuevo museo que condensa la producción de arte contemporáneo finlandés e internacional. Una institución que trae y promueve las artes, hacia y desde Finlandia. Un lugar privilegiado de la ciudad; intercambiando conexiones nodales junto al puerto y a la red de museos Guggenheim.</p>
+  {%- endcall %}
+
+  {%- call project("Corporativo", "Oficinas Tourin", "2022/12/OfTourinR3.webp", false, true) %}
+  <p>Se proyecta un espacio de oficinas <strong><em>simple y polivalente</em></strong> para optimizar el espacio y buscar una correcta interacción entre las personas.</p>
+  {%- endcall %}
+
+  {%- call project("Caso de Estudio", "GRUYER", "2022/12/gruyereSlider.webp") %}
+  <p>Edificio de viviendas frente a la costa del Rio de la Plata en Punta Gorda, Montevideo, Uruguay.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Estudio Montero", "2019/07/MonteroHeader.webp", false, true) %}
+  <p>Junto a la rambla de Punta Carretas un lugar perfecto para <em><strong>relajarse y descansar</strong></em>.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Cocina Milán", "2026/02/Cocina-2.webp") %}
+  <p><strong>La cocina</strong> de diseño abierto <strong>actúa de articulador</strong> entre el comedor, la sala de estar y el resto de la casa.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Dormitorio Dante y Franco", "2026/02/Dante.webp", false, true) %}
+  <p>En 11 m2 el diseño del dormitorio contempla zonas de <em><strong>estudio, reunión, vestuario, juegos, diferentes actividades físicas</strong></em> y dormir.</p>
+  {%- endcall %}
+
+  {%- call project("Concurso de anteproyectos", "ANTEL Arena", "2022/12/CartonAntelarena1.webp") %}
+  <p>El proyecto se define en torno a dos conceptos: <strong>la plasticidad del entorno</strong> en la trama urbana y el cuerpo de <strong>pureza formal</strong> que conforma la Arena.</p>
+  {%- endcall %}
+
+  {%- call project("Concurso de Anteproyectos", "ITR UTEC", "2022/12/utec_carton1.webp", false, true) %}
+  <p>Se reconstruye el <em><strong>recorrido histórico del sitio</strong></em>, desde sus comienzos en relación con la industria frigorífica, al avance del programa universitario de la actualidad, y la <em><strong>proyección hacia el futuro</strong></em>.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Diseño de Biblioteca", "2024/02/Biblioteca-Acceso-Small.webp") %}
+  <p>Se diseña la biblioteca en doble altura que oficia de acceso y recibidor para la casa de Ana en Miami FL.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Dormitorio Ritesh", "2024/02/Ritesh-Small.webp", false, true) %}
+  <p>En Hong Kong, el diseño para el dormitorio de Ritesh busca generar un espacio grande y flexible para que realice sus actividades. A su vez, se generan espacios de almacenamiento para los adultos.</p>
+  {%- endcall %}
+
+  {%- call project("Residencial", "Diseño de estudio", "2024/02/Estudio-Small.webp") %}
+  <p>Se diseña un espacio para el trabajo y el estudio en la casa de Louisa en Miami.</p>
+  {%- endcall %}
+</div>

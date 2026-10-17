@@ -1,0 +1,60 @@
+---
+layout: base
+navActive: /cuaderno/
+---
+{%- set posts = collections.posts %}
+<article class="post container">
+  <div class="post__layout">
+    <aside class="post__aside">
+      <a class="post__back" href="/cuaderno/">{% include "icons/arrow-left.svg" %}<span>Volver</span></a>
+    </aside>
+    <div class="post__main">
+      <header class="post__header">
+        <h1 class="post__title">{{ title }}</h1>
+        <p class="post__meta">
+          <time datetime="{{ page.date | dateShort }}">{{ page.date | dateEs }}</time>
+          {%- if categories and categories.length %} · {% for c in categories %}<a href="/category/{{ c }}/">{{ c | termName(categoryList) }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+        </p>
+        <hr class="post__divider">
+      </header>
+      <div class="post__body">
+        {{ content | safe }}
+      </div>
+      {%- if tags and tags.length %}
+      <ul class="post__tags" aria-label="Etiquetas">
+        {%- for t in tags %}
+        <li><a href="/tag/{{ t }}/">#{{ t | termName(tagList) }}</a></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+      {%- set prev = posts | getNextCollectionItem %}
+      {%- set next = posts | getPreviousCollectionItem %}
+      <nav class="post-nav" aria-label="Notas anterior y siguiente">
+        {%- if prev %}
+        <a class="post-nav__link post-nav__link--prev" href="{{ prev.url }}">{% include "icons/arrow-left.svg" %}<span><small>Ant</small><strong>Nota anterior</strong></span></a>
+        {%- else %}<span></span>{%- endif %}
+        {%- if next %}
+        <a class="post-nav__link post-nav__link--next" href="{{ next.url }}"><span><small>Siguiente</small><strong>Siguiente nota</strong></span>{% include "icons/arrow-right.svg" %}</a>
+        {%- endif %}
+      </nav>
+      <section class="book-promo">
+        <h2 class="h-serif">{{ site.book.title }}</h2>
+        <div class="book-promo__grid">
+          <img src="/assets/img/2023/10/5.webp" alt="{{ site.book.coverAlt }}" width="597" height="800" loading="lazy" decoding="async">
+          <div>
+            <p>Si esta lectura te gustó, quizá también te interese <a href="{{ site.book.url }}"><em>El arte de habitar lo que somos</em></a>, mi libro sobre cómo la arquitectura, la psicología y la vida cotidiana se entrelazan en lo más humano: nuestro bienestar. Está disponible en <a href="{{ site.book.amazon }}" target="_blank" rel="noopener">Amazon</a> en formato digital y físico, y en Uruguay podés conseguirlo por <a href="{{ site.book.mercadolibre }}" target="_blank" rel="noopener">MercadoLibre</a>.</p>
+            <p>Gracias por acompañarme en este proyecto.</p>
+          </div>
+        </div>
+      </section>
+      <section class="related">
+        <h2 class="h-serif">Lecturas recomendadas</h2>
+        <div class="cards cards--4">
+          {%- for post in posts | exclude(page.url) | limit(4) %}
+          {% include "partials/post-card.njk" %}
+          {%- endfor %}
+        </div>
+      </section>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="{{ site.name }} — inicio">{{ site.name }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span class="nav-toggle__open">{% include "icons/menu.svg" %}</span>
+      <span class="nav-toggle__close">{% include "icons/close.svg" %}</span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Principal">
+      {%- for item in site.nav %}
+      {%- set active = (page.url == item.url) or (navActive and navActive == item.url) %}
+      <a href="{{ item.url }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+    </nav>
+    <a class="btn btn--header" href="/contacto/">{% include "icons/phone.svg" %}<span>Contacto</span></a>
+  </div>
+</header>

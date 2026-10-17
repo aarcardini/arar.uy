@@ -1,0 +1,25 @@
+---
+layout: page
+pagination:
+  data: categoryList
+  size: 1
+  alias: term
+permalink: "/category/{{ term.slug }}/"
+navActive: /cuaderno/
+eleventyComputed:
+  title: "{{ term.name }}"
+  seoTitle: "{{ term.name }} - Cuaderno de notas - Estudio ARAR."
+  description: "Notas del Cuaderno de Estudio ARAR. sobre {{ term.name }}: arquitectura, diseño y experiencia humana."
+---
+<section class="archive container">
+  <header class="archive__header">
+    <p class="label">Categoría</p>
+    <h1 class="display">{{ term.name }}</h1>
+    <p class="archive__back"><a href="/cuaderno/">{% include "icons/arrow-left.svg" %} Volver al Cuaderno de notas</a></p>
+  </header>
+  <div class="cards">
+    {%- for post in collections.posts | inCategory(term.slug) %}
+    {% include "partials/post-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>

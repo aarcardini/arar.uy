@@ -1,0 +1,57 @@
+import { HtmlBasePlugin } from "@11ty/eleventy";
+
+const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+function normalizePrefix(p) {
+  if (!p || p === "/") return "/";
+  if (!p.startsWith("/")) p = "/" + p;
+  if (!p.endsWith("/")) p = p + "/";
+  return p;
+}
+
+export default function (eleventyConfig) {
+  const pathPrefix = normalizePrefix(process.env.PATH_PREFIX);
+
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
+  eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addWatchTarget("src/assets/css/");
+  eleventyConfig.addWatchTarget("src/assets/js/");
+
+  eleventyConfig.addCollection("posts", (api) =>
+    api.getFilteredByGlob("src/posts/*.html").sort((a, b) => b.date - a.date)
+  );
+
+  eleventyConfig.addFilter("dateEs", (d) => {
+    const dt = new Date(d);
+    return `${dt.getUTCDate()} de ${MESES[dt.getUTCMonth()]} de ${dt.getUTCFullYear()}`;
+  });
+  eleventyConfig.addFilter("dateISO", (d) => new Date(d).toISOString());
+  eleventyConfig.addFilter("dateShort", (d) => new Date(d).toISOString().slice(0, 10));
+  eleventyConfig.addFilter("inCategory", (posts, slug) => posts.filter((p) => (p.data.categories || []).includes(slug)));
+  eleventyConfig.addFilter("inTag", (posts, slug) => posts.filter((p) => (p.data.tags || []).includes(slug)));
+  eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addFilter("exclude", (arr, url) => arr.filter((p) => p.url !== url));
+  eleventyConfig.addFilter("termName", (slug, terms) => {
+    const t = (terms || []).find((x) => x.slug === slug);
+    return t ? t.name : slug;
+  });
+  eleventyConfig.addFilter("absUrl", (url, base) => new URL(url, base).href);
+  eleventyConfig.addFilter("jsonify", (v) => JSON.stringify(v));
+  eleventyConfig.addFilter("stripHtml", (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());
+  eleventyConfig.addFilter("xmlEscape", (s) =>
+    String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+  );
+
+  return {
+    dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
+    templateFormats: ["njk", "html", "md"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    pathPrefix,
+  };
+}
