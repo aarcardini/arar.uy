@@ -6,13 +6,20 @@ description: "Nos sentimos apasionados por cualquier faceta arquitectónica. Nos
 image: /assets/img/2023/10/servicios-2.webp
 permalink: /servicios/
 ---
-<section class="container" style="padding-top:29px">
+<section class="container services-top">
+  <div class="services-intro">
+    <p class="label">Así es como podemos ayudarte</p>
+    <h1 class="h-serif">Nuestros servicios</h1>
+    <p class="services-intro__text">Proyectamos casas, reformas, interiores y espacios de trabajo pensados para el bienestar de quienes los usan. Trabajamos en todo Uruguay y, a distancia, con clientes de otros países.</p>
+    <nav class="services-index" aria-label="Servicios">
+      <a href="#arquitectura">Arquitectura</a>
+      <a href="#desarrollos">Desarrollos</a>
+      <a href="#consultoria">Consultoría</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+    </nav>
+  </div>
   <div class="services-banner">
     <img src="/assets/img/2023/10/servicios-2.webp" alt="Detalle de fachada con lamas verticales" width="1600" height="2400" fetchpriority="high" decoding="async">
-  </div>
-  <div class="services-intro">
-    <p class="label">así es como podemos ayudarte</p>
-    <h1 class="h-serif">Nuestros servicios</h1>
   </div>
 </section>
 
@@ -36,9 +43,12 @@ permalink: /servicios/
       </div>
       <div>
         <h3 class="h-sub">Arquitectura corporativa</h3>
-        <p>Creemos que el «usuario promedio» no existe. Tras más de 10 años desarrollando proyectos corporativos a gran escala, hemos comprobado que las oficinas estandarizadas agotan a las mentes brillantes. Pensamos y diseñamos espacios de trabajo basados en la <em>ergonomía sensorial</em> aplicando diferentes conceptos de <em>neuroarquitectura</em>. Al diseñar considerando la <em>neurodiversidad</em> (espacios acústicamente sanos, iluminación circadiana, zonas de baja estimulación, etc.) buscamos retener el talento que procesa la información de forma diferente a la vez que potenciamos el bienestar de todo el equipo. Porque diseñar para los márgenes eleva la experiencia de todos.</p>
+        <p>Creemos que el «usuario promedio» no existe. Tras más de 10 años desarrollando proyectos corporativos a gran escala, hemos comprobado que las oficinas estandarizadas agotan a las mentes brillantes.</p>
+        <p>Pensamos y diseñamos espacios de trabajo basados en la <em>ergonomía sensorial</em> aplicando diferentes conceptos de <em>neuroarquitectura</em>. Al diseñar considerando la <em>neurodiversidad</em> (espacios acústicamente sanos, iluminación circadiana, zonas de baja estimulación, etc.) buscamos retener el talento que procesa la información de forma diferente a la vez que potenciamos el bienestar de todo el equipo.</p>
+        <p>Porque diseñar para los márgenes eleva la experiencia de todos.</p>
       </div>
     </div>
+    <p class="service__cta"><a class="btn btn--outline" href="{{ site.whatsapp }}?text={{ "Hola, quiero consultar por un proyecto de arquitectura." | urlencode }}" target="_blank" rel="noopener">{% include "icons/whatsapp.svg" %}<span>Consultar por arquitectura</span></a></p>
   </div>
 
   <div class="service service--reverse" id="desarrollos">
@@ -59,6 +69,7 @@ permalink: /servicios/
         <p>Sin ser una inmobiliaria, como arquitectos, somos las personas ideales para captar tus necesidades y salir en búsqueda del inmueble que se adapte con mayor facilidad a tu proyecto y necesidades.</p>
       </div>
     </div>
+    <p class="service__cta"><a class="btn btn--outline" href="{{ site.whatsapp }}?text={{ "Hola, quiero consultar por un desarrollo inmobiliario." | urlencode }}" target="_blank" rel="noopener">{% include "icons/whatsapp.svg" %}<span>Consultar por un desarrollo</span></a></p>
   </div>
 
   <div class="service" id="consultoria">
@@ -80,5 +91,26 @@ permalink: /servicios/
         <p>Realizamos proyectos desde Uruguay para estudios y clientes en diferentes partes del globo.</p>
       </div>
     </div>
+    <p class="service__cta"><a class="btn btn--outline" href="{{ site.whatsapp }}?text={{ "Hola, quiero consultar por una consultoría o revisión de proyecto." | urlencode }}" target="_blank" rel="noopener">{% include "icons/whatsapp.svg" %}<span>Consultar por una consultoría</span></a></p>
   </div>
+</section>
+
+<section class="faq container container--inset" id="preguntas">
+  <h2 class="h-serif">Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Trabajan fuera de Montevideo?</summary>
+    <p>Sí. Hacemos proyectos y obras en todo Uruguay, y trabajamos a distancia con clientes de otros países: ya proyectamos para Venezuela, Arabia Saudita, Hong Kong y Estados Unidos.</p>
+  </details>
+  <details>
+    <summary>¿Cuánto cuestan sus servicios?</summary>
+    <p>Los honorarios dependen del tamaño y el alcance de cada proyecto. Después de la primera charla, que es sin costo, te mandamos una propuesta con los honorarios de cada etapa.</p>
+  </details>
+  <details>
+    <summary>¿Se encargan también de la obra?</summary>
+    <p>Depende del proyecto. En algunos casos hacemos el proyecto y los permisos, y en otros también acompañamos la obra hasta el final. Lo definimos juntos en la propuesta.</p>
+  </details>
+  <details>
+    <summary>¿Cómo empezamos?</summary>
+    <p>Escribinos por WhatsApp o por mail y contanos qué querés hacer. Coordinamos una primera charla sin costo y después te mandamos una propuesta. <a href="/contacto/">Ver cómo contactarnos</a>.</p>
+  </details>
 </section>

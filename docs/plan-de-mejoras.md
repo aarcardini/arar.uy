@@ -65,7 +65,13 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   bloqueo del scroll del fondo y cierre con Escape, al elegir una opción o al pasar a pantalla ancha; la
   hamburguesa va al borde derecho; el bloque de contacto del pie usa un botón principal "Hablemos de tu
   proyecto".
-- [ ] Bloque 5 · Tablet, Servicios y Nosotros (G-09, SER-01 a SER-05, NOS-01 a NOS-03)
+- [ ] **Bloque 5 · Tablet, Servicios y Nosotros** (G-09, SER-01 a SER-05, NOS-01 a NOS-03): Servicios empieza
+  con título, resumen y un índice (Arquitectura, Desarrollos, Consultoría, Preguntas frecuentes) antes de la
+  foto; cada servicio tiene texto e imagen en zigzag y los subservicios en dos columnas anchas (de ~28 a ~65
+  caracteres por línea); botón de WhatsApp por servicio con mensaje propio; preguntas frecuentes (alcance,
+  honorarios, obra, cómo empezar). Nosotros: texto antes que la foto en mobile, franja "Trayectoria" y la
+  colaboración con Graetz Nuñez como experiencia previa. En una columna (tablet), las imágenes de los bloques
+  de texto e imagen se limitan a 544 px.
 
 ## Fases siguientes
 
