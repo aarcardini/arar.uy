@@ -56,7 +56,10 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   bienestar, botones "Hablemos de tu proyecto" y "Ver proyectos" y la nota "La primera charla es sin costo" en la
   primera pantalla; los proyectos suben al segundo lugar; Servicios lista las tres líneas con enlace a cada una;
   franja de datos (+10 años, 5 países, 5 concursos, libro y notas); libro y últimas tres notas del Cuaderno.
-- [ ] Bloque 3 · Libro (LIB-01 a LIB-03)
+- [ ] **Bloque 3 · Libro** (LIB-01 a LIB-03): compra arriba ("Comprar en Amazon" y "Comprar en MercadoLibre
+  (Uruguay)", con Amazon España y el envío gratis en una línea), formatos e idiomas; en mobile la tapa se achica
+  para que los botones entren en la primera pantalla; la Parte II pasa a ser una lista. Pendiente: una imagen
+  plana de la tapa y reseñas de lectores, cuando estén.
 - [ ] Bloque 4 · Menú mobile y botones (G-07, G-05)
 - [ ] Bloque 5 · Tablet, Servicios y Nosotros (G-09, SER-01 a SER-05, NOS-01 a NOS-03)
 
