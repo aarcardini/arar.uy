@@ -16,13 +16,13 @@ permalink: /cuaderno/
 </section>
 
 <section class="container notebook" data-filter-grid data-page-size="9">
-  <div class="tabs" role="tablist" aria-label="Filtrar notas por tema">
-    <button class="tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">Todo</button>
-    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="diseno-y-teoria">Teoría y diseño</button>
-    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="arquitectura-experiencia-humana">Arquitectura como experiencia</button>
-    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="neuro">Neuro(s)</button>
-    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="cultura-y-proyectos">Cultura, proyectos y arquitectos</button>
-    <button class="tab" type="button" role="tab" aria-selected="false" data-filter="jardin">Serie Jardín</button>
+  <div class="tabs" role="group" aria-label="Filtrar notas por tema">
+    <button class="tab is-active" type="button" aria-pressed="true" data-filter="all">Todo</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="diseno-y-teoria">Teoría y diseño</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="arquitectura-experiencia-humana">Arquitectura como experiencia</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="neuro">Neuro(s)</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="cultura-y-proyectos">Cultura, proyectos y arquitectos</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="jardin">Serie Jardín</button>
   </div>
   <div class="cards">
     {%- set cardHeading = "h2" %}

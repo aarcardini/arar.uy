@@ -70,7 +70,7 @@
         tabs.forEach(function (t) {
           var on = t === tab;
           t.classList.toggle("is-active", on);
-          t.setAttribute("aria-selected", on ? "true" : "false");
+          t.setAttribute("aria-pressed", on ? "true" : "false");
         });
         current = tab.getAttribute("data-filter");
         shown = PAGE;
