@@ -18,7 +18,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   mobile, espaciado casi neutro, interlineado 1,6; notas a 18/17 px con columna de ~70 caracteres y sin
   justificar; columnas de texto acotadas en tablet; título de las tarjetas más grande que el extracto; arreglo
   de dos desbordes horizontales (nota con tabla y enlace largo en Privacidad).
-- [ ] **Bloque 2 · Alineación y etiquetas** (G-02, G-04): en una columna (mobile y tablet) el texto se alinea a la
+- [x] **Bloque 2 · Alineación y etiquetas** (G-02, G-04): en una columna (mobile y tablet) el texto se alinea a la
   izquierda; las celdas de proceso, valores y "tres escalas" también, en todos los anchos; las etiquetas sobre
   los títulos pasan a mayúsculas de 12–13 px con espaciado moderado (resuelve "nuestros Servicios",
   "así es como podemos ayudarte", etc.); el tipo de cada proyecto usa el mismo estilo.
