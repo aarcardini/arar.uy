@@ -50,20 +50,28 @@
     update();
   });
 
-  /* Filtro por categoría + "Cargar más" (Cuaderno) */
+  /* Filtro por tema, búsqueda y "Ver más" (Cuaderno y Proyectos) */
+  var normalize = function (t) {
+    return (t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  };
   document.querySelectorAll("[data-filter-grid]").forEach(function (root) {
     var tabs = Array.prototype.slice.call(root.querySelectorAll("[data-filter]"));
     var cards = Array.prototype.slice.call(root.querySelectorAll("[data-cats]"));
     var more = root.querySelector("[data-load-more]");
+    var search = root.querySelector("[data-filter-search]");
+    var count = root.querySelector("[data-filter-count]");
+    var empty = root.querySelector("[data-filter-empty]");
     var PAGE = parseInt(root.getAttribute("data-page-size") || "9", 10);
     var current = "all";
+    var query = "";
     var shown = PAGE;
+    cards.forEach(function (card) { card._text = normalize(card.getAttribute("data-search")); });
 
     var apply = function () {
       var matched = 0;
       cards.forEach(function (card) {
         var cats = (card.getAttribute("data-cats") || "").split(" ");
-        var match = current === "all" || cats.indexOf(current) !== -1;
+        var match = (current === "all" || cats.indexOf(current) !== -1) && (!query || card._text.indexOf(query) !== -1);
         if (match) {
           card.hidden = matched >= shown;
           matched++;
@@ -72,6 +80,8 @@
         }
       });
       if (more) more.hidden = matched <= shown;
+      if (count) count.textContent = matched ? "Mostrando " + Math.min(shown, matched) + " de " + matched + (matched === 1 ? " nota" : " notas") : "";
+      if (empty) empty.hidden = matched !== 0;
     };
 
     tabs.forEach(function (tab) {
@@ -90,6 +100,7 @@
       });
     });
     if (more) more.addEventListener("click", function () { shown += PAGE; apply(); });
+    if (search) search.addEventListener("input", function () { query = normalize(search.value.trim()); shown = PAGE; apply(); });
 
     var hash = location.hash.replace("#", "");
     var initial = tabs.filter(function (t) { return t.getAttribute("data-filter") === hash; })[0];

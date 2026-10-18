@@ -23,7 +23,7 @@
   {
     "id": 165,
     "slug": "arquitectura-experiencia-humana",
-    "name": "Arquitectura experiencia humana",
+    "name": "Arquitectura como experiencia",
     "count": 20,
     "description": ""
   },
@@ -51,14 +51,14 @@
   {
     "id": 167,
     "slug": "cultura-y-proyectos",
-    "name": "Cultura y proyectos",
+    "name": "Cultura, proyectos y arquitectos",
     "count": 15,
     "description": ""
   },
   {
     "id": 166,
     "slug": "diseno-y-teoria",
-    "name": "Diseño y teoría",
+    "name": "Teoría y diseño",
     "count": 20,
     "description": ""
   },
@@ -79,14 +79,14 @@
   {
     "id": 164,
     "slug": "jardin",
-    "name": "Jardín",
+    "name": "Serie Jardín",
     "count": 7,
     "description": ""
   },
   {
     "id": 163,
     "slug": "neuro",
-    "name": "Neuro",
+    "name": "Neuro(s)",
     "count": 11,
     "description": ""
   },

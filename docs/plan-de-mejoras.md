@@ -15,6 +15,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 | Contacto | WhatsApp primero (con mensaje armado), email como alternativa; la primera charla es sin costo |
 | Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta |
 | Prueba social | Sin testimonios por ahora: datos (proyectos, países, concursos, años) |
+| Cuaderno | Solo los 5 temas visibles, con los nombres de las pestañas; sin suscripción por ahora; buscador simple |
 
 ## Fase 1 · Arreglos rápidos de interfaz (completa)
 
@@ -81,7 +82,15 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   datos en `src/_data/proyectos.json`; el carrusel de la home lleva a cada ficha y muestra nombre y lugar, sin
   imágenes repetidas; Casa Calma se suma como proyecto. Pendiente: completar año, superficie y estado.
 
+## Fase 4 · Cuaderno
+
+- [ ] **Bloque 1 · Listado** (G-13, CUA-02 a CUA-05): los 5 temas salen de `src/_data/temas.json` y usan en todo
+  el sitio los nombres de las pestañas; cada tarjeta muestra su tema principal (el más específico) y los minutos
+  de lectura, calculados solos; buscador por título, resumen y tema; "Ver más notas" con contador ("Mostrando 9
+  de 43 notas") y aviso cuando la búsqueda no encuentra nada; sin "Leer más" (la tarjeta entera es el enlace);
+  firma del autor en el encabezado.
+- [ ] Bloque 2 · Nota (NOT-02, NOT-04, NOT-05)
+
 ## Fases siguientes
 
-- Fase 4 · Cuaderno
 - Fase 5 · Copywriting, microcopy y UX writing

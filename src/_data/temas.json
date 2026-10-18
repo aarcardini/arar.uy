@@ -1,0 +1,7 @@
+[
+  { "slug": "diseno-y-teoria", "name": "Teoría y diseño", "prioridad": 5 },
+  { "slug": "arquitectura-experiencia-humana", "name": "Arquitectura como experiencia", "prioridad": 4 },
+  { "slug": "neuro", "name": "Neuro(s)", "prioridad": 2 },
+  { "slug": "cultura-y-proyectos", "name": "Cultura, proyectos y arquitectos", "prioridad": 3 },
+  { "slug": "jardin", "name": "Serie Jardín", "prioridad": 1 }
+]

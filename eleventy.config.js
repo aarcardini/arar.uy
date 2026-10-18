@@ -66,6 +66,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("inTag", (posts, slug) => posts.filter((p) => (p.data.tags || []).includes(slug)));
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
   eleventyConfig.addFilter("where", (arr, key, value) => (arr || []).filter((x) => x[key] === value));
+  // Temas del Cuaderno: de las categorías de una nota, solo las que son temas (en el orden de temas.json)
+  eleventyConfig.addFilter("themesOf", (cats, temas) => (temas || []).filter((t) => (cats || []).includes(t.slug)));
+  // Tema principal de una nota: el más específico según la prioridad de temas.json (1 = más específico)
+  eleventyConfig.addFilter("mainTheme", (cats, temas) =>
+    (temas || []).filter((t) => (cats || []).includes(t.slug)).sort((a, b) => a.prioridad - b.prioridad)[0]
+  );
+  // Minutos de lectura a 200 palabras por minuto (sin contar etiquetas HTML ni el bloque de datos)
+  eleventyConfig.addFilter("readingTime", (html) => {
+    const text = String(html || "").replace(/^---[\s\S]*?\n---\n/, "").replace(/<[^>]+>/g, " ");
+    const words = text.split(/\s+/).filter(Boolean).length;
+    return Math.max(1, Math.round(words / 200));
+  });
   eleventyConfig.addFilter("exclude", (arr, url) => arr.filter((p) => p.url !== url));
   eleventyConfig.addFilter("termName", (slug, terms) => {
     const t = (terms || []).find((x) => x.slug === slug);

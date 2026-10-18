@@ -275,7 +275,9 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .card__media { display: block; aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-cool); }
 .card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .card:hover .card__media img { transform: scale(1.03); }
+.card__theme { margin: 16px 0 0; font-size: 12px; font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted); }
 .card__title { font-size: 1.1875rem; line-height: 1.35; font-weight: 600; letter-spacing: -0.3px; margin: 16px 0 4px; }
+.card__theme + .card__title { margin-top: 4px; }
 .card:hover .card__title a, .card__title a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 .card__date { color: var(--muted-light); font-size: 0.875rem; margin: 0; }
 .card__excerpt { color: var(--muted); font-size: 1rem; margin: 6px 0 12px; }
@@ -295,7 +297,13 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
   .tabs::-webkit-scrollbar { display: none; }
   .tab { flex: none; }
 }
-.load-more { display: flex; justify-content: center; margin-top: 48px; }
+.load-more { display: grid; justify-items: center; gap: 16px; margin-top: 48px; }
+.load-more__count { margin: 0; font-size: 15px; color: var(--muted); }
+.notebook-search { max-width: 32rem; margin: 0 auto 24px; }
+.notebook-search input { width: 100%; min-height: 48px; padding: 12px 18px; border: 1px solid var(--ink); border-radius: 60px; background: var(--paper); color: var(--ink); font: inherit; }
+.notebook-search input::placeholder { color: var(--muted); }
+.notebook-empty { text-align: center; color: var(--muted); margin: 32px 0 0; }
+.notebook-hero__byline { margin-top: 12px !important; font-size: 15px; opacity: .9; }
 
 /* --------------------------------------------------------------------------
    Llamado a la acción + footer
