@@ -92,6 +92,31 @@ export default function (eleventyConfig) {
         .replace(/<img\b/, '<img fetchpriority="high" sizes="(min-width: 1025px) 864px, 90vw"')
     )
   );
+  // Índice de las notas: ids en los h2 del cuerpo y lista de secciones
+  const slugify = (t) => String(t).replace(/<[^>]+>/g, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "seccion";
+  const headings = (html) => {
+    const seen = {};
+    return [...String(html).matchAll(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/g)].map((m) => {
+      const text = m[2].replace(/<[^>]+>/g, "").trim();
+      let id = slugify(text);
+      seen[id] = (seen[id] || 0) + 1;
+      if (seen[id] > 1) id += "-" + seen[id];
+      return { id, text, attrs: m[1] };
+    });
+  };
+  eleventyConfig.addFilter("toc", (html) => headings(html).map(({ id, text }) => ({ id, text })));
+  eleventyConfig.addFilter("headingIds", (html) => {
+    const list = headings(html);
+    let i = 0;
+    return String(html).replace(/<h2\b([^>]*)>/g, (tag, attrs) => (/\bid=/.test(attrs) ? tag : `<h2 id="${list[i++].id}"${attrs}>`));
+  });
+  // Notas relacionadas: primero las del mismo tema, después las más recientes
+  eleventyConfig.addFilter("relatedPosts", (posts, url, themeSlug, n) => {
+    const others = posts.filter((p) => p.url !== url);
+    const same = themeSlug ? others.filter((p) => (p.data.categories || []).includes(themeSlug)) : [];
+    return [...same, ...others.filter((p) => !same.includes(p))].slice(0, n);
+  });
   eleventyConfig.addFilter("absUrl", (url, base) => new URL(url, base).href);
   eleventyConfig.addFilter("jsonify", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("stripHtml", (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());

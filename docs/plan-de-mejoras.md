@@ -89,7 +89,10 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   de lectura, calculados solos; buscador por título, resumen y tema; "Ver más notas" con contador ("Mostrando 9
   de 43 notas") y aviso cuando la búsqueda no encuentra nada; sin "Leer más" (la tarjeta entera es el enlace);
   firma del autor en el encabezado.
-- [ ] Bloque 2 · Nota (NOT-02, NOT-04, NOT-05)
+- [ ] **Bloque 2 · Nota** (NOT-02, NOT-04, NOT-05): encabezado con fecha, minutos de lectura y solo los temas
+  (enlazan al Cuaderno filtrado) y la firma del autor; índice desplegable "En esta nota" en las notas con 4 o más
+  secciones (38 de 43); recuadro del autor al final; el bloque del libro suma un botón; "Más notas sobre {tema}"
+  en lugar de las cuatro más recientes; se quita el tiempo de lectura escrito a mano.
 
 ## Fases siguientes
 

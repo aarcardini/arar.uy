@@ -3,6 +3,9 @@ layout: base
 navActive: /cuaderno/
 ---
 {%- set posts = collections.posts %}
+{%- set postThemes = categories | themesOf(temas) %}
+{%- set mainT = categories | mainTheme(temas) %}
+{%- set sections = content | toc %}
 <article class="post container">
   <div class="post__layout">
     <aside class="post__aside">
@@ -12,13 +15,24 @@ navActive: /cuaderno/
       <header class="post__header">
         <h1 class="post__title">{{ title }}</h1>
         <p class="post__meta">
-          <time datetime="{{ page.date | dateShort }}">{{ page.date | dateEs }}</time>
-          {%- if categories and categories.length %} · {% for c in categories %}<a href="/category/{{ c }}/">{{ c | termName(categoryList) }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+          <time datetime="{{ page.date | dateShort }}">{{ page.date | dateEs }}</time> · {{ content | readingTime }} min de lectura
+          {%- if postThemes.length %} · {% for t in postThemes %}<a href="/cuaderno/#{{ t.slug }}">{{ t.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
+        <p class="post__byline">Por <a href="/nosotros_como_estudio_de_arquitectura/">{{ site.author }}</a></p>
         <hr class="post__divider">
       </header>
+      {%- if sections.length >= 4 %}
+      <details class="post-toc">
+        <summary>En esta nota · {{ sections.length }} secciones</summary>
+        <ol>
+          {%- for h in sections %}
+          <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
+          {%- endfor %}
+        </ol>
+      </details>
+      {%- endif %}
       <div class="post__body">
-        {{ content | eagerFirstImage | safe }}
+        {{ content | headingIds | eagerFirstImage | safe }}
       </div>
       {%- if tags and tags.length %}
       <ul class="post__tags" aria-label="Etiquetas">
@@ -27,6 +41,14 @@ navActive: /cuaderno/
         {%- endfor %}
       </ul>
       {%- endif %}
+      <aside class="author-box" aria-label="Sobre el autor">
+        <img src="/assets/img/2025/06/aa.webp" alt="" width="160" height="160" loading="lazy" decoding="async">
+        <div>
+          <p class="author-box__name">{{ site.author }}</p>
+          <p>Arquitecto, cofundador de Estudio ARAR y autor de <a href="{{ site.book.url }}"><em>{{ site.book.title }}</em></a>. En el Cuaderno escribe sobre cómo los espacios influyen en la forma en que vivimos.</p>
+          <a class="author-box__link" href="/nosotros_como_estudio_de_arquitectura/">Conocé el estudio</a>
+        </div>
+      </aside>
       {%- set prev = posts | getNextCollectionItem %}
       {%- set next = posts | getPreviousCollectionItem %}
       <nav class="post-nav" aria-label="Notas anterior y siguiente">
@@ -44,13 +66,14 @@ navActive: /cuaderno/
           <div>
             <p>Si esta lectura te gustó, quizá también te interese <a href="{{ site.book.url }}"><em>El arte de habitar lo que somos</em></a>, mi libro sobre cómo la arquitectura, la psicología y la vida cotidiana se entrelazan en lo más humano: nuestro bienestar. Está disponible en <a href="{{ site.book.amazon }}" target="_blank" rel="noopener">Amazon</a> en formato digital y físico, y en Uruguay podés conseguirlo por <a href="{{ site.book.mercadolibre }}" target="_blank" rel="noopener">MercadoLibre</a>.</p>
             <p>Gracias por acompañarme en este proyecto.</p>
+            <a class="btn btn--outline" href="{{ site.book.url }}">Conocer el libro</a>
           </div>
         </div>
       </section>
       <section class="related">
-        <h2 class="h-serif">Lecturas recomendadas</h2>
+        <h2 class="h-serif">{% if mainT %}Más notas sobre {{ mainT.name }}{% else %}Más notas del Cuaderno{% endif %}</h2>
         <div class="cards cards--4">
-          {%- for post in posts | exclude(page.url) | limit(4) %}
+          {%- for post in posts | relatedPosts(page.url, mainT.slug if mainT else null, 4) %}
           {% include "partials/post-card.njk" %}
           {%- endfor %}
         </div>

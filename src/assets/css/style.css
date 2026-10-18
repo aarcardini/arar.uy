@@ -533,7 +533,20 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .post__title { font-family: var(--serif); font-weight: 700; font-size: var(--fs-h2); line-height: var(--lh-h2); letter-spacing: var(--ls-h2); }
 .post__meta { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
 .post__meta a:hover { text-decoration: underline; }
+.post__byline { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+.post__byline a, .post__meta a { text-decoration: underline; text-underline-offset: 3px; }
 .post__divider { margin: 16px 0 26px; }
+.post-toc { max-width: var(--measure); margin: 0 auto 32px; border: 1px solid var(--ink); border-radius: 4px; padding: 0 20px; }
+.post-toc summary { min-height: 48px; display: flex; align-items: center; cursor: pointer; font-weight: 600; }
+.post-toc ol { margin: 0 0 16px; padding-left: 1.4em; display: grid; gap: 6px; }
+.post-toc a { text-decoration: underline; text-underline-offset: 3px; }
+.post__body h2 { scroll-margin-top: calc(var(--header-h) + 16px); }
+.author-box { max-width: var(--measure); margin: 48px auto 0; display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 20px; align-items: start; padding-top: 24px; border-top: 1px solid var(--ink); }
+.author-box img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; }
+.author-box p { margin: 0 0 8px; }
+.author-box__name { font-weight: 600; }
+.author-box a { text-decoration: underline; text-underline-offset: 3px; }
+.author-box__link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; }
 .post__body { font-size: 1.125rem; line-height: 1.7; }
 .post__header, .post__tags,
 .post__body > :is(p, h2, h3, h4, ul, ol, blockquote, hr, .embed-card) { max-width: var(--measure); margin-inline: auto; }
@@ -579,7 +592,8 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .book-promo { margin-top: 56px; }
 .book-promo .h-serif { margin-bottom: 32px; }
 .book-promo__grid { display: grid; grid-template-columns: minmax(160px, 220px) 1fr; column-gap: 40px; align-items: center; }
-.book-promo__grid a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+.book-promo__grid a:not(.btn) { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+.book-promo__grid .btn { margin-top: 8px; }
 .related { margin-top: 72px; }
 .related .h-serif { margin-bottom: 32px; }
 .related .cards--4 { gap: 35px 24px; }
