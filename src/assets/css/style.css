@@ -406,14 +406,15 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 /* --------------------------------------------------------------------------
    Cuaderno de notas
    -------------------------------------------------------------------------- */
-.notebook-hero { position: relative; min-height: 520px; display: grid; place-items: center; text-align: center; color: var(--paper-soft); background: var(--paper-cool) url("../img/2023/10/blog.webp") bottom right / cover no-repeat; padding: 10%; }
-.notebook-hero::before { content: ""; position: absolute; inset: 0; background: rgba(16,16,16,.25); }
+.notebook-hero { position: relative; min-height: 420px; display: grid; place-items: center; text-align: center; color: var(--paper-soft); background: var(--paper-cool) url("../img/2023/10/blog.webp") bottom right / cover no-repeat; padding: 10%; }
+/* Velo más denso detrás del texto: el subtítulo blanco necesita contraste 4,5:1 sobre la página clara de la foto */
+.notebook-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at center, rgba(16,16,16,.62), rgba(16,16,16,.3)); }
 .notebook-hero > * { position: relative; }
 .notebook-hero .h-serif { margin-bottom: 20px; }
-.notebook-hero p { margin: 0; }
+.notebook-hero p { margin: 0; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
 .notebook { margin-top: 80px; }
-@media (max-width: 1024px) { .notebook-hero { min-height: 360px; } .notebook { margin-top: 48px; } }
-@media (max-width: 767px) { .notebook-hero { min-height: 260px; padding: 35px; } }
+@media (max-width: 1024px) { .notebook-hero { min-height: 340px; } .notebook { margin-top: 48px; } }
+@media (max-width: 767px) { .notebook-hero { min-height: 260px; padding: 35px; } .notebook-hero::before { background: rgba(16,16,16,.58); } }
 
 /* Archivos de categoría / etiqueta */
 .archive { margin-top: 56px; }

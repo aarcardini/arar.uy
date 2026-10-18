@@ -22,7 +22,10 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   izquierda; las celdas de proceso, valores y "tres escalas" también, en todos los anchos; las etiquetas sobre
   los títulos pasan a mayúsculas de 12–13 px con espaciado moderado (resuelve "nuestros Servicios",
   "así es como podemos ayudarte", etc.); el tipo de cada proyecto usa el mismo estilo.
-- [ ] Bloque 3 · Contacto y contraste del Cuaderno (G-06, CUA-01)
+- [ ] **Bloque 3 · Contacto y contraste del Cuaderno** (G-06, CUA-01): el bloque "Pongamos los lápices sobre el
+  papel" deja de aparecer en Contacto (se enlazaba a sí misma) y en el Libro (ya tiene sus botones de compra);
+  el subtítulo del Cuaderno pasa de 2,2:1 a más de 5:1 de contraste en los tres anchos; el encabezado del
+  Cuaderno baja de 520 a 420 px de alto en desktop.
 - [ ] Bloque 4 · Zonas táctiles y accesibilidad (G-08, G-11)
 - [ ] Bloque 5 · Ortografía y nombres (G-12)
 - [ ] Bloque 6 · Proceso y navegación de notas (INI-03, NOT-03)
