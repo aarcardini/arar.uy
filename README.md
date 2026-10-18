@@ -52,7 +52,13 @@ pasa a indexarse solo.
 Las pestañas del cuaderno filtran por categoría: `diseno-y-teoria`, `arquitectura-experiencia-humana`,
 `neuro`, `cultura-y-proyectos` y `jardin`.
 
-### Dominio propio (cuando se decida)
+### Analytics
+
+El ID de medición de Google Analytics 4 está en `src/_data/site.json` (`analyticsId`). La etiqueta solo se
+incluye en compilaciones con dominio propio (no en vistas previas con `noindex`). Para desactivarla, dejá el
+campo vacío.
+
+## Dominio propio (cuando se decida)
 
 1. Crear el archivo `src/CNAME` con el contenido `arar.uy` y agregarlo como passthrough en
    `eleventy.config.js` (o configurarlo desde Settings → Pages → Custom domain).
