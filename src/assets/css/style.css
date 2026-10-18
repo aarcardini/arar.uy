@@ -322,10 +322,16 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 @media (max-width: 1024px) { .page-hero { padding-top: 40px; } }
 
 /* Contacto */
-.contact { margin-top: 130px; }
-.contact__grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(40px, 18vw, 260px); row-gap: 48px; }
-.contact__grid .h-sub { margin-bottom: 25px; }
-@media (max-width: 767px) { .contact { margin-top: 64px; } .contact__grid { grid-template-columns: 1fr; } }
+.contact-meta { margin: 20px 0 0; font-size: 15px; color: var(--muted); }
+.contact { margin-top: 96px; }
+.contact__grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(40px, 10vw, 160px); row-gap: 48px; max-width: 1040px; margin-inline: auto; }
+.contact__grid .h-sub { margin-bottom: 20px; }
+.contact-list { padding-left: 1.2em; display: grid; gap: 10px; }
+.contact-steps { list-style: none; counter-reset: paso; display: grid; gap: 16px; }
+.contact-steps li { counter-increment: paso; display: grid; grid-template-columns: 2rem minmax(0, 1fr); align-items: baseline; }
+.contact-steps li::before { content: counter(paso); font-family: var(--serif); font-weight: 700; font-size: 1.4em; line-height: 1; }
+.contact-note { margin-top: 20px; color: var(--muted); }
+@media (max-width: 767px) { .contact { margin-top: 56px; } .contact__grid { grid-template-columns: 1fr; } .page-hero__actions .btn { width: 100%; } }
 
 /* Prosa (privacidad, textos largos) */
 .prose { margin-top: 56px; }

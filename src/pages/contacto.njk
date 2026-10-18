@@ -2,27 +2,43 @@
 layout: page
 title: Contacto
 seoTitle: Contacto - Estudio ARAR.
-description: "Trabajemos juntos. Escribinos a alejandro@arar.uy o por WhatsApp al 091 428 436. Estudio ARAR, arquitectos en Montevideo, Uruguay."
+description: "Contanos qué tenés en mente. Escribinos por WhatsApp al 091 428 436 o a alejandro@arar.uy. La primera charla es sin costo. Estudio ARAR, arquitectos en Montevideo, Uruguay."
 permalink: /contacto/
 hideCta: true
 ---
+{%- set waLink = site.whatsapp ~ "?text=" ~ (site.whatsappMessage | urlencode) %}
+{%- set mailLink = "mailto:" ~ site.email ~ "?subject=" ~ ("Consulta por un proyecto" | urlencode) %}
 <section class="page-hero container">
   <h1 class="display">Trabajemos juntos</h1>
-  <p class="page-hero__text">{{ site.tagline }}</p>
+  <p class="page-hero__text">Contanos qué tenés en mente: una casa, una reforma, una oficina o un terreno. La primera charla es sin costo.</p>
+  <p class="page-hero__actions">
+    <a class="btn" href="{{ waLink }}" target="_blank" rel="noopener">{% include "icons/whatsapp.svg" %}<span>Escribinos por WhatsApp</span></a>
+    <a class="btn btn--outline" href="{{ mailLink }}">{% include "icons/mail.svg" %}<span>Mandanos un mail</span></a>
+  </p>
+  <p class="contact-meta">{{ site.phoneDisplay }} · {{ site.email }} · {{ site.hours }}</p>
 </section>
+
 <section class="contact container">
   <div class="contact__grid">
     <div>
-      <h2 class="h-sub">{{ site.name }}</h2>
-      <ul class="icon-list icon-list--spaced">
-        <li>{% include "icons/mail.svg" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li>{% include "icons/whatsapp.svg" %}<a href="{{ site.whatsapp }}" target="_blank" rel="noopener">{{ site.phoneDisplay }}</a></li>
-        <li>{% include "icons/clock.svg" %}<span>{{ site.hours }}</span></li>
+      <h2 class="h-sub">Qué conviene contarnos</h2>
+      <ul class="contact-list">
+        <li>Qué querés hacer: construir, reformar o diseñar un interior o una oficina.</li>
+        <li>Dónde está el lugar y, si lo sabés, cuántos metros tiene.</li>
+        <li>Para cuándo te gustaría tenerlo.</li>
+        <li>Un presupuesto orientativo, aunque sea aproximado.</li>
+        <li>Fotos, planos o referencias, si tenés.</li>
       </ul>
+      <p class="contact-note">No hace falta tener todo definido: para eso está la primera charla.</p>
     </div>
     <div>
-      <h2 class="h-sub">¿Cómo podemos ayudarte?</h2>
-      <p>Hablemos y desarrollemos proyectos juntos.</p>
+      <h2 class="h-sub">Qué pasa después</h2>
+      <ol class="contact-steps">
+        <li>Te respondemos en {{ site.responseTime }}.</li>
+        <li>Coordinamos una primera charla sin costo, por videollamada o en persona en Montevideo.</li>
+        <li>Te mandamos una propuesta con el alcance, las etapas y los honorarios.</li>
+      </ol>
+      <p class="contact-note">Trabajamos con clientes de Uruguay y del exterior.</p>
     </div>
   </div>
 </section>

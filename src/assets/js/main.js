@@ -86,4 +86,20 @@
     var initial = tabs.filter(function (t) { return t.getAttribute("data-filter") === hash; })[0];
     if (initial) { initial.click(); } else { apply(); }
   });
+
+  /* Medición (GA4): clics en WhatsApp, email y compra del libro. Solo registra si Analytics está cargado. */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || typeof window.gtag !== "function") return;
+    var href = a.getAttribute("href");
+    var params = { ubicacion: location.pathname };
+    var name = null;
+    if (/wa\.me\//.test(href)) name = "clic_whatsapp";
+    else if (/^mailto:/.test(href)) name = "clic_email";
+    else if (/amazon\.|amzn\.|\/\/a\.co\/|mercadolibre\./.test(href)) {
+      name = "clic_compra_libro";
+      params.tienda = /mercadolibre/.test(href) ? "mercadolibre" : "amazon";
+    }
+    if (name) window.gtag("event", name, params);
+  });
 })();

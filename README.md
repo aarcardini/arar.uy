@@ -58,6 +58,10 @@ El ID de medición de Google Analytics 4 está en `src/_data/site.json` (`analyt
 incluye en compilaciones con dominio propio (no en vistas previas con `noindex`). Para desactivarla, dejá el
 campo vacío.
 
+`src/assets/js/main.js` registra tres eventos para medir conversiones: `clic_whatsapp`, `clic_email` y
+`clic_compra_libro` (con el parámetro `tienda`: `amazon` o `mercadolibre`). Todos llevan `ubicacion` con la
+ruta de la página. Para contarlos como conversiones, marcarlos como *eventos clave* en GA4.
+
 ## Dominio propio (cuando se decida)
 
 1. Crear el archivo `src/CNAME` con el contenido `arar.uy` y agregarlo como passthrough en

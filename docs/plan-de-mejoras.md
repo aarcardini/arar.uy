@@ -12,6 +12,9 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 | Público prioritario | Particulares y empresas, al mismo nivel |
 | Voz | Voseo; el estudio habla en plural ("nosotros"); el Cuaderno y el Libro los firma Alejandro en primera persona |
 | Nombres | Menú: Servicios · Proyectos · Cuaderno · Nosotros · Libro; botón principal "Hablemos" (sin ícono de teléfono) |
+| Contacto | WhatsApp primero (con mensaje armado), email como alternativa; la primera charla es sin costo |
+| Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta |
+| Prueba social | Sin testimonios por ahora: datos (proyectos, países, concursos, años) |
 
 ## Fase 1 · Arreglos rápidos de interfaz (completa)
 
@@ -44,9 +47,18 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   a Servicios, donde el proceso no está; al final de cada nota, "Nota anterior" y "Nota siguiente" muestran el
   título de la nota.
 
+## Fase 2 · Estructura y conversión
+
+- [ ] **Bloque 1 · Contacto** (CON-01 a CON-03, G-14): botón principal de WhatsApp con mensaje armado y email
+  con asunto; qué conviene contar; qué pasa después (respuesta en uno o dos días hábiles, primera charla sin
+  costo, propuesta con alcance, etapas y honorarios); medición de clics en WhatsApp, email y compra del libro.
+- [ ] Bloque 2 · Home (INI-01, INI-02, INI-04, INI-05)
+- [ ] Bloque 3 · Libro (LIB-01 a LIB-03)
+- [ ] Bloque 4 · Menú mobile y botones (G-07, G-05)
+- [ ] Bloque 5 · Tablet, Servicios y Nosotros (G-09, SER-01 a SER-05, NOS-01 a NOS-03)
+
 ## Fases siguientes
 
-- Fase 2 · Estructura y conversión
 - Fase 3 · Portfolio
 - Fase 4 · Cuaderno
 - Fase 5 · Copywriting, microcopy y UX writing
