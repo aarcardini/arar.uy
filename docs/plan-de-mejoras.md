@@ -47,7 +47,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   a Servicios, donde el proceso no está; al final de cada nota, "Nota anterior" y "Nota siguiente" muestran el
   título de la nota.
 
-## Fase 2 · Estructura y conversión
+## Fase 2 · Estructura y conversión (completa)
 
 - [x] **Bloque 1 · Contacto** (CON-01 a CON-03, G-14): botón principal de WhatsApp con mensaje armado y email
   con asunto; qué conviene contar; qué pasa después (respuesta en uno o dos días hábiles, primera charla sin
@@ -65,7 +65,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   bloqueo del scroll del fondo y cierre con Escape, al elegir una opción o al pasar a pantalla ancha; la
   hamburguesa va al borde derecho; el bloque de contacto del pie usa un botón principal "Hablemos de tu
   proyecto".
-- [ ] **Bloque 5 · Tablet, Servicios y Nosotros** (G-09, SER-01 a SER-05, NOS-01 a NOS-03): Servicios empieza
+- [x] **Bloque 5 · Tablet, Servicios y Nosotros** (G-09, SER-01 a SER-05, NOS-01 a NOS-03): Servicios empieza
   con título, resumen y un índice (Arquitectura, Desarrollos, Consultoría, Preguntas frecuentes) antes de la
   foto; cada servicio tiene texto e imagen en zigzag y los subservicios en dos columnas anchas (de ~28 a ~65
   caracteres por línea); botón de WhatsApp por servicio con mensaje propio; preguntas frecuentes (alcance,
