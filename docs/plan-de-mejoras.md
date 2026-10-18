@@ -99,7 +99,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 
 ## Fase 5 · Copywriting, microcopy y UX writing
 
-- [ ] **Bloque 1 · Guía de voz y mensajes globales**: [`guia-de-voz.md`](guia-de-voz.md) con quién habla, tono,
+- [x] **Bloque 1 · Guía de voz y mensajes globales**: [`guia-de-voz.md`](guia-de-voz.md) con quién habla, tono,
   glosario, botones, forma y mensajes de WhatsApp; título de la home "Arquitectura que te hace bien"; bloque final
   "¿Tenés un proyecto en mente?"; título y descripción del sitio para buscadores.
 - [ ] Bloque 2 · Textos de la home
