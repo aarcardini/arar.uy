@@ -60,7 +60,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   (Uruguay)", con Amazon España y el envío gratis en una línea), formatos e idiomas; en mobile la tapa se achica
   para que los botones entren en la primera pantalla; la Parte II pasa a ser una lista. Pendiente: una imagen
   plana de la tapa y reseñas de lectores, cuando estén.
-- [ ] **Bloque 4 · Menú mobile y botones** (G-07, G-05): en tablet (768–1024 px) se ve la navegación completa en
+- [x] **Bloque 4 · Menú mobile y botones** (G-07, G-05): en tablet (768–1024 px) se ve la navegación completa en
   lugar de la hamburguesa; en celular el menú ocupa la pantalla, con ítems grandes, WhatsApp y email al pie,
   bloqueo del scroll del fondo y cierre con Escape, al elegir una opción o al pasar a pantalla ancha; la
   hamburguesa va al borde derecho; el bloque de contacto del pie usa un botón principal "Hablemos de tu
