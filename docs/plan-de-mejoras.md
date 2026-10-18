@@ -52,7 +52,10 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 - [x] **Bloque 1 · Contacto** (CON-01 a CON-03, G-14): botón principal de WhatsApp con mensaje armado y email
   con asunto; qué conviene contar; qué pasa después (respuesta en uno o dos días hábiles, primera charla sin
   costo, propuesta con alcance, etapas y honorarios); medición de clics en WhatsApp, email y compra del libro.
-- [ ] Bloque 2 · Home (INI-01, INI-02, INI-04, INI-05)
+- [ ] **Bloque 2 · Home** (INI-01, INI-02, INI-04, INI-05): bajada con quiénes son, dónde y el enfoque en el
+  bienestar, botones "Hablemos de tu proyecto" y "Ver proyectos" y la nota "La primera charla es sin costo" en la
+  primera pantalla; los proyectos suben al segundo lugar; Servicios lista las tres líneas con enlace a cada una;
+  franja de datos (+10 años, 5 países, 5 concursos, libro y notas); libro y últimas tres notas del Cuaderno.
 - [ ] Bloque 3 · Libro (LIB-01 a LIB-03)
 - [ ] Bloque 4 · Menú mobile y botones (G-07, G-05)
 - [ ] Bloque 5 · Tablet, Servicios y Nosotros (G-09, SER-01 a SER-05, NOS-01 a NOS-03)

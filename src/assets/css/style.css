@@ -343,7 +343,11 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
    Home
    -------------------------------------------------------------------------- */
 .hero { padding-top: 29px; text-align: center; }
-.hero .display { max-width: 1140px; margin: 0 auto 80px; }
+.hero .display { max-width: 1140px; margin: 0 auto 24px; }
+.hero__text { max-width: 40rem; margin: 0 auto; font-size: 1.125rem; }
+.hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 28px 0 0; }
+.hero__note { margin: 12px 0 0; font-size: 15px; color: var(--muted); }
+.hero__media { margin-top: 56px; }
 .hero__media img { width: 100%; }
 .home-process .split__text { padding-right: 20%; }
 .home-process .split__text .btn { display: inline-flex; }
@@ -351,7 +355,42 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .portfolio { text-align: center; }
 .portfolio .display, .portfolio .h-serif { margin-bottom: 30px; }
 .portfolio .carousel { margin: 40px 0 24px; text-align: left; }
-@media (max-width: 767px) { .hero .display { margin-bottom: 50px; } }
+@media (max-width: 767px) {
+  .hero .display { margin-bottom: 16px; }
+  .hero__text { font-size: 1rem; }
+  .hero__actions { margin-top: 22px; }
+  .hero__actions .btn { flex: 1 1 100%; }
+  .hero__media { margin-top: 36px; }
+}
+
+/* Servicios, datos y lecturas en la home */
+.home-services { list-style: none; margin: 8px 0 0; }
+.home-services li { border-top: 1px solid var(--ink); }
+.home-services li:last-child { border-bottom: 1px solid var(--ink); }
+.home-services a { display: grid; gap: 2px; padding: 14px 0; }
+.home-services strong { font-weight: 600; }
+.home-services span { color: var(--muted); font-size: 1rem; }
+.home-services a:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 32px; margin: 0; border-top: 2px solid var(--ink); padding-top: 28px; }
+.facts dt { font-family: var(--serif); font-weight: 700; font-size: var(--fs-h2); line-height: 1; letter-spacing: var(--ls-h2); }
+.facts dd { margin: 12px 0 0; font-size: 1rem; }
+.home-reading { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 48px 72px; align-items: start; }
+.home-reading__book { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 32px; align-items: center; }
+.home-reading__book img { width: 100%; border-radius: 2px; }
+.home-reading__book .h-serif { font-size: calc(var(--fs-h2) * 0.7); line-height: 1.1; margin-bottom: 16px; }
+.home-reading .btn { margin-top: 20px; }
+.note-list { list-style: none; }
+.note-list li { border-top: 1px solid var(--ink); }
+.note-list li:last-child { border-bottom: 1px solid var(--ink); }
+.note-list a { display: grid; gap: 2px; padding: 14px 0; }
+.note-list span { font-weight: 600; line-height: 1.35; }
+.note-list time { color: var(--muted-light); font-size: 0.875rem; }
+.note-list a:hover span { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 900px) {
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-reading { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) { .home-reading__book { grid-template-columns: 120px minmax(0, 1fr); gap: 20px; } }
 
 /* --------------------------------------------------------------------------
    Servicios

@@ -7,9 +7,43 @@ permalink: /
 ---
 <section class="hero container">
   <h1 class="display">Creamos espacios para vivir, trabajar y jugar.</h1>
+  <p class="hero__text">Somos Estudio ARAR, arquitectos en Montevideo. Diseñamos casas, reformas y espacios de trabajo pensados para el bienestar de quienes los habitan.</p>
+  <p class="hero__actions">
+    <a class="btn" href="/contacto/">Hablemos de tu proyecto</a>
+    <a class="btn btn--outline" href="/proyectos/">Ver proyectos</a>
+  </p>
+  <p class="hero__note">La primera charla es sin costo.</p>
   <div class="hero__media blob-hero">
     <img src="/assets/img/2026/02/20260215_221512000_iOS.webp" alt="Interior de vivienda con living, cocina y galería abiertos al jardín" width="1906" height="1200" fetchpriority="high" sizes="(min-width: 1440px) 1296px, 90vw" decoding="async">
   </div>
+</section>
+
+<section class="section container portfolio">
+  <p class="label">Proyectos</p>
+  <h2 class="h-serif">Nuestros proyectos</h2>
+  <p>Una selección de nuestros proyectos.</p>
+  <div class="carousel carousel--3" data-carousel>
+    <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior">{% include "icons/chevron-left.svg" %}</button>
+    <div class="carousel__track" tabindex="0" aria-label="Selección de proyectos">
+      {%- set slides = [
+        ["2026/02/20260215_221500000_iOS.webp", "Reforma Casa Calma, Punta del Este"],
+        ["2026/02/broot1.webp", "Edificio Broot, Montevideo"],
+        ["2026/02/LP3.webp", "Centro Cívico Ciudad del Plata"],
+        ["2026/02/CCA4.webp", "Centro Cultural Mariano Arana"],
+        ["2026/02/Cocina-1.webp", "Cocina Milán"],
+        ["2026/02/FH1.webp", "Fatimah's Home, Riad"],
+        ["2026/02/LP1.webp", "Centro Cívico Ciudad del Plata"],
+        ["2026/02/CCA-1.webp", "Centro Cultural Mariano Arana"],
+        ["2022/11/HomeBanner2.webp", "Ouí Bistró, Caracas"],
+        ["2022/11/gruyere.webp", "Edificio Gruyer, Punta Gorda"]
+      ] %}
+      {%- for s in slides %}
+      <a class="carousel__slide" href="/proyectos/"><img src="/assets/img/{{ s[0] }}" alt="{{ s[1] }}" loading="lazy" decoding="async"></a>
+      {%- endfor %}
+    </div>
+    <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente">{% include "icons/chevron-right.svg" %}</button>
+  </div>
+  <a class="btn btn--outline" href="/proyectos/">Ver proyectos</a>
 </section>
 
 <section class="section container container--inset">
@@ -32,10 +66,15 @@ permalink: /
       <img src="/assets/img/2026/02/CCA3.webp" alt="Render del Centro Mariano Arana para concurso público" width="1906" height="1200" loading="lazy" decoding="async">
     </div>
     <div class="split__text">
-      <p class="label">nuestros Servicios</p>
+      <p class="label">Servicios</p>
       <h2 class="h-serif">Arquitectura + humana</h2>
       <p>Diseñamos y construimos espacios residenciales y corporativos únicos que reflejan la individualidad de nuestros clientes y las identidades de las empresas, ofreciendo también soluciones para proyectos de arquitectura y desarrollos inmobiliarios.</p>
-      <a class="btn btn--outline" href="/servicios/">+ sobre nuestros servicios</a>
+      <ul class="home-services">
+        <li><a href="/servicios/#arquitectura"><strong>Arquitectura residencial y corporativa</strong><span>Casas, reformas e interiores para desacelerar, y oficinas donde cada persona pueda trabajar a su manera.</span></a></li>
+        <li><a href="/servicios/#desarrollos"><strong>Desarrollos inmobiliarios</strong><span>La impronta arquitectónica para una oportunidad de inversión, desde la búsqueda del terreno.</span></a></li>
+        <li><a href="/servicios/#consultoria"><strong>Consultoría</strong><span>Revisión crítica de proyectos antes de la obra y outsourcing para estudios de otros países.</span></a></li>
+      </ul>
+      <a class="btn btn--outline" href="/servicios/">Ver servicios</a>
     </div>
   </div>
 </section>
@@ -77,30 +116,33 @@ permalink: /
   </div>
 </section>
 
-<section class="section container portfolio">
-  <p class="label">Proyectos</p>
-  <h2 class="h-serif">Nuestros proyectos</h2>
-  <p>Una selección de nuestros proyectos.</p>
-  <div class="carousel carousel--3" data-carousel>
-    <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior">{% include "icons/chevron-left.svg" %}</button>
-    <div class="carousel__track" tabindex="0" aria-label="Selección de proyectos">
-      {%- set slides = [
-        ["2026/02/20260215_221500000_iOS.webp", "Reforma Casa Calma, Punta del Este"],
-        ["2026/02/broot1.webp", "Edificio Broot, Montevideo"],
-        ["2026/02/LP3.webp", "Centro Cívico Ciudad del Plata"],
-        ["2026/02/CCA4.webp", "Centro Cultural Mariano Arana"],
-        ["2026/02/Cocina-1.webp", "Cocina Milán"],
-        ["2026/02/FH1.webp", "Fatimah's Home, Riad"],
-        ["2026/02/LP1.webp", "Centro Cívico Ciudad del Plata"],
-        ["2026/02/CCA-1.webp", "Centro Cultural Mariano Arana"],
-        ["2022/11/HomeBanner2.webp", "Ouí Bistró, Caracas"],
-        ["2022/11/gruyere.webp", "Edificio Gruyer, Punta Gorda"]
-      ] %}
-      {%- for s in slides %}
-      <a class="carousel__slide" href="/proyectos/"><img src="/assets/img/{{ s[0] }}" alt="{{ s[1] }}" loading="lazy" decoding="async"></a>
-      {%- endfor %}
+<section class="section container container--inset home-facts" aria-labelledby="datos-titulo">
+  <h2 class="label" id="datos-titulo">El estudio en números</h2>
+  <dl class="facts">
+    <div><dt>+10</dt><dd>años de experiencia en proyectos residenciales y corporativos</dd></div>
+    <div><dt>5</dt><dd>países con proyectos: Uruguay, Venezuela, Arabia Saudita, Hong Kong y Estados Unidos</dd></div>
+    <div><dt>5</dt><dd>propuestas para concursos de arquitectura, entre ellas ANTEL Arena y Guggenheim Helsinki</dd></div>
+    <div><dt>1</dt><dd>libro y más de 40 notas sobre arquitectura y bienestar</dd></div>
+  </dl>
+</section>
+
+<section class="section container container--inset home-reading">
+  <div class="home-reading__book">
+    <img src="/assets/img/2023/10/5.webp" alt="{{ site.book.coverAlt }}" width="597" height="800" loading="lazy" decoding="async">
+    <div>
+      <p class="label">El libro</p>
+      <h2 class="h-serif">{{ site.book.title }}</h2>
+      <p>Arquitectura, psicología y vida cotidiana para pensar cómo los espacios influyen en nuestro bienestar. Disponible en Amazon y, en Uruguay, en MercadoLibre.</p>
+      <a class="btn btn--outline" href="{{ site.book.url }}">Conocer el libro</a>
     </div>
-    <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente">{% include "icons/chevron-right.svg" %}</button>
   </div>
-  <a class="btn btn--outline" href="/proyectos/">Ver proyectos</a>
+  <div class="home-reading__notes">
+    <p class="label">Del Cuaderno</p>
+    <ul class="note-list">
+      {%- for post in collections.posts | limit(3) %}
+      <li><a href="{{ post.url }}"><span>{{ post.data.title }}</span><time datetime="{{ post.date | dateShort }}">{{ post.date | dateEs }}</time></a></li>
+      {%- endfor %}
+    </ul>
+    <a class="btn btn--outline" href="/cuaderno/">Ir al Cuaderno</a>
+  </div>
 </section>
