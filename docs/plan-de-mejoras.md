@@ -74,7 +74,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   colaboración con Graetz Nuñez como experiencia previa. En una columna (tablet), las imágenes de los bloques
   de texto e imagen se limitan a 544 px.
 
-## Fase 3 · Portfolio
+## Fase 3 · Portfolio (completa)
 
 - [x] **Bloque 1 · Listado y fichas** (PRO-01 a PRO-05, G-10): listado con filtros por tipo (Residencial,
   Corporativo y comercial, Desarrollos, Concursos) y contador; una ficha por proyecto en `/proyectos/<slug>/`
@@ -82,14 +82,14 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   datos en `src/_data/proyectos.json`; el carrusel de la home lleva a cada ficha y muestra nombre y lugar, sin
   imágenes repetidas; Casa Calma se suma como proyecto. Pendiente: completar año, superficie y estado.
 
-## Fase 4 · Cuaderno
+## Fase 4 · Cuaderno (completa)
 
 - [x] **Bloque 1 · Listado** (G-13, CUA-02 a CUA-05): los 5 temas salen de `src/_data/temas.json` y usan en todo
   el sitio los nombres de las pestañas; cada tarjeta muestra su tema principal (el más específico) y los minutos
   de lectura, calculados solos; buscador por título, resumen y tema; "Ver más notas" con contador ("Mostrando 9
   de 43 notas") y aviso cuando la búsqueda no encuentra nada; sin "Leer más" (la tarjeta entera es el enlace);
   firma del autor en el encabezado.
-- [ ] **Bloque 2 · Nota** (NOT-02, NOT-04, NOT-05): encabezado con fecha, minutos de lectura y solo los temas
+- [x] **Bloque 2 · Nota** (NOT-02, NOT-04, NOT-05): encabezado con fecha, minutos de lectura y solo los temas
   (enlazan al Cuaderno filtrado) y la firma del autor; índice desplegable "En esta nota" en las notas con 4 o más
   secciones (38 de 43); recuadro del autor al final; el bloque del libro suma un botón; "Más notas sobre {tema}"
   en lugar de las cuatro más recientes; se quita el tiempo de lectura escrito a mano.
