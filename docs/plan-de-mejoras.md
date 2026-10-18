@@ -14,7 +14,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 
 ## Fase 1 · Arreglos rápidos de interfaz
 
-- [ ] **Bloque 1 · Tipografía y lectura** (G-01, G-03, NOT-01): texto de 17 px en desktop y 16 px en tablet y
+- [x] **Bloque 1 · Tipografía y lectura** (G-01, G-03, NOT-01): texto de 17 px en desktop y 16 px en tablet y
   mobile, espaciado casi neutro, interlineado 1,6; notas a 18/17 px con columna de ~70 caracteres y sin
   justificar; columnas de texto acotadas en tablet; título de las tarjetas más grande que el extracto; arreglo
   de dos desbordes horizontales (nota con tabla y enlace largo en Privacidad).
