@@ -49,7 +49,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 
 ## Fase 2 · Estructura y conversión
 
-- [ ] **Bloque 1 · Contacto** (CON-01 a CON-03, G-14): botón principal de WhatsApp con mensaje armado y email
+- [x] **Bloque 1 · Contacto** (CON-01 a CON-03, G-14): botón principal de WhatsApp con mensaje armado y email
   con asunto; qué conviene contar; qué pasa después (respuesta en uno o dos días hábiles, primera charla sin
   costo, propuesta con alcance, etapas y honorarios); medición de clics en WhatsApp, email y compra del libro.
 - [ ] Bloque 2 · Home (INI-01, INI-02, INI-04, INI-05)
