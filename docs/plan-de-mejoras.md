@@ -75,7 +75,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 
 ## Fase 3 · Portfolio
 
-- [ ] **Bloque 1 · Listado y fichas** (PRO-01 a PRO-05, G-10): listado con filtros por tipo (Residencial,
+- [x] **Bloque 1 · Listado y fichas** (PRO-01 a PRO-05, G-10): listado con filtros por tipo (Residencial,
   Corporativo y comercial, Desarrollos, Concursos) y contador; una ficha por proyecto en `/proyectos/<slug>/`
   con ubicación, año, superficie y estado (solo los que tienen dato), galería y navegación entre proyectos;
   datos en `src/_data/proyectos.json`; el carrusel de la home lleva a cada ficha y muestra nombre y lugar, sin
