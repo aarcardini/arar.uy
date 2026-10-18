@@ -13,7 +13,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 | Voz | Voseo; el estudio habla en plural ("nosotros"); el Cuaderno y el Libro los firma Alejandro en primera persona |
 | Nombres | Menú: Servicios · Proyectos · Cuaderno · Nosotros · Libro; botón principal "Hablemos" (sin ícono de teléfono) |
 
-## Fase 1 · Arreglos rápidos de interfaz
+## Fase 1 · Arreglos rápidos de interfaz (completa)
 
 - [x] **Bloque 1 · Tipografía y lectura** (G-01, G-03, NOT-01): texto de 17 px en desktop y 16 px en tablet y
   mobile, espaciado casi neutro, interlineado 1,6; notas a 18/17 px con columna de ~70 caracteres y sin
@@ -38,7 +38,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   "etc."); voseo en Servicios, Nosotros y Libro; *slow living* en cursiva; teléfono "091 428 436 (WhatsApp)";
   "Volver al Cuaderno" en las notas; botones de compra sin mayúsculas forzadas. Las notas del Cuaderno y la
   página de Privacidad quedan para la Fase 5.
-- [ ] **Bloque 6 · Proceso y navegación de notas** (INI-03, NOT-03): las cuatro etapas del proceso quedan en
+- [x] **Bloque 6 · Proceso y navegación de notas** (INI-03, NOT-03): las cuatro etapas del proceso quedan en
   orden (Investigación → Ideación → Pruebas → Implementación), numeradas y marcadas como anteproyecto o proyecto
   ejecutivo, igual que dice el texto; el botón del proceso lleva a Contacto ("Hablemos de tu proyecto") en vez de
   a Servicios, donde el proceso no está; al final de cada nota, "Nota anterior" y "Nota siguiente" muestran el
