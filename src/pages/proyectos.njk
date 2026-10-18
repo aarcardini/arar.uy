@@ -23,7 +23,7 @@ permalink: /proyectos/
     {%- for p in proyectos %}
     <article class="pcard" data-cats="{{ p.kind }}">
       <a href="/proyectos/{{ p.slug }}/">
-        <img src="/assets/img/{{ p.cover }}" alt=""{% if loop.index > 3 %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">
+        <img src="/assets/img/{{ p.cover }}" alt="" sizes="(min-width: 1025px) min(384px, 27vw), (min-width: 601px) 44vw, 90vw"{% if loop.index > 3 %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">
         <span class="pcard__kind">{{ p.kindLabel }}</span>
         <h2 class="pcard__title">{{ p.title }}</h2>
         {%- if p.location %}<span class="pcard__place">{{ p.location }}</span>{% endif %}

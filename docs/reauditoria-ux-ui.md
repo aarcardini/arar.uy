@@ -182,3 +182,19 @@ mostrar la tapa del libro.
 
 Los puntos 1 a 3 entran en uno o dos bloques. Se pueden revisar con el mismo método de capturas antes y después,
 con tu aprobación antes de subir a `main`.
+
+---
+
+## 5. Seguimiento
+
+Las prioridades 1 a 3 se aplicaron en la Fase 6 del [plan de mejoras](plan-de-mejoras.md). Pasan a resueltos
+N-01 a N-06, G-05, G-08, G-10 y OTR-03. Medido después de los cambios:
+
+- axe-core: **0 hallazgos** en las 13 páginas (antes, 2 avisos moderados).
+- Objetivos táctiles de menos de 44 px en mobile: **0** (antes, 12).
+- Proyectos en desktop: **~370 KB** al cargar (antes, ~890 KB).
+- Sin desbordes en 13 páginas × 3 anchos.
+
+Quedan las prioridades 4 (material de proyectos y del libro) y 5 (taxonomía, contador por tema en el Cuaderno,
+pie y notas antiguas).
+

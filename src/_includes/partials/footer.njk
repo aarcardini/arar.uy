@@ -17,7 +17,9 @@
         </ul>
       </div>
       <div class="footer-col footer-col--book">
+        {%- if page.url != site.book.url %}
         <a href="{{ site.book.url }}" aria-label="{{ site.book.title }}"><img src="{{ site.book.cover }}" alt="{{ site.book.coverAlt }}" width="862" height="1080" loading="lazy" decoding="async"></a>
+        {%- endif %}
       </div>
       <div class="footer-col">
         <h2 class="footer-title">Contacto</h2>

@@ -127,3 +127,20 @@ Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.m
   mensaje armado en el pie; descripciones para buscadores de Libro, Cuaderno, Privacidad, temas y etiquetas.
   Privacidad aclara además que el sitio no guarda datos personales (solo Google Analytics) y que los mensajes
   de WhatsApp y mail no pasan por el sitio. Pendiente: que un profesional revise el texto de Privacidad.
+
+## Fase 6 · Ajustes de la re-auditoría
+
+- [x] **Prioridades 1 a 3** (N-01 a N-06, G-05, G-08, G-10, OTR-03):
+  - Las imágenes principales de Proyectos, Libro, Servicios, Nosotros e in-bio indican su tamaño real. Proyectos
+    pasa de ~890 a ~370 KB en desktop.
+  - Gruyer y Fatimah's Home ya no repiten la portada en la galería.
+  - Índice de las notas, firma del autor y "Empatía" con zona táctil de 44 px; "Empatía" se ve como enlace.
+  - El bloque "¿Tenés un proyecto en mente?" es una región con nombre y la columna lateral de las notas deja de
+    ser un `aside` anidado: axe queda sin hallazgos.
+  - `og:locale` pasa a `es_UY`.
+  - En "¿Dónde encontrarlo?" (Libro), los botones son de contorno; el principal queda arriba.
+  - Desarrollos tiene bajada y las fotos de cada servicio llevan a la ficha del proyecto.
+  - La 404 ya no muestra el bloque final.
+  - Pie alineado a la izquierda en mobile y tablet, y sin la tapa del libro en la página del Libro.
+  - Contador en el carrusel de la home ("1–3 de 8" en desktop, "1 de 8" en mobile).
+

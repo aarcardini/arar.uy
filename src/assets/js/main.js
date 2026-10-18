@@ -40,10 +40,19 @@
     var next = root.querySelector(".carousel__btn--next");
     if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
     if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    var count = root.parentNode.querySelector("[data-carousel-count]");
+    var total = track.querySelectorAll(".carousel__slide").length;
     var update = function () {
       var max = track.scrollWidth - track.clientWidth - 2;
       root.classList.toggle("at-start", track.scrollLeft <= 2);
       root.classList.toggle("at-end", track.scrollLeft >= max);
+      if (count && total) {
+        var s = step();
+        var visible = Math.max(1, Math.floor((track.clientWidth + 2) / s + 0.1));
+        var first = track.scrollLeft >= max ? total - visible + 1 : Math.round(track.scrollLeft / s) + 1;
+        var last = Math.min(total, first + visible - 1);
+        count.textContent = (first === last ? first : first + "–" + last) + " de " + total;
+      }
     };
     track.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
