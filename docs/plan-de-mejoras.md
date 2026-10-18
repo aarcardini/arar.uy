@@ -102,6 +102,10 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 - [x] **Bloque 1 · Guía de voz y mensajes globales**: [`guia-de-voz.md`](guia-de-voz.md) con quién habla, tono,
   glosario, botones, forma y mensajes de WhatsApp; título de la home "Arquitectura que te hace bien"; bloque final
   "¿Tenés un proyecto en mente?"; título y descripción del sitio para buscadores.
-- [ ] Bloque 2 · Textos de la home
+- [x] **Bloque 2 · Textos de la home**: manifiesto "Espacios con significado" centrado en cómo te sentís en un
+  espacio; servicios en una frase y sin "impronta" ni *outsourcing*; "Cómo trabajamos" sin jerga (*Design Thinking*,
+  *insights*, *feedback*, *look and feel*), sin superlativos ni "¿Estás listo para construir tus sueños?", en tres
+  párrafos; etapas renombradas ("Ideas y primera propuesta", "Etapa 4 · Técnica · Proyecto ejecutivo y obra", con
+  la obra "según el proyecto"); bajada de Proyectos y frase del pie alineadas con el título de la home.
 - [ ] Bloque 3 · Servicios y Nosotros
 - [ ] Bloque 4 · Microcopy y páginas restantes
