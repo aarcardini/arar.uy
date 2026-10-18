@@ -16,6 +16,9 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 | Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta |
 | Prueba social | Sin testimonios por ahora: datos (proyectos, países, concursos, años) |
 | Cuaderno | Solo los 5 temas visibles, con los nombres de las pestañas; sin suscripción por ahora; buscador simple |
+| Tono | Cercano y cálido, sereno y pausado (ver [`guia-de-voz.md`](guia-de-voz.md)) |
+| Título de la home | "Arquitectura que te hace bien" |
+| Bloque final | "¿Tenés un proyecto en mente?" + "Contanos qué querés hacer. La primera charla es sin costo." |
 
 ## Fase 1 · Arreglos rápidos de interfaz (completa)
 
@@ -94,6 +97,11 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   secciones (38 de 43); recuadro del autor al final; el bloque del libro suma un botón; "Más notas sobre {tema}"
   en lugar de las cuatro más recientes; se quita el tiempo de lectura escrito a mano.
 
-## Fases siguientes
+## Fase 5 · Copywriting, microcopy y UX writing
 
-- Fase 5 · Copywriting, microcopy y UX writing
+- [ ] **Bloque 1 · Guía de voz y mensajes globales**: [`guia-de-voz.md`](guia-de-voz.md) con quién habla, tono,
+  glosario, botones, forma y mensajes de WhatsApp; título de la home "Arquitectura que te hace bien"; bloque final
+  "¿Tenés un proyecto en mente?"; título y descripción del sitio para buscadores.
+- [ ] Bloque 2 · Textos de la home
+- [ ] Bloque 3 · Servicios y Nosotros
+- [ ] Bloque 4 · Microcopy y páginas restantes

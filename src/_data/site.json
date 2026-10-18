@@ -1,8 +1,8 @@
 {
   "name": "Estudio ARAR.",
   "shortName": "Estudio ARAR",
-  "title": "Estudio ARAR. Arquitectos. Uruguay",
-  "description": "Creamos espacios para vivir, trabajar y jugar. Arquitectos en Montevideo, Uruguay, con énfasis en la arquitectura residencial",
+  "title": "Estudio ARAR · Arquitectura que te hace bien · Montevideo",
+  "description": "Estudio de arquitectura en Montevideo, Uruguay. Diseñamos casas, reformas y espacios de trabajo pensados para el bienestar de quienes los habitan. La primera charla es sin costo.",
   "url": "https://arar.uy",
   "analyticsId": "G-Q6PY070YXB",
   "lang": "es",
@@ -33,8 +33,8 @@
   ],
   "cta": {
     "label": "Hablemos",
-    "title": "Pongamos los lápices sobre el papel",
-    "text": "Agendemos una cita y pongamos manos a la obra.",
+    "title": "¿Tenés un proyecto en mente?",
+    "text": "Contanos qué querés hacer. La primera charla es sin costo.",
     "button": "Hablemos de tu proyecto",
     "url": "/contacto/"
   },
