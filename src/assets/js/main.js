@@ -6,15 +6,24 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
+    var setOpen = function (open) {
+      nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
       document.body.classList.toggle("nav-open", open);
-    });
+    };
+    toggle.addEventListener("click", function () { setOpen(!nav.classList.contains("is-open")); });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && nav.classList.contains("is-open")) toggle.click();
+      if (e.key === "Escape" && nav.classList.contains("is-open")) { setOpen(false); toggle.focus(); }
     });
+    // Al elegir un enlace (o abrir WhatsApp en otra pestaña) el menú se cierra
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) setOpen(false); });
+    // Si la ventana pasa a ancho de tablet o escritorio, el menú abierto se cierra
+    if (window.matchMedia) {
+      var wide = window.matchMedia("(min-width: 768px)");
+      var onChange = function () { if (wide.matches) setOpen(false); };
+      if (wide.addEventListener) wide.addEventListener("change", onChange); else if (wide.addListener) wide.addListener(onChange);
+    }
   }
 
   /* Carruseles (scroll-snap + flechas) */
