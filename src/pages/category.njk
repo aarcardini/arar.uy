@@ -18,6 +18,7 @@ eleventyComputed:
     <p class="archive__back"><a href="/cuaderno/">{% include "icons/arrow-left.svg" %} Volver al Cuaderno de notas</a></p>
   </header>
   <div class="cards">
+    {%- set cardHeading = "h2" %}
     {%- for post in collections.posts | inCategory(term.slug) %}
     {% include "partials/post-card.njk" %}
     {%- endfor %}

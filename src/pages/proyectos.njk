@@ -6,7 +6,7 @@ description: "Una selección de proyectos de Estudio ARAR: concursos, vivienda, 
 image: /assets/img/2022/11/gug.webp
 permalink: /proyectos/
 ---
-{%- macro project(kind, title, cover, tall=false, reverse=false, slides=null, carouselLabel="") %}
+{%- macro project(kind, title, cover, tall=false, reverse=false, slides=null, carouselLabel="", first=false) %}
 <article class="project{% if reverse %} project--reverse{% endif %}">
   <div class="project__media">
     {%- if slides %}
@@ -14,14 +14,14 @@ permalink: /proyectos/
       <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Imagen anterior">{% include "icons/chevron-left.svg" %}</button>
       <div class="carousel__track" tabindex="0" aria-label="{{ carouselLabel }}">
         {%- for s in slides %}
-        <div class="carousel__slide"><img src="/assets/img/{{ s }}" alt="{{ title }}, imagen {{ loop.index }}" loading="lazy" decoding="async"></div>
+        <div class="carousel__slide"><img src="/assets/img/{{ s }}" alt="{{ title }}, imagen {{ loop.index }}"{% if first and loop.first %} fetchpriority="high" sizes="(min-width: 1025px) 605px, 90vw"{% else %} loading="lazy"{% endif %} decoding="async"></div>
         {%- endfor %}
       </div>
       <button class="carousel__btn carousel__btn--next" type="button" aria-label="Imagen siguiente">{% include "icons/chevron-right.svg" %}</button>
     </div>
     {%- else %}
     <div class="project__cover{% if tall %} project__cover--tall{% endif %}">
-      <img src="/assets/img/{{ cover }}" alt="{{ title }}" loading="lazy" decoding="async">
+      <img src="/assets/img/{{ cover }}" alt="{{ title }}"{% if first %} fetchpriority="high" sizes="(min-width: 1025px) 605px, 90vw"{% else %} loading="lazy"{% endif %} decoding="async">
       <span class="project__cover-title" aria-hidden="true">{{ title }}</span>
     </div>
     {%- endif %}
@@ -48,7 +48,7 @@ permalink: /proyectos/
 <div class="container container--inset">
   <h1 class="sr-only">Proyectos de Estudio ARAR.</h1>
 
-  {%- call project("Concurso de anteproyectos", "Centro Cívico Ciudad del Plata", null, false, false, ["2026/02/LP2-scaled.webp","2026/02/LP3.webp","2026/02/LP4.webp","2026/02/LP5.webp","2026/02/LP6.webp","2026/02/LP1.webp"], "Imágenes del Centro Cívico Ciudad del Plata") %}
+  {%- call project("Concurso de anteproyectos", "Centro Cívico Ciudad del Plata", null, false, false, ["2026/02/LP2-scaled.webp","2026/02/LP3.webp","2026/02/LP4.webp","2026/02/LP5.webp","2026/02/LP6.webp","2026/02/LP1.webp"], "Imágenes del Centro Cívico Ciudad del Plata", first=true) %}
   <p>El Centro Cívico para la Ciudad del Plata se concibe con el ciudadano como eje central. Cada función se aloja en un edificio independiente que cuenta con todos los servicios necesarios para su autonomía. Los edificios se ubican en el perímetro del terreno, dejando un espacio verde en el centro para el disfrute de las personas que trabajan o visitan el recinto, tanto de la ciudad como de fuera.</p>
   {%- endcall %}
 

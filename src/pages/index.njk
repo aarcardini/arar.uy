@@ -8,14 +8,14 @@ permalink: /
 <section class="hero container">
   <h1 class="display">Creamos espacios para vivir, trabajar y jugar.</h1>
   <div class="hero__media blob-hero">
-    <img src="/assets/img/2026/02/20260215_221512000_iOS.webp" alt="Interior de vivienda con living, cocina y galería abiertos al jardín" width="1906" height="1200" fetchpriority="high" decoding="async">
+    <img src="/assets/img/2026/02/20260215_221512000_iOS.webp" alt="Interior de vivienda con living, cocina y galería abiertos al jardín" width="1906" height="1200" fetchpriority="high" sizes="(min-width: 1440px) 1296px, 90vw" decoding="async">
   </div>
 </section>
 
 <section class="section container container--inset">
   <div class="split split--44 split--wide-gap">
     <div class="split__media blob-square">
-      <img src="/assets/img/2026/02/Dante.webp" alt="Dormitorio infantil con cama alta de madera y zona de juegos" width="800" height="800" loading="lazy" decoding="async">
+      <img src="/assets/img/2026/02/Dante.webp" alt="Dormitorio infantil con cama alta de madera y zona de juegos" width="800" height="800" sizes="(min-width: 1025px) 580px, 90vw" decoding="async">
     </div>
     <div class="split__text">
       <h2 class="h-serif">Espacios con significado</h2>
@@ -93,7 +93,7 @@ permalink: /
         ["2022/11/gruyere.webp", "Edificio Gruyer, Punta Gorda"]
       ] %}
       {%- for s in slides %}
-      <a class="carousel__slide" href="/proyectos/"><img src="/assets/img/{{ s[0] }}" alt="{{ s[1] }}"{% if loop.index > 3 %} loading="lazy"{% endif %} decoding="async"></a>
+      <a class="carousel__slide" href="/proyectos/"><img src="/assets/img/{{ s[0] }}" alt="{{ s[1] }}" loading="lazy" decoding="async"></a>
       {%- endfor %}
     </div>
     <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente">{% include "icons/chevron-right.svg" %}</button>

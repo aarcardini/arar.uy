@@ -18,6 +18,7 @@ src/
 │   ├── js/main.js    menú móvil, carruseles, filtro del cuaderno
 │   ├── fonts/        Lora e Inter autoalojadas (woff2)
 │   └── img/          imágenes optimizadas (WebP), misma ruta que en WordPress (año/mes/nombre)
+│                     (al compilar, cada <img> recibe versiones de 400/800/1200/1600 px en assets/img/r/)
 ├── pages/            las páginas del sitio (inicio, servicios, proyectos, cuaderno, nosotros, libro, contacto…)
 └── posts/            las 43 notas del cuaderno, una por archivo, con su contenido en HTML
 ```

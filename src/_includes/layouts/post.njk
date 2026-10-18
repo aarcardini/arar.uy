@@ -18,7 +18,7 @@ navActive: /cuaderno/
         <hr class="post__divider">
       </header>
       <div class="post__body">
-        {{ content | safe }}
+        {{ content | eagerFirstImage | safe }}
       </div>
       {%- if tags and tags.length %}
       <ul class="post__tags" aria-label="Etiquetas">

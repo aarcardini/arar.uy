@@ -24,7 +24,8 @@ permalink: /cuaderno/
     <button class="tab" type="button" role="tab" aria-selected="false" data-filter="cultura-y-proyectos">Cultura, proyectos y arquitectos</button>
     <button class="tab" type="button" role="tab" aria-selected="false" data-filter="jardin">Serie Jardín</button>
   </div>
-  <div class="cards" role="list">
+  <div class="cards">
+    {%- set cardHeading = "h2" %}
     {%- for post in collections.posts %}
     {% include "partials/post-card.njk" %}
     {%- endfor %}

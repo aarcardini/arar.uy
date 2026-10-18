@@ -1,4 +1,6 @@
+import path from "node:path";
 import { HtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 
@@ -13,6 +15,34 @@ export default function (eleventyConfig) {
   const pathPrefix = normalizePrefix(process.env.PATH_PREFIX);
 
   eleventyConfig.addPlugin(HtmlBasePlugin);
+
+  // El plugin de imágenes toma el atributo width como único ancho a generar. Este paso corre
+  // antes (prioridad mayor) y quita width/height de las <img> locales para que genere todos
+  // los anchos y los reescriba con las medidas reales del archivo.
+  eleventyConfig.htmlTransformer.addPosthtmlPlugin("html", () => (tree) => {
+    tree.match({ tag: "img" }, (node) => {
+      if (node.attrs?.src?.startsWith("/assets/img/")) {
+        delete node.attrs.width;
+        delete node.attrs.height;
+      }
+      return node;
+    });
+    return tree;
+  }, { priority: 0 });
+
+  // Imágenes adaptables: cada <img> del HTML generado recibe srcset con varios anchos
+  // (y el original), para que el teléfono no descargue la versión de escritorio.
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    formats: ["webp"],
+    widths: [400, 800, 1200, 1600, "auto"],
+    urlPath: "/assets/img/r/",
+    outputDir: "./_site/assets/img/r/",
+    filenameFormat: (id, src, width, format) =>
+      `${path.basename(src, path.extname(src))}-${width}w-${id.slice(0, 6)}.${format}`,
+    sharpWebpOptions: { quality: 78 },
+    defaultAttributes: { decoding: "async", sizes: "auto" },
+  });
 
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
@@ -40,6 +70,15 @@ export default function (eleventyConfig) {
     const t = (terms || []).find((x) => x.slug === slug);
     return t ? t.name : slug;
   });
+  // La primera imagen del cuerpo de una nota suele ser la más grande en pantalla:
+  // se carga sin diferir y con prioridad alta para mejorar el LCP.
+  eleventyConfig.addFilter("eagerFirstImage", (html) =>
+    String(html).replace(/<img\b[^>]*>/, (tag) =>
+      tag
+        .replace(/\s+loading="lazy"/, "")
+        .replace(/<img\b/, '<img fetchpriority="high" sizes="(min-width: 1025px) 864px, 90vw"')
+    )
+  );
   eleventyConfig.addFilter("absUrl", (url, base) => new URL(url, base).href);
   eleventyConfig.addFilter("jsonify", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("stripHtml", (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());
