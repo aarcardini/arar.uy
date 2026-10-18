@@ -11,6 +11,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 | Ritmo | Por bloques de hallazgos relacionados |
 | Público prioritario | Particulares y empresas, al mismo nivel |
 | Voz | Voseo; el estudio habla en plural ("nosotros"); el Cuaderno y el Libro los firma Alejandro en primera persona |
+| Nombres | Menú: Servicios · Proyectos · Cuaderno · Nosotros · Libro; botón principal "Hablemos" (sin ícono de teléfono) |
 
 ## Fase 1 · Arreglos rápidos de interfaz
 
@@ -31,7 +32,12 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   menos 44 px (los objetivos chicos en mobile bajan de 65 a 13, todos "Leer más" dentro de tarjetas ya
   clickeables); filtros del Cuaderno como botones con `aria-pressed`; jerarquía de encabezados en Libro y
   Proyectos; sin subrayado falso en Nosotros; textos alternativos en las 52 imágenes de notas que no tenían.
-- [ ] Bloque 5 · Ortografía y nombres (G-12)
+- [ ] **Bloque 5 · Ortografía y nombres** (G-12): menú con "Proyectos" y "Cuaderno"; botón "Hablemos";
+  "Portfolio" y "Nuestros Trabajos" pasan a "Proyectos" / "Nuestros proyectos"; mayúsculas de oración en
+  títulos y tipos de proyecto; tildes ("¿Qué…?", "¿Dónde…?", "Río", "dé"); puntuación ("Nuestro objetivo es…",
+  "etc."); voseo en Servicios, Nosotros y Libro; *slow living* en cursiva; teléfono "091 428 436 (WhatsApp)";
+  "Volver al Cuaderno" en las notas; botones de compra sin mayúsculas forzadas. Las notas del Cuaderno y la
+  página de Privacidad quedan para la Fase 5.
 - [ ] Bloque 6 · Proceso y navegación de notas (INI-03, NOT-03)
 
 ## Fases siguientes
