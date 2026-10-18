@@ -143,4 +143,11 @@ Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.m
   - La 404 ya no muestra el bloque final.
   - Pie alineado a la izquierda en mobile y tablet, y sin la tapa del libro en la página del Libro.
   - Contador en el carrusel de la home ("1–3 de 8" en desktop, "1 de 8" en mobile).
+- [x] **Accesibilidad en todo el sitio**. axe pasa sin hallazgos en las 73 páginas, en desktop y en mobile.
+  - Con el menú mobile abierto, la página de atrás queda inactiva y el foco no se pierde detrás del menú.
+  - Se quitan 4 enlaces vacíos en *Autismo y arquitectura*.
+  - La tabla de *Diseño arquitectónico neuro-inclusivo* se puede recorrer con el teclado.
+  - Los subtítulos de *El tiempo es oro* quedan en orden, y la nota gana índice.
+  - El carrusel y las transiciones respetan la preferencia de menos movimiento.
+  - Los enlaces que abren otra pestaña lo avisan a los lectores de pantalla.
 

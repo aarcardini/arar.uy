@@ -85,6 +85,17 @@ export default function (eleventyConfig) {
   });
   // La primera imagen del cuerpo de una nota suele ser la más grande en pantalla:
   // se carga sin diferir y con prioridad alta para mejorar el LCP.
+  // Los enlaces que abren otra pestaña lo avisan a los lectores de pantalla
+  eleventyConfig.addTransform("avisoNuevaPestana", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    const aviso = " (se abre en otra pestaña)";
+    return content.replace(/<a\b([^>]*\btarget="_blank"[^>]*)>([\s\S]*?)<\/a>/g, (m, attrs, inner) =>
+      /\baria-label="/.test(attrs)
+        ? `<a${attrs.replace(/\baria-label="([^"]*)"/, `aria-label="$1${aviso}"`)}>${inner}</a>`
+        : `<a${attrs}>${inner}<span class="sr-only">${aviso}</span></a>`
+    );
+  });
+
   eleventyConfig.addFilter("eagerFirstImage", (html) =>
     String(html).replace(/<img\b[^>]*>/, (tag) =>
       tag

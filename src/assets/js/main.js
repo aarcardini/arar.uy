@@ -6,11 +6,16 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (toggle && nav) {
+    var header = toggle.closest(".site-header");
     var setOpen = function (open) {
       nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
       document.body.classList.toggle("nav-open", open);
+      // Con el menú abierto, la página de atrás queda inactiva para el teclado y los lectores de pantalla
+      Array.prototype.forEach.call(document.body.children, function (el) {
+        if (el !== header && el.tagName !== "SCRIPT") el.inert = open;
+      });
     };
     toggle.addEventListener("click", function () { setOpen(!nav.classList.contains("is-open")); });
     document.addEventListener("keydown", function (e) {
@@ -36,10 +41,11 @@
       var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || "0") || 0;
       return slide.getBoundingClientRect().width + gap;
     };
+    var motion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
     var prev = root.querySelector(".carousel__btn--prev");
     var next = root.querySelector(".carousel__btn--next");
-    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
-    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: motion }); });
+    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: motion }); });
     var count = root.parentNode.querySelector("[data-carousel-count]");
     var total = track.querySelectorAll(".carousel__slide").length;
     var update = function () {

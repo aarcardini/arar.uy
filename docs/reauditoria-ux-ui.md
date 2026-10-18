@@ -198,3 +198,15 @@ N-01 a N-06, G-05, G-08, G-10 y OTR-03. Medido después de los cambios:
 Quedan las prioridades 4 (material de proyectos y del libro) y 5 (taxonomía, contador por tema en el Cuaderno,
 pie y notas antiguas).
 
+### Revisión ampliada de accesibilidad
+
+Después de la Fase 6, axe se corrió en las **73 páginas** del sitio, no solo en las 13 tipo, en desktop y en mobile.
+También se probó el reflujo a 320 px, el foco con el menú mobile abierto y el carrusel con teclado. Aparecieron 3
+problemas en notas antiguas y 1 en el menú, más 2 detalles menores; todos se resolvieron. Resultado:
+
+- axe: **0 hallazgos** en 73 páginas × 2 anchos.
+- Reflujo a 320 px: sin desbordes.
+- Las 141 imágenes de las notas tienen texto alternativo.
+
+Lo que una herramienta no mide: conviene una prueba manual con un lector de pantalla (VoiceOver o TalkBack).
+
