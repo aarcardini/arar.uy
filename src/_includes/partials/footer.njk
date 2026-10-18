@@ -24,7 +24,7 @@
         <ul class="icon-list">
           <li>{% include "icons/location.svg" %}<span>{{ site.location }}</span></li>
           <li>{% include "icons/mail.svg" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li>{% include "icons/whatsapp.svg" %}<a href="{{ site.whatsapp }}" target="_blank" rel="noopener">{{ site.phoneDisplay }}</a></li>
+          <li>{% include "icons/whatsapp.svg" %}<a href="{{ site.whatsapp }}?text={{ site.whatsappMessage | urlencode }}" target="_blank" rel="noopener">{{ site.phoneDisplay }}</a></li>
         </ul>
       </div>
     </div>

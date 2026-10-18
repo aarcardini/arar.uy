@@ -9,13 +9,13 @@ navActive: /cuaderno/
 eleventyComputed:
   title: "{{ term.name }}"
   seoTitle: "{{ term.name }} - Cuaderno de notas - Estudio ARAR."
-  description: "Notas del Cuaderno de Estudio ARAR. etiquetadas con {{ term.name }}."
+  description: "Notas del Cuaderno de Estudio ARAR sobre {{ term.name }}."
 ---
 <section class="archive container">
   <header class="archive__header">
     <p class="label">Etiqueta</p>
     <h1 class="display">{{ term.name }}</h1>
-    <p class="archive__back"><a href="/cuaderno/">{% include "icons/arrow-left.svg" %} Volver al Cuaderno de notas</a></p>
+    <p class="archive__back"><a href="/cuaderno/">{% include "icons/arrow-left.svg" %} Volver al Cuaderno</a></p>
   </header>
   <div class="cards">
     {%- set cardHeading = "h2" %}

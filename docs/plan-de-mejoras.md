@@ -97,7 +97,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   secciones (38 de 43); recuadro del autor al final; el bloque del libro suma un botón; "Más notas sobre {tema}"
   en lugar de las cuatro más recientes; se quita el tiempo de lectura escrito a mano.
 
-## Fase 5 · Copywriting, microcopy y UX writing
+## Fase 5 · Copywriting, microcopy y UX writing (completa)
 
 - [x] **Bloque 1 · Guía de voz y mensajes globales**: [`guia-de-voz.md`](guia-de-voz.md) con quién habla, tono,
   glosario, botones, forma y mensajes de WhatsApp; título de la home "Arquitectura que te hace bien"; bloque final
@@ -115,4 +115,11 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   ni signos de exclamación; valores más cortos ("Calidad y seguridad" pasa a "Acompañamiento" y "Aventureros" a
   "Curiosidad", sin prometer obra en todos los casos); *slow living* e historia en párrafos breves, con los mismos
   datos.
-- [ ] Bloque 4 · Microcopy y páginas restantes
+- [x] **Bloque 4 · Microcopy y páginas restantes**: Privacidad reescrita de vos y en lenguaje simple (datos que nos
+  mandás por WhatsApp o mail, derechos según la Ley 18.331, Google Analytics, sin la sección de comentarios del
+  blog), con fecha nueva; Libro sin "Entenderás" ni "Aprenderemos", términos en cursiva (*eudaimonía*,
+  *wabi-sabi*) y pedido de reseña más claro; "Mercado Libre" escrito igual en todo el sitio; criterios de
+  Proyectos ("Lo que buscamos en cada proyecto"); bajada del Cuaderno que dice de qué tratan las notas; archivos
+  de temas con "Tema" y "Volver al Cuaderno"; 404 con "Ir al Cuaderno"; "Montevideo, Uruguay" y WhatsApp con
+  mensaje armado en el pie; descripciones para buscadores de Libro, Cuaderno, Privacidad, temas y etiquetas.
+  Pendiente: que un profesional revise el texto de Privacidad.

@@ -508,7 +508,7 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .notebook-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at center, rgba(16,16,16,.62), rgba(16,16,16,.3)); }
 .notebook-hero > * { position: relative; }
 .notebook-hero .h-serif { margin-bottom: 20px; }
-.notebook-hero p { margin: 0; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
+.notebook-hero p { margin: 0 auto; max-width: 30rem; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
 .notebook { margin-top: 80px; }
 @media (max-width: 1024px) { .notebook-hero { min-height: 340px; } .notebook { margin-top: 48px; } }
 @media (max-width: 767px) { .notebook-hero { min-height: 260px; padding: 35px; } .notebook-hero::before { background: rgba(16,16,16,.58); } }

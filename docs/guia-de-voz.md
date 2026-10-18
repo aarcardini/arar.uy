@@ -48,6 +48,7 @@ de más.
 | anteproyecto, proyecto ejecutivo, obra | fases técnicas en inglés | Las etapas del proceso |
 | bienestar | neuroarquitectura (en la propuesta comercial) | |
 | WhatsApp | Whatsapp, whatsapp | Con mayúscula intermedia |
+| Mercado Libre | MercadoLibre | Con espacio, como escribe la marca |
 
 ## Botones y enlaces
 
@@ -55,7 +56,7 @@ de más.
 - **Un botón principal por pantalla** (fondo negro); el resto, de contorno o como enlace.
 - **Sin "Leer más", "Click aquí" ni "Más info".** Si la tarjeta entera es clickeable, no hace falta.
 - Botones en uso: Hablemos · Hablemos de tu proyecto · Escribinos por WhatsApp · Mandanos un mail · Ver proyectos ·
-  Ver servicios · Conocer el libro · Comprar en Amazon · Comprar en MercadoLibre (Uruguay) · Ir al Cuaderno ·
+  Ver servicios · Conocer el libro · Comprar en Amazon · Comprar en Mercado Libre (Uruguay) · Ir al Cuaderno ·
   Ver más notas · Volver al Cuaderno · Volver a Proyectos.
 
 ## Forma
