@@ -3,6 +3,9 @@
 Seguimiento paso a paso del plan de [`auditoria-ux-ui.md`](auditoria-ux-ui.md). Cada bloque se revisa con
 capturas antes/después y se publica en `main` solo después de aprobarlo.
 
+Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.md) (40 de 51 hallazgos resueltos,
+10 parciales, 1 pendiente y 6 nuevos).
+
 ## Decisiones tomadas
 
 | Tema | Decisión |
