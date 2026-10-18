@@ -26,7 +26,11 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   papel" deja de aparecer en Contacto (se enlazaba a sí misma) y en el Libro (ya tiene sus botones de compra);
   el subtítulo del Cuaderno pasa de 2,2:1 a más de 5:1 de contraste en los tres anchos; el encabezado del
   Cuaderno baja de 520 a 420 px de alto en desktop.
-- [ ] Bloque 4 · Zonas táctiles y accesibilidad (G-08, G-11)
+- [ ] **Bloque 4 · Zonas táctiles y accesibilidad** (G-08, G-11): tarjetas de notas clickeables en toda su
+  superficie; en pantallas táctiles, enlaces del pie, contacto, etiquetas, "Volver", marca, menú y redes de al
+  menos 44 px (los objetivos chicos en mobile bajan de 65 a 13, todos "Leer más" dentro de tarjetas ya
+  clickeables); filtros del Cuaderno como botones con `aria-pressed`; jerarquía de encabezados en Libro y
+  Proyectos; sin subrayado falso en Nosotros; textos alternativos en las 52 imágenes de notas que no tenían.
 - [ ] Bloque 5 · Ortografía y nombres (G-12)
 - [ ] Bloque 6 · Proceso y navegación de notas (INI-03, NOT-03)
 
