@@ -84,7 +84,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 
 ## Fase 4 · Cuaderno
 
-- [ ] **Bloque 1 · Listado** (G-13, CUA-02 a CUA-05): los 5 temas salen de `src/_data/temas.json` y usan en todo
+- [x] **Bloque 1 · Listado** (G-13, CUA-02 a CUA-05): los 5 temas salen de `src/_data/temas.json` y usan en todo
   el sitio los nombres de las pestañas; cada tarjeta muestra su tema principal (el más específico) y los minutos
   de lectura, calculados solos; buscador por título, resumen y tema; "Ver más notas" con contador ("Mostrando 9
   de 43 notas") y aviso cuando la búsqueda no encuentra nada; sin "Leer más" (la tarjeta entera es el enlace);
