@@ -122,4 +122,5 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   Proyectos ("Lo que buscamos en cada proyecto"); bajada del Cuaderno que dice de qué tratan las notas; archivos
   de temas con "Tema" y "Volver al Cuaderno"; 404 con "Ir al Cuaderno"; "Montevideo, Uruguay" y WhatsApp con
   mensaje armado en el pie; descripciones para buscadores de Libro, Cuaderno, Privacidad, temas y etiquetas.
-  Pendiente: que un profesional revise el texto de Privacidad.
+  Privacidad aclara además que el sitio no guarda datos personales (solo Google Analytics) y que los mensajes
+  de WhatsApp y mail no pasan por el sitio. Pendiente: que un profesional revise el texto de Privacidad.
