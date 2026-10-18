@@ -32,7 +32,7 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   menos 44 px (los objetivos chicos en mobile bajan de 65 a 13, todos "Leer más" dentro de tarjetas ya
   clickeables); filtros del Cuaderno como botones con `aria-pressed`; jerarquía de encabezados en Libro y
   Proyectos; sin subrayado falso en Nosotros; textos alternativos en las 52 imágenes de notas que no tenían.
-- [ ] **Bloque 5 · Ortografía y nombres** (G-12): menú con "Proyectos" y "Cuaderno"; botón "Hablemos";
+- [x] **Bloque 5 · Ortografía y nombres** (G-12): menú con "Proyectos" y "Cuaderno"; botón "Hablemos";
   "Portfolio" y "Nuestros Trabajos" pasan a "Proyectos" / "Nuestros proyectos"; mayúsculas de oración en
   títulos y tipos de proyecto; tildes ("¿Qué…?", "¿Dónde…?", "Río", "dé"); puntuación ("Nuestro objetivo es…",
   "etc."); voseo en Servicios, Nosotros y Libro; *slow living* en cursiva; teléfono "091 428 436 (WhatsApp)";
