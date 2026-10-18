@@ -107,5 +107,12 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   *insights*, *feedback*, *look and feel*), sin superlativos ni "¿Estás listo para construir tus sueños?", en tres
   párrafos; etapas renombradas ("Ideas y primera propuesta", "Etapa 4 · Técnica · Proyecto ejecutivo y obra", con
   la obra "según el proyecto"); bajada de Proyectos y frase del pie alineadas con el título de la home.
-- [ ] Bloque 3 · Servicios y Nosotros
+- [x] **Bloque 3 · Servicios y Nosotros**: Servicios sin "neuro" (*neuroarquitectura*, *neurodiversidad*, *ergonomía
+  sensorial*), sin jerga ("carga cognitiva", "sensorialmente inteligente") ni anglicismos (*outsourcing* pasa a
+  "Proyectos para otros estudios"); subtítulos "Búsqueda del inmueble" y "Revisión de proyectos"; pies de foto
+  con coma ("Casa Calma, Punta del Este"); título y descripción para buscadores nuevos. Nosotros: título "Somos
+  Karen y Alejandro" con "Arquitectura + humana" como etiqueta; sin "dos almas apasionadas", "algo extraordinario"
+  ni signos de exclamación; valores más cortos ("Calidad y seguridad" pasa a "Acompañamiento" y "Aventureros" a
+  "Curiosidad", sin prometer obra en todos los casos); *slow living* e historia en párrafos breves, con los mismos
+  datos.
 - [ ] Bloque 4 · Microcopy y páginas restantes
