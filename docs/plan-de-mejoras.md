@@ -38,7 +38,11 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   "etc."); voseo en Servicios, Nosotros y Libro; *slow living* en cursiva; teléfono "091 428 436 (WhatsApp)";
   "Volver al Cuaderno" en las notas; botones de compra sin mayúsculas forzadas. Las notas del Cuaderno y la
   página de Privacidad quedan para la Fase 5.
-- [ ] Bloque 6 · Proceso y navegación de notas (INI-03, NOT-03)
+- [ ] **Bloque 6 · Proceso y navegación de notas** (INI-03, NOT-03): las cuatro etapas del proceso quedan en
+  orden (Investigación → Ideación → Pruebas → Implementación), numeradas y marcadas como anteproyecto o proyecto
+  ejecutivo, igual que dice el texto; el botón del proceso lleva a Contacto ("Hablemos de tu proyecto") en vez de
+  a Servicios, donde el proceso no está; al final de cada nota, "Nota anterior" y "Nota siguiente" muestran el
+  título de la nota.
 
 ## Fases siguientes
 
