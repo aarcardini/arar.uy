@@ -244,8 +244,13 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .carousel__track::-webkit-scrollbar { display: none; }
 .carousel__slide { flex: 0 0 100%; scroll-snap-align: start; }
 .carousel__slide img { width: 100%; height: 100%; object-fit: cover; }
-.carousel--3 .carousel__slide { flex-basis: calc((100% - 40px) / 3); aspect-ratio: 4 / 3; }
-.carousel--project .carousel__slide { aspect-ratio: 605 / 526; }
+.carousel--3 .carousel__slide { flex-basis: calc((100% - 40px) / 3); }
+.carousel--3 .carousel__slide img { height: auto; aspect-ratio: 4 / 3; }
+.carousel--3 .carousel__btn { top: calc(50% - 26px); }
+.carousel__caption { display: grid; margin-top: 12px; font-size: 15px; line-height: 1.35; }
+.carousel__caption strong { font-weight: 600; }
+.carousel__caption span { color: var(--muted); }
+.carousel__slide:hover .carousel__caption strong { text-decoration: underline; text-underline-offset: 3px; }
 .carousel__btn {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
   width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;
@@ -449,40 +454,43 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 /* --------------------------------------------------------------------------
    Proyectos
    -------------------------------------------------------------------------- */
-.projects-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding-top: 43px; }
-.projects-hero__text { text-align: right; padding-right: 34px; }
-.projects-hero__text .h-serif { color: #292926; margin-bottom: 44px; }
-.project { display: grid; grid-template-columns: 1fr 1fr; align-items: start; margin-top: 72px; }
-.project__text { padding: 72px 30% 0 0; }
-.project--reverse .project__text { padding: 72px 0 0 30%; text-align: left; }
-.project:not(.project--reverse) .project__text { text-align: right; order: 0; }
-.project:not(.project--reverse) .project__media { order: 1; }
-.project__kind { font-size: 12px; font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted); margin: 0 0 34px; }
-.project__title { margin-bottom: 20px; }
-.project__text blockquote { margin: 0 0 1em 40px; font-style: normal; }
-.project--reverse .project__text blockquote { margin: 0 40px 1em 0; }
-.project__media { position: relative; }
-.project__cover { position: relative; display: block; aspect-ratio: 605 / 500; overflow: hidden; }
-.project__cover img { width: 100%; height: 100%; object-fit: cover; }
-.project__cover--tall { aspect-ratio: 605 / 612; }
-.project__cover-title { position: absolute; inset: 0; display: grid; place-items: center; color: var(--paper-soft); background: rgba(16,16,16,.35); font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; opacity: 0; transition: opacity .3s ease; }
-.project__cover:hover .project__cover-title { opacity: 1; }
+.projects-top { padding-top: 56px; text-align: center; max-width: 44rem; }
+.projects-top .h-serif { margin-bottom: 16px; }
+.projects-list { margin-top: 40px; }
+.projects-list .tabs { margin-bottom: 40px; }
+.pcards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 32px; }
+.pcard[hidden] { display: none; }
+.pcard a { display: grid; gap: 4px; }
+.pcard img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: 12px; transition: opacity .3s ease; }
+.pcard a:hover img { opacity: .88; }
+.pcard__kind { font-size: 12px; font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted); }
+.pcard__title { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; line-height: 1.2; }
+.pcard a:hover .pcard__title { text-decoration: underline; text-underline-offset: 4px; }
+.pcard__place { font-size: 15px; color: var(--muted); }
 .criteria { display: grid; grid-template-columns: 376fr 801fr; column-gap: 33px; margin-top: 86px; }
 .criteria__items { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 40px; row-gap: 24px; }
 .criteria .h-sub { margin-bottom: 15px; }
 .criteria__intro .h-sub { max-width: 376px; }
-@media (max-width: 900px) {
-  .projects-hero { grid-template-columns: 1fr; row-gap: 32px; }
-  .projects-hero__text { text-align: left; padding-right: 0; max-width: var(--measure); margin-inline: auto; }
-  .project { grid-template-columns: 1fr; margin-top: 56px; }
-  .project__text, .project--reverse .project__text { padding: 24px 0 0; text-align: left; max-width: var(--measure); margin-inline: auto; }
-  .project:not(.project--reverse) .project__text { text-align: left; order: 1; }
-  .project:not(.project--reverse) .project__media { order: 0; }
-  .project__text blockquote, .project--reverse .project__text blockquote { margin: 0 0 1em; }
-  .project__kind { margin-bottom: 16px; }
-  .criteria { grid-template-columns: 1fr; row-gap: 24px; margin-top: 64px; }
+.criteria { margin-top: var(--section-gap); }
+.project-page { padding-top: 40px; }
+.project-page__header { margin: 24px 0 32px; }
+.project-page__header .label { margin-bottom: 12px; }
+.project-data { display: flex; flex-wrap: wrap; gap: 16px 48px; margin: 24px 0 0; padding-top: 16px; border-top: 1px solid var(--ink); }
+.project-data dt { font-size: 12px; font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted); }
+.project-data dd { margin: 4px 0 0; }
+.project-page__cover { margin: 0; }
+.project-page__cover img { width: 100%; }
+.project-page__text { max-width: var(--measure); margin: 40px 0; }
+.project-page__text blockquote { margin: 0; padding-left: 1.25em; border-left: 3px solid var(--ink); font-family: var(--serif); font-size: 1.1em; }
+.project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.project-gallery figure { margin: 0; }
+.project-gallery img { width: 100%; }
+@media (max-width: 1024px) { .pcards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .criteria { grid-template-columns: 1fr; row-gap: 24px; } }
+@media (max-width: 600px) {
+  .pcards, .project-gallery { grid-template-columns: minmax(0, 1fr); }
+  .criteria__items { grid-template-columns: 1fr; }
 }
-@media (max-width: 600px) { .criteria__items { grid-template-columns: 1fr; } }
 
 /* --------------------------------------------------------------------------
    Cuaderno de notas

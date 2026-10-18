@@ -52,6 +52,13 @@ pasa a indexarse solo.
 Las pestañas del cuaderno filtran por categoría: `diseno-y-teoria`, `arquitectura-experiencia-humana`,
 `neuro`, `cultura-y-proyectos` y `jardin`.
 
+### Agregar o editar un proyecto
+
+Los proyectos están en `src/_data/proyectos.json`: cada uno genera su ficha en `/proyectos/<slug>/` y una tarjeta
+en el listado. Campos: `slug`, `title`, `kind` (filtro: `residencial`, `corporativo`, `desarrollo` o `concurso`),
+`kindLabel` (texto visible), `location`, `year`, `area`, `status`, `cover`, `images` (rutas dentro de
+`/assets/img/`) y `text` (HTML). Los campos vacíos no se muestran. El orden del archivo es el orden del listado.
+
 ### Analytics
 
 El ID de medición de Google Analytics 4 está en `src/_data/site.json` (`analyticsId`). La etiqueta solo se

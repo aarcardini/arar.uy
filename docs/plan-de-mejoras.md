@@ -73,8 +73,15 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
   colaboración con Graetz Nuñez como experiencia previa. En una columna (tablet), las imágenes de los bloques
   de texto e imagen se limitan a 544 px.
 
+## Fase 3 · Portfolio
+
+- [ ] **Bloque 1 · Listado y fichas** (PRO-01 a PRO-05, G-10): listado con filtros por tipo (Residencial,
+  Corporativo y comercial, Desarrollos, Concursos) y contador; una ficha por proyecto en `/proyectos/<slug>/`
+  con ubicación, año, superficie y estado (solo los que tienen dato), galería y navegación entre proyectos;
+  datos en `src/_data/proyectos.json`; el carrusel de la home lleva a cada ficha y muestra nombre y lugar, sin
+  imágenes repetidas; Casa Calma se suma como proyecto. Pendiente: completar año, superficie y estado.
+
 ## Fases siguientes
 
-- Fase 3 · Portfolio
 - Fase 4 · Cuaderno
 - Fase 5 · Copywriting, microcopy y UX writing

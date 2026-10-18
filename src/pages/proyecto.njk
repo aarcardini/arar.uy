@@ -1,0 +1,58 @@
+---
+layout: page
+pagination:
+  data: proyectos
+  size: 1
+  alias: p
+  addAllPagesToCollections: true
+permalink: "/proyectos/{{ p.slug }}/"
+navActive: /proyectos/
+parentCrumb:
+  name: Proyectos
+  url: /proyectos/
+eleventyComputed:
+  title: "{{ p.title }}"
+  seoTitle: "{{ p.title }} - Proyectos - Estudio ARAR."
+  description: "{{ p.kindLabel }}{% if p.location %} en {{ p.location }}{% endif %}. Un proyecto de Estudio ARAR, arquitectos en Montevideo, Uruguay."
+  image: "/assets/img/{{ p.cover }}"
+---
+{%- set i = pagination.pageNumber %}
+{%- set total = proyectos.length %}
+{%- set prevP = proyectos[i - 1] if i > 0 else null %}
+{%- set nextP = proyectos[i + 1] if i + 1 < total else null %}
+<article class="container container--inset project-page">
+  <p class="archive__back"><a href="/proyectos/">{% include "icons/arrow-left.svg" %} Volver a Proyectos</a></p>
+  <header class="project-page__header">
+    <p class="label">{{ p.kindLabel }}</p>
+    <h1 class="h-serif">{{ p.title }}</h1>
+    {%- if p.location or p.year or p.area or p.status %}
+    <dl class="project-data">
+      {%- if p.location %}<div><dt>Ubicación</dt><dd>{{ p.location }}</dd></div>{% endif %}
+      {%- if p.year %}<div><dt>Año</dt><dd>{{ p.year }}</dd></div>{% endif %}
+      {%- if p.area %}<div><dt>Superficie</dt><dd>{{ p.area }}</dd></div>{% endif %}
+      {%- if p.status %}<div><dt>Estado</dt><dd>{{ p.status }}</dd></div>{% endif %}
+    </dl>
+    {%- endif %}
+  </header>
+  <figure class="project-page__cover">
+    <img src="/assets/img/{{ p.cover }}" alt="{{ p.title }}{% if p.images.length > 1 %}, imagen 1 de {{ p.images.length }}{% endif %}" fetchpriority="high" sizes="(min-width: 1440px) 1210px, 90vw" decoding="async">
+  </figure>
+  <div class="project-page__text">
+    {{ p.text | safe }}
+  </div>
+  {%- if p.images.length > 1 %}
+  <div class="project-gallery">
+    {%- for img in p.images %}{% if not loop.first %}
+    <figure><img src="/assets/img/{{ img }}" alt="{{ p.title }}, imagen {{ loop.index }} de {{ p.images.length }}" loading="lazy" decoding="async"></figure>
+    {%- endif %}{% endfor %}
+  </div>
+  {%- endif %}
+  <nav class="post-nav" aria-label="Proyecto anterior y siguiente">
+    {%- if prevP %}
+    <a class="post-nav__link post-nav__link--prev" href="/proyectos/{{ prevP.slug }}/">{% include "icons/arrow-left.svg" %}<span><small>Proyecto anterior</small><strong>{{ prevP.title }}</strong></span></a>
+    {%- else %}<span></span>{%- endif %}
+    {%- if nextP %}
+    <a class="post-nav__link post-nav__link--next" href="/proyectos/{{ nextP.slug }}/"><span><small>Proyecto siguiente</small><strong>{{ nextP.title }}</strong></span>{% include "icons/arrow-right.svg" %}</a>
+    {%- endif %}
+  </nav>
+</article>

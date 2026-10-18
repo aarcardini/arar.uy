@@ -26,19 +26,18 @@ permalink: /
     <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior">{% include "icons/chevron-left.svg" %}</button>
     <div class="carousel__track" tabindex="0" aria-label="Selección de proyectos">
       {%- set slides = [
-        ["2026/02/20260215_221500000_iOS.webp", "Reforma Casa Calma, Punta del Este"],
-        ["2026/02/broot1.webp", "Edificio Broot, Montevideo"],
-        ["2026/02/LP3.webp", "Centro Cívico Ciudad del Plata"],
-        ["2026/02/CCA4.webp", "Centro Cultural Mariano Arana"],
-        ["2026/02/Cocina-1.webp", "Cocina Milán"],
-        ["2026/02/FH1.webp", "Fatimah's Home, Riad"],
-        ["2026/02/LP1.webp", "Centro Cívico Ciudad del Plata"],
-        ["2026/02/CCA-1.webp", "Centro Cultural Mariano Arana"],
-        ["2022/11/HomeBanner2.webp", "Ouí Bistró, Caracas"],
-        ["2022/11/gruyere.webp", "Edificio Gruyer, Punta Gorda"]
+        ["casa-calma", "2026/02/20260215_221500000_iOS.webp"],
+        ["broot", "2026/02/broot1.webp"],
+        ["centro-civico-ciudad-del-plata", "2026/02/LP3.webp"],
+        ["centro-cultural-mariano-arana", "2026/02/CCA4.webp"],
+        ["cocina-milan", "2026/02/Cocina-1.webp"],
+        ["fatimahs-home", "2026/02/FH1.webp"],
+        ["oui", "2022/11/HomeBanner2.webp"],
+        ["gruyer", "2022/11/gruyere.webp"]
       ] %}
       {%- for s in slides %}
-      <a class="carousel__slide" href="/proyectos/"><img src="/assets/img/{{ s[0] }}" alt="{{ s[1] }}" loading="lazy" decoding="async"></a>
+      {%- set p = (proyectos | where("slug", s[0]))[0] %}
+      <a class="carousel__slide" href="/proyectos/{{ p.slug }}/"><img src="/assets/img/{{ s[1] }}" alt="" loading="lazy" decoding="async"><span class="carousel__caption"><strong>{{ p.title }}</strong>{% if p.location %}<span>{{ p.location }}</span>{% endif %}</span></a>
       {%- endfor %}
     </div>
     <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente">{% include "icons/chevron-right.svg" %}</button>

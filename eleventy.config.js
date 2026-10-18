@@ -65,6 +65,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("inCategory", (posts, slug) => posts.filter((p) => (p.data.categories || []).includes(slug)));
   eleventyConfig.addFilter("inTag", (posts, slug) => posts.filter((p) => (p.data.tags || []).includes(slug)));
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addFilter("where", (arr, key, value) => (arr || []).filter((x) => x[key] === value));
   eleventyConfig.addFilter("exclude", (arr, url) => arr.filter((p) => p.url !== url));
   eleventyConfig.addFilter("termName", (slug, terms) => {
     const t = (terms || []).find((x) => x.slug === slug);
