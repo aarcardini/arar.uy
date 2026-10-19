@@ -11,7 +11,7 @@
       <a href="{{ item.url }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a>
       {%- endfor %}
       <div class="nav__extra">
-        <p>¿Tenés un proyecto? La primera charla es sin costo.</p>
+        <p>¿Tenés un proyecto en mente?</p>
         <a class="btn" href="{{ site.whatsapp }}?text={{ site.whatsappMessage | urlencode }}" target="_blank" rel="noopener">{% include "icons/whatsapp.svg" %}<span>Escribinos por WhatsApp</span></a>
         <a class="nav__mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>

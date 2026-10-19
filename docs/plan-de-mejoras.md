@@ -15,13 +15,13 @@ Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.m
 | Público prioritario | Particulares y empresas, al mismo nivel |
 | Voz | Voseo; el estudio habla en plural ("nosotros"); el Cuaderno y el Libro los firma Alejandro en primera persona |
 | Nombres | Menú: Servicios · Proyectos · Cuaderno · Nosotros · Libro; botón principal "Hablemos" (sin ícono de teléfono) |
-| Contacto | WhatsApp primero (con mensaje armado), email como alternativa; la primera charla es sin costo |
+| Contacto | WhatsApp primero (con mensaje armado), email como alternativa; la primera charla es sin costo, pero no se menciona en el sitio (se responde si preguntan) |
 | Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta |
 | Prueba social | Sin testimonios por ahora: datos (proyectos, países, concursos, años) |
 | Cuaderno | Solo los 5 temas visibles, con los nombres de las pestañas; sin suscripción por ahora; buscador simple |
 | Tono | Cercano y cálido, sereno y pausado (ver [`guia-de-voz.md`](guia-de-voz.md)) |
 | Título de la home | "Arquitectura que te hace bien" |
-| Bloque final | "¿Tenés un proyecto en mente?" + "Contanos qué querés hacer. La primera charla es sin costo." |
+| Bloque final | "¿Tenés un proyecto en mente?" + "Contanos qué querés hacer y te ayudamos a darle forma." |
 
 ## Fase 1 · Arreglos rápidos de interfaz (completa)
 
@@ -150,4 +150,7 @@ Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.m
   - Los subtítulos de *El tiempo es oro* quedan en orden, y la nota gana índice.
   - El carrusel y las transiciones respetan la preferencia de menos movimiento.
   - Los enlaces que abren otra pestaña lo avisan a los lectores de pantalla.
+- [x] **Pie**: la tapa del libro queda dentro del pie (se quita un margen negativo heredado).
+- [x] **Sin "la primera charla es sin costo"**: se quita de la home, el bloque final, el menú mobile, Contacto,
+  Servicios y las descripciones para buscadores. La charla sigue siendo sin costo; se responde si alguien pregunta.
 

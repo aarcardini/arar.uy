@@ -372,7 +372,6 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .hero .display { max-width: 1140px; margin: 0 auto 24px; }
 .hero__text { max-width: 40rem; margin: 0 auto; font-size: 1.125rem; }
 .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 28px 0 0; }
-.hero__note { margin: 12px 0 0; font-size: 15px; color: var(--muted); }
 .hero__media { margin-top: 56px; }
 .hero__media img { width: 100%; }
 .home-process .split__text { padding-right: 20%; }

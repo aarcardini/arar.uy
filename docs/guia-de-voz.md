@@ -31,7 +31,7 @@ de más.
   espacios de trabajo pensados para el bienestar de quienes los habitan.
 - **Diferencial:** el bienestar (espacios que hacen bien, calma, *slow living*). En la propuesta comercial no se
   usa la palabra "neuro"; en el Cuaderno sí.
-- **Invitación:** ¿Tenés un proyecto en mente? Contanos qué querés hacer. La primera charla es sin costo.
+- **Invitación:** ¿Tenés un proyecto en mente? Contanos qué querés hacer y te ayudamos a darle forma.
 
 ## Glosario
 
@@ -42,7 +42,7 @@ de más.
 | nota | post, artículo, entrada | Cada texto del Cuaderno |
 | Nosotros | Quiénes somos, el equipo | Menú |
 | Hablemos | Contacto (como botón) | "Contacto" queda solo como nombre de la página |
-| primera charla | reunión inicial, cita | Siempre "sin costo" |
+| primera charla | reunión inicial, cita | En el sitio no se menciona el costo; si alguien pregunta, es sin costo |
 | propuesta | presupuesto, cotización | Incluye alcance, etapas y honorarios |
 | honorarios | precio, costo | |
 | anteproyecto, proyecto ejecutivo, obra | fases técnicas en inglés | Las etapas del proceso |
@@ -80,7 +80,7 @@ de más.
 
 | Antes | Después |
 |---|---|
-| Pongamos los lápices sobre el papel. Agendemos una cita y pongamos manos a la obra. | ¿Tenés un proyecto en mente? Contanos qué querés hacer. La primera charla es sin costo. |
+| Pongamos los lápices sobre el papel. Agendemos una cita y pongamos manos a la obra. | ¿Tenés un proyecto en mente? Contanos qué querés hacer y te ayudamos a darle forma. |
 | Contacto (con ícono de teléfono) | Hablemos |
 | Cargar más | Ver más notas · Mostrando 9 de 43 notas |
 | Ant · Nota anterior | Nota anterior · La arquitectura del caos tierno |
