@@ -6,6 +6,9 @@ capturas antes/después y se publica en `main` solo después de aprobarlo.
 Estado después de las Fases 1 a 5: [`reauditoria-ux-ui.md`](reauditoria-ux-ui.md) (40 de 51 hallazgos resueltos,
 10 parciales, 1 pendiente y 6 nuevos).
 
+Etapa siguiente: [`analisis-branding-marketing.md`](analisis-branding-marketing.md) y su
+[`plan-de-marketing.md`](plan-de-marketing.md).
+
 ## Decisiones tomadas
 
 | Tema | Decisión |
