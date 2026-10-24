@@ -75,7 +75,7 @@ GA4 no registra contactos.
 
 Es la línea con más diferencial y menos competencia.
 
-- [ ] **Bloque 1 · Página de servicio** (PUB-02) · *Sitio* · **Borrador en revisión** (`/servicios/espacios-de-trabajo-neuroinclusivos/`). Una página propia dentro de Servicios con:
+- [ ] **Bloque 1 · Página de servicio** (PUB-02) · *Sitio* · **Publicada, en revisión** (`/servicios/espacios-de-trabajo-neuroinclusivos/`). Una página propia dentro de Servicios con:
   - el problema (oficinas iguales para todos que cansan a muchas personas);
   - qué hacemos (diagnóstico del espacio, recomendaciones y proyecto);
   - cómo trabajamos y qué recibe la empresa;
