@@ -11,6 +11,12 @@
   "phoneDisplay": "091 428 436 (WhatsApp)",
   "whatsapp": "https://wa.me/59891428436",
   "whatsappMessage": "Hola, quiero consultar por un proyecto.",
+  "whatsappMessages": {
+    "proyectos": "Hola, vi los proyectos en la web y quiero consultar por un proyecto.",
+    "cuaderno": "Hola, leí el Cuaderno y quiero consultar por un proyecto.",
+    "trabajo": "Hola, leí el Cuaderno y quiero consultar por un espacio de trabajo.",
+    "libro": "Hola, quiero consultar por el libro El arte de habitar lo que somos."
+  },
   "location": "Montevideo, Uruguay",
   "hours": "De lunes a viernes",
   "responseTime": "uno o dos días hábiles",
