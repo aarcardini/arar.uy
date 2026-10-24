@@ -44,7 +44,7 @@ GA4 no registra contactos.
   `clic_email` y `clic_compra_libro` como eventos clave. Son 5 minutos.
 - [ ] **Planilla de consultas** (MED-02) · *Alejandro*. Fecha, cómo nos conoció, qué quiere hacer, si pasó a
   propuesta y si se concretó. Preguntar "¿cómo nos conociste?" en cada primera charla.
-- [ ] **Mensaje de WhatsApp según la página** (EMB-03) · *Sitio* · **Listo para revisar.** El WhatsApp del pie y del menú del celular
+- [x] **Mensaje de WhatsApp según la página** (EMB-03) · *Sitio*. El WhatsApp del pie y del menú del celular
   manda un mensaje distinto según la página (ver la [guía de voz](guia-de-voz.md#mensajes-de-whatsapp-precargados)):
   proyectos, ficha de cada proyecto (con su nombre), notas del Cuaderno, notas sobre neurodiversidad y Libro. El
   resto de las páginas, Contacto incluida, sigue con el mensaje general. Servicios ya tenía uno por servicio.
@@ -53,17 +53,17 @@ GA4 no registra contactos.
 
 ## Fase 2 · Ordenar la marca (semanas 1 y 2)
 
-- [ ] **Bloque 1 · Nombre, títulos e imagen para compartir** · *Sitio* · **Listo para revisar.**
+- [x] **Bloque 1 · Nombre, títulos e imagen para compartir** · *Sitio*
   - Títulos de página sin el punto final: "… · Estudio ARAR" (MAR-02). El punto queda en el logo.
-  - Arreglar el título de la ficha de Fatimah's Home, que hoy muestra `Fatimah&#39;s Home` en la pestaña y en
+  - Arreglar el título de la ficha de Fatimah's Home, que mostraba `Fatimah&#39;s Home` en la pestaña y en
     Google.
   - Casa Calma como imagen al compartir la home y las páginas comerciales (MAR-04).
   - Jerarquía fija de mensajes (MAR-01): promesa "Arquitectura que te hace bien", manifiesto "Espacios con
     significado", y "Arquitectura + humana" solo como nombre del enfoque en Nosotros.
-- [ ] **Bloque 2 · Estudio y fundadores** (MAR-03) · *Sitio* · **Listo para revisar** (la historia del nombre es un borrador).
+- [x] **Bloque 2 · Estudio y fundadores** (MAR-03) · *Sitio*
   - LinkedIn pasa de los datos del estudio a los de Alejandro como fundador. En el sitio se nombra como "el
     LinkedIn de Alejandro", y Nosotros invita a ver ahí la trayectoria completa (D5).
-  - En Nosotros, la historia del nombre. Borrador: *"ARAR son las iniciales de Alejandro. También nos gustó lo
+  - En Nosotros, la historia del nombre: *"ARAR son las iniciales de Alejandro. También nos gustó lo
     que significa: arar es preparar la tierra para lo que viene. Eso hacemos: creamos la base, una casa o una
     oficina, donde las personas crecen."*
 - [ ] **Bloque 3 · Perfil de LinkedIn** (CAN-03) · *Alejandro*
