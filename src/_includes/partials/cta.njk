@@ -1,6 +1,6 @@
 <section class="cta container" aria-labelledby="cta-titulo">
   <p class="label">{{ site.cta.label }}</p>
-  <h2 class="display" id="cta-titulo">{{ site.cta.title }}</h2>
-  <p class="cta__text">{{ site.cta.text }}</p>
+  <h2 class="display" id="cta-titulo">{{ ctaTitle or site.cta.title }}</h2>
+  <p class="cta__text">{{ ctaText or site.cta.text }}</p>
   <a class="btn" href="{{ site.cta.url }}">{{ site.cta.button }}</a>
 </section>

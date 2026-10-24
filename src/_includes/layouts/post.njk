@@ -18,7 +18,7 @@ navActive: /cuaderno/
           <time datetime="{{ page.date | dateShort }}">{{ page.date | dateEs }}</time> · {{ content | readingTime }} min de lectura
           {%- if postThemes.length %} · {% for t in postThemes %}<a href="/cuaderno/#{{ t.slug }}">{{ t.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
-        <p class="post__byline">Por <a href="/nosotros_como_estudio_de_arquitectura/">{{ site.author }}</a></p>
+        <p class="post__byline">Por <a href="/nosotros/">{{ site.author }}</a></p>
         <hr class="post__divider">
       </header>
       {%- if sections.length >= 4 %}
@@ -46,7 +46,7 @@ navActive: /cuaderno/
         <div>
           <p class="author-box__name">{{ site.author }}</p>
           <p>Arquitecto, cofundador de Estudio ARAR y autor de <a href="{{ site.book.url }}"><em>{{ site.book.title }}</em></a>. En el Cuaderno escribe sobre cómo los espacios influyen en la forma en que vivimos.</p>
-          <a class="author-box__link" href="/nosotros_como_estudio_de_arquitectura/">Conocé el estudio</a>
+          <a class="author-box__link" href="/nosotros/">Conocé el estudio</a>
         </div>
       </aside>
       {%- set prev = posts | getNextCollectionItem %}

@@ -13,20 +13,20 @@ permalink: /proyectos/
 
 <section class="container container--inset projects-list" data-filter-grid data-page-size="100">
   <div class="tabs" role="group" aria-label="Filtrar proyectos por tipo">
-    <button class="tab is-active" type="button" aria-pressed="true" data-filter="all">Todos ({{ proyectos.length }})</button>
-    <button class="tab" type="button" aria-pressed="false" data-filter="residencial">Residencial ({{ (proyectos | where("kind", "residencial")).length }})</button>
-    <button class="tab" type="button" aria-pressed="false" data-filter="corporativo">Corporativo y comercial ({{ (proyectos | where("kind", "corporativo")).length }})</button>
-    <button class="tab" type="button" aria-pressed="false" data-filter="desarrollo">Desarrollos ({{ (proyectos | where("kind", "desarrollo")).length }})</button>
-    <button class="tab" type="button" aria-pressed="false" data-filter="concurso">Concursos ({{ (proyectos | where("kind", "concurso")).length }})</button>
+    <button class="tab is-active" type="button" aria-pressed="true" data-filter="all">Todos</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="residencial">Residencial</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="corporativo">Corporativo y comercial</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="desarrollo">Desarrollos</button>
+    <button class="tab" type="button" aria-pressed="false" data-filter="concurso">Concursos</button>
   </div>
   <div class="pcards">
     {%- for p in proyectos %}
     <article class="pcard" data-cats="{{ p.kind }}">
       <a href="/proyectos/{{ p.slug }}/">
         <img src="/assets/img/{{ p.cover }}" alt="" sizes="(min-width: 1025px) min(384px, 27vw), (min-width: 601px) 44vw, 90vw"{% if loop.index > 3 %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">
-        <span class="pcard__kind">{{ p.kindLabel }}</span>
+        <span class="pcard__kind">{{ p.kindLabel }}<span class="sr-only">: </span></span>
         <h2 class="pcard__title">{{ p.title }}</h2>
-        {%- if p.location %}<span class="pcard__place">{{ p.location }}</span>{% endif %}
+        {%- if p.location %}<span class="pcard__place"><span class="sr-only">, </span>{{ p.location }}</span>{% endif %}
       </a>
     </article>
     {%- endfor %}

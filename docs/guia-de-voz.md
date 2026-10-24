@@ -23,6 +23,8 @@ de más.
 | Palabras de todos los días | Jerga y anglicismos: *insights*, *feedback*, *look and feel* |
 | Promesas que podemos cumplir | Superlativos: "único", "extraordinario", "los más altos estándares" |
 | Calma | Urgencia: "¡no te lo pierdas!", "últimos lugares" |
+| "Quienes lo habitan", "las personas", "todo el equipo", "la ciudadanía" | "El usuario", "el ciudadano", "los empleados" |
+| Formas de vivir distintas: "tu día a día", "tu forma de vivir" | Un único modelo de hogar: "tu familia" |
 
 ## Mensajes centrales
 
@@ -61,7 +63,8 @@ de más.
 - **Sin "Leer más", "Click aquí" ni "Más info".** Si la tarjeta entera es clickeable, no hace falta.
 - Botones en uso: Hablemos · Hablemos de tu proyecto · Escribinos por WhatsApp · Mandanos un mail · Ver proyectos ·
   Ver servicios · Conocer el libro · Comprar en Amazon · Comprar en Mercado Libre (Uruguay) · Ir al Cuaderno ·
-  Ver más notas · Volver al Cuaderno · Volver a Proyectos.
+  Ver más notas · Volver al Cuaderno · Volver a Proyectos · Contanos sobre tu casa u oficina · Contanos sobre tu
+  inversión · Pedinos una revisión de proyecto · Consultar por una oficina.
 
 ## Forma
 
