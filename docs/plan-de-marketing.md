@@ -160,7 +160,7 @@ diferencia?", "Somos conscientes que…", el tuteo y los clichés de Nosotros ("
 teléfono escrito "091428436 (Whatsapp)". El texto "(se abre en otra pestaña)" ya está oculto a la vista: solo lo leen
 los lectores de pantalla.
 
-- [ ] **Correcciones** · *Sitio* · **Listo para revisar.**
+- [x] **Correcciones** · *Sitio*
   - Proyectos: filtros sin contadores; casas, interiores y locales primero, y concursos al final.
   - Home: el carrusel empieza por Casa Calma, Cocina Milán, Ouí, Fatimah's Home y Oficinas Tourin; queda un solo
     concurso, al final. La etapa 4 dice "si lo necesitás, acompañamos la obra hasta el final".
@@ -170,17 +170,17 @@ los lectores de pantalla.
     "reflejen a tu familia".
   - Fichas: Centro Cívico dice "la ciudadanía"; el cierre pregunta "¿Buscás resolver un espacio parecido?".
   - Tarjetas de proyectos: el nombre y el lugar se leen separados en los lectores de pantalla.
-- [ ] **Propuestas a decidir** · *Alejandro*
-  - Metros cuadrados de oficinas proyectados en la trayectoria ("+XX.000 m² en 10 años"): necesita el dato.
-  - "Revisión de proyecto" como servicio de entrada, con nombre, alcance y precio cerrados. Se cruza con el
-    diagnóstico de oficina (Fase 3, bloque 2).
-  - Contacto guiado: dos preguntas (qué espacio y qué incomoda) que arman el mensaje de WhatsApp o del mail. Sin
-    formulario que guarde datos, para seguir cumpliendo la política de privacidad.
-  - Fichas como casos (punto de partida, intervención, resultado): ya está en la Fase 4, bloque 2; necesita la
-    información de cada proyecto.
-  - Una cita del libro antes del llamado final de Servicios: choca con D1 (no darle más lugar al libro en la web).
-  - Cambiar "Proyectos" por "Casos de estudio" en el menú: se recomienda mantener "Proyectos", que es lo que la
-    gente busca, y darle forma de caso a cada ficha.
+- [x] **Propuestas decididas** (24 de octubre)
+  - Trayectoria: se mantienen los años de trabajo en otros estudios, sin una cifra de metros cuadrados.
+  - "Revisión de proyecto antes de la obra" como puerta de entrada, en Consultoría: qué se revisa, qué se recibe y
+    una propuesta según el tamaño y el alcance, sin precio fijo.
+  - Contacto guiado en Contacto: dos preguntas (qué espacio y qué resolver) arman el texto del WhatsApp o del mail.
+    El sitio no guarda nada.
+  - Sin cita del libro en Servicios (D1). En su lugar, una frase de *Diseñar para quedarse*, del Cuaderno, antes
+    del llamado final.
+  - Se mantiene "Proyectos" en el menú; cada ficha toma forma de caso de estudio.
+- [ ] **Fichas como casos de estudio** (punto de partida, intervención, resultado) · *Alejandro (información) y
+  Sitio*. Sigue en la Fase 4, bloque 2.
 
 ## Fase 6 · Revisar y ajustar (semana 8)
 

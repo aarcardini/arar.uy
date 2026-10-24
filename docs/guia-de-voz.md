@@ -93,6 +93,9 @@ En el pie y en el menú del celular, el mensaje cambia según la página, para s
 - Libro: "Hola, quiero consultar por el libro El arte de habitar lo que somos."
 - Espacios de trabajo neuroinclusivos: "Hola, quiero consultar por un espacio de trabajo."
 - El resto de las páginas, Contacto incluida: el mensaje general.
+- Contacto guiado (en Contacto): "Hola, quiero consultar por {una casa · una reforma puntual · una oficina o un
+  local · la revisión de un proyecto · un terreno}." y, si eligen qué resolver, "Lo que más quiero resolver: {la
+  falta de luz o el ruido · una distribución poco práctica}." o "Empezamos de cero."
 
 ## Antes y después
 

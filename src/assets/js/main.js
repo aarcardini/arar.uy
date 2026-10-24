@@ -122,6 +122,28 @@
     if (initial) { initial.click(); } else { apply(); }
   });
 
+  /* Contacto guiado: las respuestas arman el texto del WhatsApp y del mail. No se guarda nada. */
+  document.querySelectorAll("[data-mensaje]").forEach(function (root) {
+    var texto = root.querySelector("[data-mensaje-texto]");
+    var wa = root.querySelector("[data-mensaje-wa]");
+    var mail = root.querySelector("[data-mensaje-mail]");
+    var valor = function (name) {
+      var el = root.querySelector('input[name="' + name + '"]:checked');
+      return el ? el.value : "";
+    };
+    var update = function () {
+      var espacio = valor("espacio") || "un proyecto";
+      var resolver = valor("resolver");
+      var msg = "Hola, quiero consultar por " + espacio + ".";
+      if (resolver === "cero") msg += " Empezamos de cero.";
+      else if (resolver) msg += " Lo que más quiero resolver: " + resolver + ".";
+      texto.textContent = msg;
+      wa.href = root.getAttribute("data-wa") + "?text=" + encodeURIComponent(msg);
+      mail.href = "mailto:" + root.getAttribute("data-mail") + "?subject=" + encodeURIComponent("Consulta por " + espacio) + "&body=" + encodeURIComponent(msg);
+    };
+    root.addEventListener("change", update);
+  });
+
   /* Medición (GA4): clics en WhatsApp, email y compra del libro. Solo registra si Analytics está cargado. */
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a[href]");

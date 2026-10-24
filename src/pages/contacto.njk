@@ -18,6 +18,42 @@ hideCta: true
   <p class="contact-meta">{{ site.phoneDisplay }} · {{ site.email }} · {{ site.hours }}</p>
 </section>
 
+{#- Contacto guiado: las respuestas solo arman el texto del WhatsApp o del mail; el sitio no guarda nada. #}
+<section class="guide container" aria-labelledby="guia-titulo" data-mensaje data-wa="{{ site.whatsapp }}" data-mail="{{ site.email }}">
+  <div class="guide__box">
+    <div class="guide__head">
+      <h2 class="h-sub" id="guia-titulo">¿No sabés por dónde empezar?</h2>
+      <p>Elegí lo que más se parece a tu caso y te armamos el mensaje. No queda guardado en el sitio: lo mandás vos, por WhatsApp o por mail.</p>
+    </div>
+    <fieldset class="choices">
+      <legend>¿Qué espacio querés transformar?</legend>
+      <div class="choices__list">
+        <label class="choice"><input type="radio" name="espacio" value="una casa"><span>Una casa</span></label>
+        <label class="choice"><input type="radio" name="espacio" value="una reforma puntual"><span>Una reforma puntual</span></label>
+        <label class="choice"><input type="radio" name="espacio" value="una oficina o un local"><span>Una oficina o un local</span></label>
+        <label class="choice"><input type="radio" name="espacio" value="la revisión de un proyecto"><span>Revisar un proyecto</span></label>
+        <label class="choice"><input type="radio" name="espacio" value="un terreno"><span>Un terreno</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="choices">
+      <legend>¿Qué te gustaría resolver?</legend>
+      <div class="choices__list">
+        <label class="choice"><input type="radio" name="resolver" value="la falta de luz o el ruido"><span>Falta luz o hay ruido</span></label>
+        <label class="choice"><input type="radio" name="resolver" value="una distribución poco práctica"><span>La distribución no funciona</span></label>
+        <label class="choice"><input type="radio" name="resolver" value="cero"><span>Empezamos de cero</span></label>
+      </div>
+    </fieldset>
+    <div class="guide__preview">
+      <p class="label">Tu mensaje</p>
+      <p data-mensaje-texto aria-live="polite">{{ site.whatsappMessage }}</p>
+    </div>
+    <p class="guide__actions">
+      <a class="btn" href="{{ waLink }}" target="_blank" rel="noopener" data-mensaje-wa>{% include "icons/whatsapp.svg" %}<span>Enviar por WhatsApp</span></a>
+      <a class="btn btn--outline" href="{{ mailLink }}" data-mensaje-mail>{% include "icons/mail.svg" %}<span>Enviar por mail</span></a>
+    </p>
+  </div>
+</section>
+
 <section class="contact container">
   <div class="contact__grid">
     <div>
