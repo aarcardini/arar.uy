@@ -19,7 +19,7 @@ Etapa siguiente: [`analisis-branding-marketing.md`](analisis-branding-marketing.
 | Voz | Voseo; el estudio habla en plural ("nosotros"); el Cuaderno y el Libro los firma Alejandro en primera persona |
 | Nombres | Menú: Servicios · Proyectos · Cuaderno · Nosotros · Libro; botón principal "Hablemos" (sin ícono de teléfono) |
 | Contacto | WhatsApp primero (con mensaje armado), email como alternativa; la primera charla es sin costo, pero no se menciona en el sitio (se responde si preguntan) |
-| Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta |
+| Diferencial | Bienestar: espacios que hacen bien, calma, *slow living*; sin usar la palabra "neuro" en la propuesta. Actualizado en el [plan de marketing](plan-de-marketing.md) (D2): "neuro" sí en la propuesta para empresas |
 | Prueba social | Sin testimonios por ahora: datos (proyectos, países, concursos, años) |
 | Cuaderno | Solo los 5 temas visibles, con los nombres de las pestañas; sin suscripción por ahora; buscador simple |
 | Tono | Cercano y cálido, sereno y pausado (ver [`guia-de-voz.md`](guia-de-voz.md)) |

@@ -19,7 +19,8 @@ Fases 1 a 6 del [plan de mejoras](plan-de-mejoras.md). La interfaz y los textos 
 > de los cambios. Tampoco reflejan las consultas que llegan por recomendación o directo por WhatsApp sin pasar
 > por el sitio.
 
-Plan de trabajo: [`plan-de-marketing.md`](plan-de-marketing.md).
+Plan de trabajo: [`plan-de-marketing.md`](plan-de-marketing.md). Las decisiones del 24 de octubre y lo que
+cambian de este análisis están en la [sección 10](#10-decisiones-y-lo-que-cambian).
 
 ---
 
@@ -122,8 +123,9 @@ Servicios y el título de Nosotros. Cada una está bien, pero juntas diluyen la 
   Hoy casi nadie busca la marca por su nombre.
 - **El punto final del nombre** sirve en el logo, pero en Google y en las pestañas del navegador se lee
   "La penumbra - Estudio ARAR.", como si sobrara el punto. Está en todos los títulos del sitio.
-- **El sitio no cuenta de dónde viene el nombre.** Si tiene una historia (las iniciales, la idea de arar la
-  tierra antes de sembrar), vale la pena contarla en Nosotros. Una historia ayuda a recordar el nombre.
+- **El sitio no cuenta de dónde viene el nombre, y la historia es buena.** ARAR son las iniciales de Alejandro
+  Ramón Arcardini Ravera, y arar es preparar la tierra para lo que viene: el estudio crea la base, una casa o una
+  oficina, donde las personas crecen. Contarla en Nosotros ayuda a recordar el nombre y le da sentido.
 
 **Recomendación:** escribir siempre "Estudio ARAR" (o "ARAR arquitectura") y nunca "ARAR" solo, para que el
 nombre se pueda buscar. Sacar el punto de los títulos y dejarlo solo en el logo.
@@ -423,14 +425,15 @@ consultas**: fecha, cómo nos conoció, qué quiere hacer, si pasó a propuesta 
 
 | Indicador | Línea de base (21/9–18/10) | Meta orientativa a 3 meses |
 |---|---|---|
-| Consultas reales (planilla) | sin dato | medir desde ya |
+| **Consultas reales (planilla)** | **0 por mes** | **las primeras: 1 o 2 por mes** |
 | Clics en WhatsApp + email | 3 (solo WhatsApp) | 8 a 10 por mes |
 | Vistas de Servicios | 9 | 40 por mes |
-| Vistas de la página del Libro | 10 | 40 por mes |
-| Clics en comprar el libro | sin dato | medir desde ya |
 | Clics de las 8 notas con más apariciones | 73 (1,0 %) | 2,5 a 3 % |
 | Posición en búsquedas de "estudio de arquitectura" | 12 a 18 | menos de 10 |
-| Reseñas en Google | sin dato | 5 |
+| Reseñas en Google | 0 | según D4 (a criterio de Alejandro) |
+| Libro: ventas en Amazon | unas 10 por mes | 15 por mes |
+| Libro: ventas en Mercado Libre | 0 | las primeras |
+| Libro: clics en "Comprar" del sitio | sin dato | medir desde ya |
 
 Las metas son orientativas: con este volumen, unos pocos clics mueven mucho los porcentajes. Lo importante es la
 tendencia de un mes a otro, con el mismo período de 28 días.
@@ -456,14 +459,36 @@ prometen) para confirmar dónde hay lugar libre. Está en el plan.
 
 ---
 
-## 9. Lo que falta saber
+## 9. Lo que faltaba saber (respondido el 24 de octubre)
 
-| Pregunta | Por qué importa |
+| Pregunta | Respuesta |
 |---|---|
-| ¿Cuál es el objetivo principal: más consultas, proyectos más grandes, más empresas o más libros? | Define el orden del plan. **Supuesto de trabajo:** más consultas de proyectos en Uruguay (particulares y empresas) y, en segundo lugar, más libros vendidos |
-| ¿Cuántas consultas llegan por mes, y por qué canal? | Sin esto no se puede saber si el sitio aporta o si todo viene por recomendación |
-| ¿El estudio tiene Perfil de Empresa de Google? ¿Tiene reseñas? | Es la palanca más fuerte para la búsqueda local |
-| ¿Se puede mostrar obra hecha con otros estudios, con crédito? | Es la mejor prueba de experiencia que hay |
-| ¿Hay clientes anteriores dispuestos a dejar una reseña o una frase? | Define cuánto se puede avanzar en confianza |
-| ¿Cuántos libros se venden y dónde (Amazon por país, Mercado Libre)? | Para saber si conviene empujar el libro fuera de Uruguay (México es el país con más lectores) |
-| ¿De dónde viene el nombre ARAR? | Puede ser parte de la historia de la marca |
+| ¿Cuál es el objetivo principal? | Más consultas de proyectos en Uruguay, de empresas y de particulares. El libro, en paralelo y con prioridad media a baja |
+| ¿Cuántas consultas llegan por mes, y por qué canal? | **Ninguna** |
+| ¿El estudio tiene Perfil de Empresa de Google? ¿Tiene reseñas? | Tiene perfil, sin reseñas |
+| ¿Se puede mostrar obra hecha con otros estudios? | Está en LinkedIn y queda ahí; no va en el sitio del estudio |
+| ¿Hay clientes dispuestos a dejar una reseña o una frase? | Los testimonios que hay son de proyectos hechos por Upwork y ya no representan al estudio |
+| ¿Cuántos libros se venden y dónde? | Unos 10 por mes en Amazon, ninguno en Mercado Libre por ahora y unos 80 en papel vendidos en Uruguay |
+| ¿De dónde viene el nombre ARAR? | Las iniciales de Alejandro Ramón Arcardini Ravera, y la idea de preparar la tierra para lo que viene |
+
+---
+
+## 10. Decisiones y lo que cambian
+
+Las decisiones completas están en el [plan](plan-de-marketing.md#decisiones-tomadas-24-de-octubre-de-2026).
+Lo que cambian de este análisis:
+
+- **El problema es más grande de lo que mostraba GA4.** Los 3 clics en WhatsApp no se convirtieron en consultas:
+  hoy no llega ninguna. Por eso el plan suma contactos directos con empresas y con la red propia, además de los
+  cambios en el sitio.
+- **PUB-01 y EMB-02 · El libro no gana lugar en el sitio** (D1). Los lectores de afuera siguen teniendo el bloque
+  del libro que ya muestran las notas. Las notas sobre la casa llevan a Arquitectura residencial; las de teoría y
+  cultura quedan como están. Las ventas del libro se trabajan fuera del sitio, en Amazon y Mercado Libre.
+- **PUB-02 · "Neuro" solo para empresas, y sin hablar como expertos** (D2). El servicio describe lo que hace un
+  arquitecto (acústica, luz, zonas, recorridos), muestra sus fuentes y nunca usa "expertos" ni promesas clínicas.
+- **CAN-04 · Instagram y Facebook se quedan** (D3). Instagram se alimenta de las fichas de proyecto a medida que
+  se completan.
+- **CONF-01 · Sin testimonios ni obra de otros estudios en el sitio** (D4, D5). La confianza se construye con
+  fichas completas, casos, el Perfil de Google y el enlace al LinkedIn de Alejandro para ver su trayectoria.
+- **CAN-01 · Las notas de afuera bajan de prioridad.** Mejorar sus títulos sigue valiendo, pero primero van las
+  notas que llevan a un servicio.

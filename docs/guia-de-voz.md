@@ -29,8 +29,11 @@ de más.
 - **Título de la home:** Arquitectura que te hace bien.
 - **Quiénes somos, en una línea:** Somos Estudio ARAR, arquitectos en Montevideo. Diseñamos casas, reformas y
   espacios de trabajo pensados para el bienestar de quienes los habitan.
-- **Diferencial:** el bienestar (espacios que hacen bien, calma, *slow living*). En la propuesta comercial no se
-  usa la palabra "neuro"; en el Cuaderno sí.
+- **Diferencial:** el bienestar (espacios que hacen bien, calma, *slow living*). En las casas no se usa la
+  palabra "neuro". En la propuesta para empresas sí: *espacios de trabajo neuroinclusivos*. En el Cuaderno, también.
+- **Cuando hablamos de lo neuro,** lo hacemos como arquitectos que aplican lo que investigan quienes se dedican a
+  esto: acústica, luz, zonas, recorridos, con las fuentes a la vista. Nunca "expertos", "especialistas en
+  neuroarquitectura" ni promesas clínicas. "Neuroinclusivo" describe el espacio, no a nosotros.
 - **Invitación:** ¿Tenés un proyecto en mente? Contanos qué querés hacer y te ayudamos a darle forma.
 
 ## Glosario
@@ -46,7 +49,8 @@ de más.
 | propuesta | presupuesto, cotización | Incluye alcance, etapas y honorarios |
 | honorarios | precio, costo | |
 | anteproyecto, proyecto ejecutivo, obra | fases técnicas en inglés | Las etapas del proceso |
-| bienestar | neuroarquitectura (en la propuesta comercial) | |
+| bienestar | neuroarquitectura (en la propuesta para casas) | En casas y en la marca en general |
+| espacios de trabajo neuroinclusivos | oficinas para neurodivergentes, neuroarquitectura corporativa | Solo en la propuesta para empresas |
 | WhatsApp | Whatsapp, whatsapp | Con mayúscula intermedia |
 | Mercado Libre | MercadoLibre | Con espacio, como escribe la marca |
 
@@ -75,6 +79,16 @@ de más.
 - Arquitectura: "Hola, quiero consultar por un proyecto de arquitectura."
 - Desarrollos: "Hola, quiero consultar por un desarrollo inmobiliario."
 - Consultoría: "Hola, quiero consultar por una consultoría o revisión de proyecto."
+
+En el pie y en el menú del celular, el mensaje cambia según la página, para saber desde dónde llega cada consulta:
+
+- Proyectos: "Hola, vi los proyectos en la web y quiero consultar por un proyecto."
+- Ficha de un proyecto: "Hola, vi el proyecto Casa Calma en la web y quiero consultar por un proyecto." (con el
+  nombre de cada proyecto)
+- Notas del Cuaderno: "Hola, leí el Cuaderno y quiero consultar por un proyecto."
+- Notas sobre neurodiversidad: "Hola, leí el Cuaderno y quiero consultar por un espacio de trabajo."
+- Libro: "Hola, quiero consultar por el libro El arte de habitar lo que somos."
+- El resto de las páginas, Contacto incluida: el mensaje general.
 
 ## Antes y después
 
