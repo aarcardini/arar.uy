@@ -53,14 +53,14 @@ GA4 no registra contactos.
 
 ## Fase 2 · Ordenar la marca (semanas 1 y 2)
 
-- [ ] **Bloque 1 · Nombre, títulos e imagen para compartir** · *Sitio*
+- [ ] **Bloque 1 · Nombre, títulos e imagen para compartir** · *Sitio* · **Listo para revisar.**
   - Títulos de página sin el punto final: "… · Estudio ARAR" (MAR-02). El punto queda en el logo.
   - Arreglar el título de la ficha de Fatimah's Home, que hoy muestra `Fatimah&#39;s Home` en la pestaña y en
     Google.
   - Casa Calma como imagen al compartir la home y las páginas comerciales (MAR-04).
   - Jerarquía fija de mensajes (MAR-01): promesa "Arquitectura que te hace bien", manifiesto "Espacios con
     significado", y "Arquitectura + humana" solo como nombre del enfoque en Nosotros.
-- [ ] **Bloque 2 · Estudio y fundadores** (MAR-03) · *Sitio*
+- [ ] **Bloque 2 · Estudio y fundadores** (MAR-03) · *Sitio* · **Listo para revisar** (la historia del nombre es un borrador).
   - LinkedIn pasa de los datos del estudio a los de Alejandro como fundador. En el sitio se nombra como "el
     LinkedIn de Alejandro", y Nosotros invita a ver ahí la trayectoria completa (D5).
   - En Nosotros, la historia del nombre. Borrador: *"ARAR son las iniciales de Alejandro. También nos gustó lo

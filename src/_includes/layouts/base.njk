@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- set pageTitle = seoTitle if seoTitle else (title ~ " - " ~ site.name if title else site.title) %}
+  {%- set pageTitle = seoTitle if seoTitle else (title ~ " · " ~ site.shortName if title else site.title) %}
   {%- set pageDescription = description if description else site.description %}
   {%- set pageImage = image if image else site.ogImage %}
   {%- set canonical = site.url ~ page.url %}
@@ -15,7 +15,7 @@
   <link rel="canonical" href="{{ canonical }}">
   <meta property="og:locale" content="es_UY">
   <meta property="og:type" content="{{ 'article' if layout == 'post' else 'website' }}">
-  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:site_name" content="{{ site.shortName }}">
   <meta property="og:title" content="{{ pageTitle }}">
   <meta property="og:description" content="{{ pageDescription }}">
   <meta property="og:url" content="{{ canonical }}">
@@ -31,7 +31,7 @@
   <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
   <link rel="icon" href="/assets/favicon-192x192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="/assets/favicon-180x180.png">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Cuaderno de notas" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.shortName }} — Cuaderno de notas" href="/feed.xml">
   <link rel="preload" href="/assets/fonts/lora-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -39,7 +39,7 @@
   {%- set isPost = (layout == 'post') %}
   {%- set published = page.date | dateISO %}
   {%- set updated = (modified | dateISO) if modified else published %}
-  {%- set org = {"@type": "ArchitectureFirm", "@id": site.url ~ "/#organization", "name": site.name, "url": site.url ~ "/", "email": site.email, "telephone": "+59891428436", "logo": site.url ~ "/assets/favicon-192x192.png", "image": site.url ~ site.ogImage, "address": {"@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY"}, "sameAs": [site.social.facebook, site.social.linkedin, site.social.instagram], "founder": [{"@type": "Person", "name": "Alejandro Arcardini Ravera"}, {"@type": "Person", "name": "Karen Johann Alvarez"}]} %}
+  {%- set org = {"@type": "ArchitectureFirm", "@id": site.url ~ "/#organization", "name": site.shortName, "url": site.url ~ "/", "email": site.email, "telephone": "+59891428436", "logo": site.url ~ "/assets/favicon-192x192.png", "image": site.url ~ site.ogImage, "address": {"@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY"}, "sameAs": [site.social.facebook, site.social.instagram], "founder": [{"@type": "Person", "name": "Alejandro Arcardini Ravera", "sameAs": [site.social.linkedin]}, {"@type": "Person", "name": "Karen Johann Alvarez", "sameAs": [site.social.linkedinKaren]}]} %}
   {%- set crumbs = [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": site.url ~ "/"}] %}
   {%- if isPost %}
     {%- set catNames = [] %}{% for c in (categories or []) %}{% set catNames = (catNames.push(c | termName(categoryList)), catNames) %}{% endfor %}
@@ -49,7 +49,7 @@
   {%- else %}
     {%- if parentCrumb %}{% set crumbs = crumbs.concat([{"@type": "ListItem", "position": 2, "name": parentCrumb.name, "item": site.url ~ parentCrumb.url}, {"@type": "ListItem", "position": 3, "name": title}]) %}
     {%- elif page.url != "/" %}{% set crumbs = crumbs.concat([{"@type": "ListItem", "position": 2, "name": title}]) %}{% endif %}
-    {%- set main = {"@type": "WebPage", "@id": canonical, "url": canonical, "name": pageTitle, "description": pageDescription, "inLanguage": "es", "isPartOf": {"@type": "WebSite", "name": site.name, "url": site.url ~ "/"}, "about": org} %}
+    {%- set main = {"@type": "WebPage", "@id": canonical, "url": canonical, "name": pageTitle, "description": pageDescription, "inLanguage": "es", "isPartOf": {"@type": "WebSite", "name": site.shortName, "url": site.url ~ "/"}, "about": org} %}
   {%- endif %}
   {%- set graph = [main] %}
   {%- if crumbs.length > 1 %}{% set graph = graph.concat([{"@type": "BreadcrumbList", "itemListElement": crumbs}]) %}{% endif %}

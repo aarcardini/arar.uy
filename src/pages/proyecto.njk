@@ -11,9 +11,9 @@ parentCrumb:
   name: Proyectos
   url: /proyectos/
 eleventyComputed:
-  title: "{{ p.title }}"
-  seoTitle: "{{ p.title }} - Proyectos - Estudio ARAR."
-  description: "{{ p.kindLabel }}{% if p.location %} en {{ p.location }}{% endif %}. Un proyecto de Estudio ARAR, arquitectos en Montevideo, Uruguay."
+  title: "{{ p.title | safe }}"
+  seoTitle: "{{ p.title | safe }} · Proyectos · Estudio ARAR"
+  description: "{{ p.kindLabel | safe }}{% if p.location %} en {{ p.location | safe }}{% endif %}. Un proyecto de Estudio ARAR, arquitectos en Montevideo, Uruguay."
   image: "/assets/img/{{ p.cover }}"
 ---
 {%- set i = pagination.pageNumber %}
