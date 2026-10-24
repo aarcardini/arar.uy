@@ -400,7 +400,7 @@ hr { border: 0; border-top: 1px solid var(--ink); margin: 0; }
 .facts dt { font-family: var(--serif); font-weight: 700; font-size: var(--fs-h2); line-height: 1; letter-spacing: var(--ls-h2); }
 .facts dd { margin: 12px 0 0; font-size: 1rem; }
 .facts dd a { text-decoration: underline; text-underline-offset: 3px; }
-.split__text p a { text-decoration: underline; text-underline-offset: 3px; }
+.split__text p a, .service__cols p a { text-decoration: underline; text-underline-offset: 3px; }
 .home-reading { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 48px 72px; align-items: start; }
 .home-reading__book { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 32px; align-items: center; }
 .home-reading__book img { width: 100%; border-radius: 2px; }

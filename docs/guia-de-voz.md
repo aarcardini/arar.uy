@@ -88,6 +88,7 @@ En el pie y en el menú del celular, el mensaje cambia según la página, para s
 - Notas del Cuaderno: "Hola, leí el Cuaderno y quiero consultar por un proyecto."
 - Notas sobre neurodiversidad: "Hola, leí el Cuaderno y quiero consultar por un espacio de trabajo."
 - Libro: "Hola, quiero consultar por el libro El arte de habitar lo que somos."
+- Espacios de trabajo neuroinclusivos: "Hola, quiero consultar por un espacio de trabajo."
 - El resto de las páginas, Contacto incluida: el mensaje general.
 
 ## Antes y después

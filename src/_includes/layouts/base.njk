@@ -82,9 +82,10 @@
 </head>
 <body class="{{ bodyClass }}">
   {#- Mensaje de WhatsApp del menú y del pie según la página, para saber desde dónde llega cada consulta.
-      Las notas con la categoría "autismo" son las de neurodiversidad y trabajo. #}
+      Una página puede fijar el suyo con waMessage. Las notas con la categoría "autismo" son las de neurodiversidad y trabajo. #}
   {%- set wa = site.whatsappMessages %}
-  {%- if p and p.slug %}{% set waText = "Hola, vi el proyecto " ~ p.title ~ " en la web y quiero consultar por un proyecto." %}
+  {%- if waMessage %}{% set waText = waMessage %}
+  {%- elif p and p.slug %}{% set waText = "Hola, vi el proyecto " ~ p.title ~ " en la web y quiero consultar por un proyecto." %}
   {%- elif page.url == "/proyectos/" %}{% set waText = wa.proyectos %}
   {%- elif page.url == site.book.url %}{% set waText = wa.libro %}
   {%- elif layout == "post" and categories and ("autismo" in categories) %}{% set waText = wa.trabajo %}
